@@ -37,3 +37,5 @@ Route::post('store-book',[BookController::class,'store'])->name('store-book');
 Route::post('store-update',[BookController::class,'update'])->name('store-update');
 
 
+Route::get('/download/{file}',[BookController::class,'download']);
+Route::get('/view/{id}',[BookController::class,'view']);

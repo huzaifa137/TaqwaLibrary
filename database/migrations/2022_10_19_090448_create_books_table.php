@@ -23,7 +23,7 @@ class CreateBooksTable extends Migration
             $table->text('pages');
             $table->text('Translated_By')->default('-');
             $table->text('Book_Image');
-            $table->timestamps();
+            $table->text('Book_pdf');
         });
     }
 

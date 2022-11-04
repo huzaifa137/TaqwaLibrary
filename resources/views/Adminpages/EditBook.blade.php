@@ -174,10 +174,20 @@
                                 
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="form-group fallback w-100">
-                                     <strong>Upload Book Image :</strong>  <input type="file" name="Book_image" class="dropify" data-default-file="" value="{{$info->Book_image}}">
+                                     <strong>Upload the Book Image :</strong>  <input type="file" name="Book_image" class="dropify" data-default-file="" value="{{old('Book_image')}}">
                                      <span style="color: red">@error('Book_image'){{$message}} @enderror</span>
                                     </div>
                                 </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group fallback w-100">
+                                     <strong>Upload Book pdf / docx :</strong>  <input type="file" name="Book_pdf" class="dropify" data-default-file="" value="{{old('Book_pdf')}}">
+                                     <span style="color: red">@error('Book_pdf'){{$message}} @enderror</span>
+                                    </div>
+                                </div>
+
+
+
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <button type="submit" class="btn btn-primary">Update</button>
                                     <button type="submit" class="btn btn-light">Cancel</button>

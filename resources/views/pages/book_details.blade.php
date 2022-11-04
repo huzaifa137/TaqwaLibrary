@@ -64,10 +64,10 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-3 ">
-                                    <div class="post-right-content">
-                                        <a href="#." class="btn btn-dark-gray">Place a Hold</a> 
-                                        <a href="#." class="btn btn-dark-gray">View sample</a> 
-                                        <a href="#." class="btn btn-dark-gray">Find Similar Titles</a>
+                                    <div class="post-right-content"> 
+                                        <a href="{{url('/view',$data->id)}}" class="btn btn-dark-gray">View Book</a> 
+                                        <a href="{{url('/download',$data->Book_pdf)}}" class="btn btn-dark-gray">Download Book</a> 
+                                        <a href="#" class="btn btn-dark-gray">Find Similar Books like this</a>
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Stroage;
 use Illuminate\Http\Request;
 use App\Models\Book;
 
@@ -17,11 +18,12 @@ class BookController extends Controller
                 'format'=>'required',
                 'pages'=>'required',
                 'translated_by'=>'required',
-                'Book_image'=>'required|mimes:jpeg,jpg,pdf,png,bmp'
+                'Book_image'=>'required|mimes:jpeg,jpg,png,bmp',
+                'Book_pdf'=>'required|mimes:pdf,zip'
             ]);
             
-
-            $post = new Book();
+            $post = new Book();            
+            
             $post->Author_Name=$request->author_name;
             $post->Book_Name=$request->book_name;
             $post->Catagory=$request->Catagory;
@@ -29,7 +31,6 @@ class BookController extends Controller
             $post->Format=$request->format;
             $post->pages=$request->pages;
             $post->Translated_By=$request->translated_by;
-
 
             if($request->file('Book_image'))
              {
@@ -39,11 +40,17 @@ class BookController extends Controller
             $post['Book_image']=$filename;
             }
 
+            $file=$request->Book_pdf;
+            $filename=date('YmdHi').'.'.$file->getClientOriginalExtension();
+		    $file->move('assets_7',$filename);
+            $post->Book_pdf=$filename;
+
+
             $save=$post->save();
 
             if($save)
-            {
-                 return redirect()->back()->with('success','Book has been added successfully');
+            {   
+                return redirect()->back()->with('success','Book has been Added successfully');
             }
         }
 
@@ -82,7 +89,8 @@ class BookController extends Controller
                 'format'=>'required',
                 'pages'=>'required',
                 'translated_by'=>'required',
-                'Book_image'=>'required|mimes:jpeg,jpg,pdf,png,bmp'
+                'Book_image'=>'required|mimes:jpeg,jpg,png,bmp',
+                'Book_pdf'=>'required|mimes:pdf,zip'
             ]);
             
             $post->Author_Name=$request->author_name;
@@ -101,6 +109,11 @@ class BookController extends Controller
             $file->move(public_path('public/BookImage'),$filename);
             $post['Book_image']=$filename;
             }
+         
+            $file=$request->Book_pdf;
+            $filename=date('YmdHi').'.'.$file->getClientOriginalExtension();
+		    $file->move('assets_7',$filename);
+            $post->Book_pdf=$filename;
 
             $save=$post->save();
 
@@ -122,28 +135,43 @@ class BookController extends Controller
              return view('gridviews.Books',compact('data',$data));
         }
 
+        // Arabic , Luganda, English books collection.
 
         public function ArabicBooks()
         {
             $data = Book::paginate(9);
-             return view('gridviews.ArabicBooks',compact('data',$data));
+            return view('gridviews.ArabicBooks',compact('data',$data));
         }
 
         public function EnglishBooks()
         {
             $data = Book::paginate(9);
-             return view('gridviews.EnglishBooks',compact('data',$data));
+            return view('gridviews.EnglishBooks',compact('data',$data));
         }
 
         public function LugandaBooks()
         {
             $data = Book::paginate(9);
-             return view('gridviews.EnglishBooks',compact('data',$data));
+            return view('gridviews.EnglishBooks',compact('data',$data));
         }
+
+        //Last , final page ---> view, download, find similar books.
 
         public function lastPage($id)
         {
             $data = Book::find($id);
             return view('pages.book_details',compact('data',$data));
+        }
+
+        public function download(Request $request,$Book_pdf)
+        {
+            return response()->download(public_path('assets_7/'.$Book_pdf));
+        }
+
+
+        public function view($id)
+        {
+            $data = Book::find($id);
+            return view('pages.ViewBook',compact('data',$data));
         }
 }
