@@ -23,7 +23,17 @@ Route::get('English',[BookController::class,'EnglishBooks'])->name('All_English_
 Route::get('Luganda',[BookController::class,'LugandaBooks'])->name('All_Luganda_Books');
 Route::get('final-page/{id}',[BookController::class,'lastPage'])->name('final-page');
 
-Route::prefix('Admin')->group(function () {
+Route::post('store-book',[BookController::class,'store'])->name('store-book');
+Route::post('store-update',[BookController::class,'update'])->name('store-update');
+
+Route::get('/download/{file}',[BookController::class,'download']);
+Route::get('/view/{id}',[BookController::class,'view']);
+
+
+Route::middleware(['middleware'=>'AuthCheck'])->group(function () {
+    Route::get('Adminpages.Dashboard',[BookController::class,'dashboard']);
+    Route::get('auth.logout',[BookController::class,'logout'])->name('auth.logout');
+
     Route::view('AddBook','Adminpages.AddBook')->name('AddBook');
     Route::view('EditBook','Adminpages.EditBook')->name('EditBook');
     Route::view('dashboard','Adminpages.Dashboard')->name('dashboard');
@@ -31,11 +41,13 @@ Route::prefix('Admin')->group(function () {
     Route::get('delete/{id}',[BookController::class,'delete']);
     Route::get('Edit/{id}',[BookController::class,'updateRecord']);
     Route::get('AllBooks',[BookController::class,'show'])->name('AllBooks');
-});
+}); 
 
-Route::post('store-book',[BookController::class,'store'])->name('store-book');
-Route::post('store-update',[BookController::class,'update'])->name('store-update');
+Route::get('auth.register',[BookController::class,'register'])->name('auth.register');
+Route::get('auth.login',[BookController::class,'login'])->name('auth.login');
+
+Route::post('auth.save',[BookController::class,'store1'])->name('auth.save');
+Route::post('auth.check',[BookController::class,'verify'])->name('auth.check');
 
 
-Route::get('/download/{file}',[BookController::class,'download']);
-Route::get('/view/{id}',[BookController::class,'view']);
+

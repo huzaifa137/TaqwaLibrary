@@ -49,7 +49,7 @@
 											@foreach ($data as $info)
 											<tr>
 												<div class="profile-photo">
-													<td><img src="{{url('public/BookImage/'.$info->Book_Image)}}"  class="img-fluid rounded-circle" alt=""></td>
+													<td><img src="{{url('public/BookImage/'.$info->Book_Image)}}"  class="img-fluid rounded-circle"  alt=""></td>
 												</div>
 												<td>{{$info->Author_Name}}</td>
 												<td>{{$info->Book_Name}}</td>

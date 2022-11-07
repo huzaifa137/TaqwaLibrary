@@ -10,11 +10,11 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
 
         <!-- Title -->
-        <title>..:: LIBRARIA ::..</title>
+        <title>..:: Taqwa Library ::..</title>
 
         <!-- Favicon -->
-        <link href="/assets/images/favicon.ico" rel="icon" type="image/x-icon" />
-
+        <link href="/assets/images/libraria-logo-v3.png" rel="icon" type="image/x-icon" />
+        
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
         <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -69,65 +69,7 @@
                                         </ul>
                                     </li>
                                 </ul>
-                                <!-- Header Topbar -->
-                                <div class="header-topbar hidden-md">
-                                    <div class="topbar-links">
-                                        <a href="signin.html"><i class="fa fa-lock"></i>Login / Register</a>
-                                        <span>|</span>
-                                        <div class="header-cart dropdown">
-                                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                                <i class="fa fa-shopping-cart"></i>
-                                                <small>0</small>
-                                            </a>
-                                            <div class="dropdown-menu cart-dropdown">
-                                                <ul>
-                                                    <li class="clearfix">
-                                                        <img src="/assets/images/header-cart-image-01.jpg" alt="cart item" />
-                                                        <div class="item-info">
-                                                            <div class="name">
-                                                                <a href="#">The Great Gatsby</a>
-                                                            </div>
-                                                            <div class="author"><strong>Author:</strong> F. Scott Fitzgerald</div>
-                                                            <div class="price">1 X $10.00</div>
-                                                        </div>
-                                                        <a class="remove" href="#"><i class="fa fa-trash-o"></i></a>
-                                                    </li>
-                                                    <li class="clearfix">
-                                                        <img src="/assets/images/header-cart-image-02.jpg" alt="cart item" />
-                                                        <div class="item-info">
-                                                            <div class="name">
-                                                                <a href="#">The Great Gatsby</a>
-                                                            </div>
-                                                            <div class="author"><strong>Author:</strong> F. Scott Fitzgerald</div>
-                                                            <div class="price">1 X $10.00</div>
-                                                        </div>
-                                                        <a class="remove" href="#"><i class="fa fa-trash-o"></i></a>
-                                                    </li>
-                                                    <li class="clearfix">
-                                                        <img src="/assets/images/header-cart-image-03.jpg" alt="cart item" />
-                                                        <div class="item-info">
-                                                            <div class="name">
-                                                                <a href="#">The Great Gatsby</a>
-                                                            </div>
-                                                            <div class="author"><strong>Author:</strong> F. Scott Fitzgerald</div>
-                                                            <div class="price">1 X $10.00</div>
-                                                        </div>
-                                                        <a class="remove" href="#"><i class="fa fa-trash-o"></i></a>
-                                                    </li>
-                                                </ul>
-                                                <div class="cart-total">
-                                                    <div class="title">SubTotal</div>
-                                                    <div class="price">$30.00</div>
-                                                </div>
-                                                <div class="cart-buttons">
-                                                    <a href="cart.html" class="btn btn-dark-gray">View Cart</a>
-                                                    <a href="checkout.html" class="btn btn-primary">Checkout</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Header Topbar -->
+
                             </div>
                             <div class="header-socialbar hidden-sm hidden-xs">
                                 <ul class="social-links">
@@ -668,13 +610,13 @@
                         <div class="col-md-9 pull-right">
                             <ul>
                                 <li><a href="{{route('home')}}">Home</a></li>
-                                <li><a href="books-media-list-view.html">Books &amp; Media</a></li>
-                                <li><a href="news-events-list-view.html">News &amp; Events</a></li>
+                                <li><a href="{{route('all')}}">BOOKS</a></li>
+                                {{-- <li><a href="news-events-list-view.html">News &amp; Events</a></li>
                                 <li><a href="#">Kids &amp; Teens</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="#">Research</a></li>
                                 <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html">Contact</a></li> --}}
                             </ul>
                         </div>
                     </div>

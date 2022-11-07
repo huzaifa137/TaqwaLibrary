@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Stroage;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\Models\Book;
+use App\Models\Admin;
 
 class BookController extends Controller
 {
@@ -173,5 +175,109 @@ class BookController extends Controller
         {
             $data = Book::find($id);
             return view('pages.ViewBook',compact('data',$data));
+        }
+
+        public function login()
+        {
+            return view('login');
+        }
+
+        public function register()
+        {
+            return view('register');
+        }
+
+        public function store1(Request $request)
+        {
+            $request->validate([
+                'fname'=>'required',
+                'email'=>'required|unique:admins',
+                'phonenumber'=>'required|unique:admins',
+                'password'=>'required|min:5',
+                'confirm_password'=>'required'
+            ]);
+
+        $password1=$request->input('password');
+        $password2=$request->input('confirm_password');
+
+        if(strcmp($password1,$password2)!=0)
+        {
+            return back()->with('fail','Password entered don\'t much');
+        }
+
+        $post = new Admin();
+        $post->fname = $request->fname;
+        $post->email = $request->email;
+        $post->phonenumber = $request->phonenumber;
+        $post->password =Hash::make($request->password);
+
+        $save = $post->save();
+
+        if($save)
+        {
+            return back()->with('success','Account created Successfully')
+            ->with('fail','Account waiting for Activation');
+        }
+        else
+        {
+            return back()->with('fail','Failed to create account');
+        }
+            
+        }
+
+        public function pass(Request $request){
+
+            if($userInfo = Admin::all()
+            ->where('phonenumber','=',$request->phonenumber)
+            ->where('status','=','invalid')
+            ->first())
+            {
+                return back()->with('fail','Account not activated');    
+            } 
+
+            $userInfo = Admin::where('phonenumber','=',$request->phonenumber)->first();
+            if(Hash::check($request->password,$userInfo->password))
+                    {  
+                    $request->session()->put('LoggedUser',$userInfo->id); 
+                    return redirect('Adminpages.Dashboard');
+                    }
+            else     
+                    {
+                    return back()->with('fail','incorrect email or password'); 
+                    }
+        }
+
+        public function verify(Request $request)
+        {
+            $request->validate([
+                'phonenumber'=>'required',
+                'password'=>'required|min:5',
+            ]);
+
+            $userInfo = Admin::where('phonenumber','=',$request->phonenumber)->first();
+
+            if(!$userInfo)
+            {
+                return back()->with('fail','incorrect phonenumber or password');
+            }
+            else{
+                return $this->pass($request);
+            }
+        }
+
+
+        public function logout()
+        {
+            if(session()->has('LoggedUser'))
+            {
+                session()->pull('LoggedUser');
+                return redirect('auth.login');
+            }
+        }
+
+        public function dashboard()
+        {
+            $data=['LoggedUserInfo'=>Admin::where('id','=',session('LoggedUser'))->first()];
+            return view('Adminpages.Dashboard',$data);
         }
 }
