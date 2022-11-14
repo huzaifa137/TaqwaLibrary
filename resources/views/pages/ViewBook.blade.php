@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>View {{$data->Book_Name}}</title>
+    <title>{{$data->Book_Name}}</title>
 </head>
 <body>
     

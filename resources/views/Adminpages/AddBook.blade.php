@@ -33,7 +33,7 @@
                         <h5 class="card-title">Basic Info</h5>
                     </div>
                     <div class="card-body">
-                        <form action="{{route('store-book')}}" method="post" enctype="multipart/form-data">
+                        <form action="{{route('store-book')}}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12">

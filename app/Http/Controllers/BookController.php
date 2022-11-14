@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Stroage;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
-use App\Models\Book;
+use App\Models\contact;
 use App\Models\Admin;
+use App\Models\Book;
+
 
 class BookController extends Controller
 {
@@ -265,7 +267,6 @@ class BookController extends Controller
             }
         }
 
-
         public function logout()
         {
             if(session()->has('LoggedUser'))
@@ -279,5 +280,35 @@ class BookController extends Controller
         {
             $data=['LoggedUserInfo'=>Admin::where('id','=',session('LoggedUser'))->first()];
             return view('Adminpages.Dashboard',$data);
+        }
+
+        public function SendMessage(Request $request)
+        {
+            $request->validate([
+                'firstname'=>'required',
+                'lastname'=>'required',
+                'email'=>'required|email',
+                'phonenumber'=>'required'
+            ]);
+
+            
+            $post = new contact();
+            $post->FirstName=$request->firstname;
+            $post->LastName=$request->lastname;
+            $post->Email=$request->email;
+            $post->PhoneNumber=$request->phonenumber;
+            $post->Message=$request->message;
+
+            $save = $post->save();
+            
+            if($save)
+            {     
+                return redirect()->back()->with('success','Information has been delivered');
+            }
+        }
+
+        public function SearchBar(Request $request)
+        {
+            return $request->all();
         }
 }

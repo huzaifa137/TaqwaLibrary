@@ -68,8 +68,10 @@
                                             <li><a href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                         </ul>
                                     </li>
-                                </ul>
 
+                                    <li><a href="{{route('contact')}}">Contact us</a></li>
+                                </ul>
+                                
                             </div>
                             <div class="header-socialbar hidden-sm hidden-xs">
                                 <ul class="social-links">
@@ -118,6 +120,7 @@
                                             <li><a href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="{{route('contact')}}">Contact us</a></li>
                                     {{-- <li>
                                         <a href="news-events-list-view.html">News &amp; Events</a>
                                         <ul>
@@ -165,29 +168,174 @@
                             <h2>What’s all the Taqwa Library?</h2>
                             <p>Libraria gives you access to <strong>Audiobooks,</strong> <strong>eBooks,</strong> <strong>Music,</strong> <strong>Movies and Comics.</strong></p>
                             <div class="filter-box">
-                                <form action="#" class="banner-filter-box" method="#">
+                                <form action="{{route('search-bar')}}" class="banner-filter-box" method="POST">
+                                    @csrf
                                     <div class="form-group">
                                         <label class="sr-only" for="keywords">Search by Keyword</label>
-                                        <input class="form-control" placeholder="Search by Keyword" id="keywords" name="keywords" type="text">
+                                        <input class="form-control" placeholder="Search by Keyword" name="keyword" >
                                     </div>
                                     <div class="form-group">
-                                        <select name="catalog" id="catalog" class="form-control">
-                                            <option>Search the Catalog</option>
-                                            <option>Catalog 01</option>
-                                            <option>Catalog 02</option>
-                                            <option>Catalog 03</option>
-                                            <option>Catalog 04</option>
-                                            <option>Catalog 05</option>
+                                        <select class="form-control" name="Catagory1" value="{{old('Catagory')}}">
+                                            <option value="#">CATAGORY</option>
+                                            <option value="AQEEDAH">AQEEDAH</option>
+                                            <option value="SHIRK">SHIRK</option>
+                                            <option value="QURAN">QURAN</option>
+                                            <option value="HADITH">HADITH</option>
+                                            <option value="PROPHETS">PROPHETS</option>
+                                            <option value="TAFSIR">TAFSIR</option>
+                                            <option value="TAWHEED">TAWHEED</option>
+                                            <option value="ALLAH">ALLAH</option>
+                                            <option value="ANGELS">ANGELS</option>
+                                            <option value="DUA-ZIKR">DUA-ZIKR</option>
+                                            <option value="JINN">JINN</option>
+                                            <option value="SUNNAH">SUNNAH</option>
+                                            <option value="BIDAH">BIDAH</option>
+                                            <option value="BIOGRAPHIES">BIOGRAPHIES</option>
+                                            <option value="DEATH-GRAVE">DEATH-GRAVE</option>
+                                            <option value="FIQH">FIQH</option>
+                                            <option value="NEW-MUSLIMS">NEW MUSLIMS</option>
+                                            <option value="Non-Muslims">Non-Muslims</option>
+                                            <option value="HEALING">HEALING</option>                           
+                                            <option value="HEART">HEART</option>                               
+                                            <option value="KUFAR-Celebrations">KUFAR-Celebrations</option>     
+                                            <option value="Qayamat-HEREAFTER">Qayamat-HEREAFTER</option>       
+                                            <option value="RAMADHAN">RAMADHAN</option>                    
+                                            <option value="RUQYA">RUQYA</option>                            
+                                            <option value="SALAF">SALAF</option>                            
+                                            <option value="SINS">SINS</option>
+                                            <option value="ISLAM-4-KIDs">ISLAM-4-KIDs</option>
+                                            <option value="ISLAMI-SHARIA-WILL">ISLAMI-SHARIA-WILL</option>
+                                            <option value="PROPHET-SAWS">PROPHETSAWS</option>
+                                            <option value="SACRED-MONTHS">SACRED MONTHS</option>
+                                            <option value="ADVICE">ADVICE</option>  
+                                            <option value="AWLIYAH-ALLAH">AWLIYAH-ALLAH</option>
+                                            <option value="BENEFITS">BENEFITS</option>
+                                            <option value="CALAMITIES">CALAMITIES</option>
+                                            <option value="CHILDREN-YOUTH">CHILDREN-YOUTH</option>
+                                            <option value="CURRENT-AFFAIRS">CURRENT AFFAIRS</option>
+                                            <option value="DAJJAL">DAJJAL</option>
+                                            <option value="DAWAH">DAWAH</option>
+                                            <option value="DESIRES">DESIRES</option>
+                                            <option value="ENVY">ENVY</option>
+                                            <option value="ETHICS-MANNERS">ETHICS-MANNERS</option>
+                                            <option value="EVIL">EVIL</option>
+                                            <option value="FATAWA">FATAWA</option> 
+                                            <option value="FITNAH">FITNAH</option>
+                                            <option value="HAJJ-UMRAH">HAJJ-UMRAH</option>
+                                            <option value="HALAL-o-HARAM">HALAL-o-HARAM</option>
+                                            <option value="HARRAM-KHUTABHs">HARRAM KHUTABHs</option>
+                                            <option value="HIJAB">HIJAB</option>
+                                            <option value="HISTORY">HISTORY</option>
+                                            <option value="ILM-ULAMA">ILM-ULAMA</option>
+                                            <option value="ISLAM">ISLAM</option>
+                                            <option value="ISLAMIC HISTORY">ISLAMIC HISTORY</option>
+                                            <option value="JANAZAH">JANAZAH</option>
+                                            <option value="KUFR">KUFR</option>
+                                            <option value="MODESTY">MODESTY</option>
+                                            <option value="MARRIAGE-DIVORCE">MARRIAGE-DIVORCE</option>
+                                            <option value="MORALS">MORALS</option>                                           
+                                            <option value="PARENTS">PARENTS</option>
+                                            <option value="PRAYERS">PRAYERS</option>
+                                            <option value="PROPHET'S-FAMILY">PROPHET'S FAMILY</option>                                            
+                                            <option value="RACISM-INJUSTICE">RACISM - INJUSTICE</option>
+                                            <option value="RELATIONS">RELATIONS</option>
+                                            <option value="RELIGIONS">RELIGIONS</option>
+                                            <option value="REPENTANCE">REPENTANCE</option>
+                                            <option value="RIGHTS">RIGHTS</option>
+                                            <option value="SAHABAH">SAHABAH</option>
+                                            <option value="SECTS">SECTS</option>
+                                            <option value="SEERAH">SEERAH</option>
+                                            <option value="SHARIA">SHARIA</option>
+                                            <option value="SHAYTAAN">SHAYTAAN</option>
+                                            <option value="SISTERS">SISTERS</option>
+                                            <option value="SOUL">SOUL</option>
+                                            <option value="SUFISM">SUFISM</option>
+                                            <option value="TERRORISM">TERRORISM</option>
+                                            <option value="WARNINGS">WARNINGS</option>
+                                            <option value="WASEELA">WASEELA</option>
+                                            <option value="ZAKAT-SADAQAH">ZAKAT-SADAQAH</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <select name="category" id="category" class="form-control">
-                                            <option>All Categories</option>
-                                            <option>Category 01</option>
-                                            <option>Category 02</option>
-                                            <option>Category 03</option>
-                                            <option>Category 04</option>
-                                            <option>Category 05</option>
+                                        <select class="form-control" name="Catagory2" value="{{old('Catagory')}}">
+                                            <option value="#">CATAGORY</option>
+                                            <option value="AQEEDAH">AQEEDAH</option>
+                                            <option value="SHIRK">SHIRK</option>
+                                            <option value="QURAN">QURAN</option>
+                                            <option value="HADITH">HADITH</option>
+                                            <option value="PROPHETS">PROPHETS</option>
+                                            <option value="TAFSIR">TAFSIR</option>
+                                            <option value="TAWHEED">TAWHEED</option>
+                                            <option value="ALLAH">ALLAH</option>
+                                            <option value="ANGELS">ANGELS</option>
+                                            <option value="DUA-ZIKR">DUA-ZIKR</option>
+                                            <option value="JINN">JINN</option>
+                                            <option value="SUNNAH">SUNNAH</option>
+                                            <option value="BIDAH">BIDAH</option>
+                                            <option value="BIOGRAPHIES">BIOGRAPHIES</option>
+                                            <option value="DEATH-GRAVE">DEATH-GRAVE</option>
+                                            <option value="FIQH">FIQH</option>
+                                            <option value="NEW-MUSLIMS">NEW MUSLIMS</option>
+                                            <option value="Non-Muslims">Non-Muslims</option>
+                                            <option value="HEALING">HEALING</option>                           
+                                            <option value="HEART">HEART</option>                               
+                                            <option value="KUFAR-Celebrations">KUFAR-Celebrations</option>     
+                                            <option value="Qayamat-HEREAFTER">Qayamat-HEREAFTER</option>       
+                                            <option value="RAMADHAN">RAMADHAN</option>                    
+                                            <option value="RUQYA">RUQYA</option>                            
+                                            <option value="SALAF">SALAF</option>                            
+                                            <option value="SINS">SINS</option>
+                                            <option value="ISLAM-4-KIDs">ISLAM-4-KIDs</option>
+                                            <option value="ISLAMI-SHARIA-WILL">ISLAMI-SHARIA-WILL</option>
+                                            <option value="PROPHET-SAWS">PROPHETSAWS</option>
+                                            <option value="SACRED-MONTHS">SACRED MONTHS</option>
+                                            <option value="ADVICE">ADVICE</option>  
+                                            <option value="AWLIYAH-ALLAH">AWLIYAH-ALLAH</option>
+                                            <option value="BENEFITS">BENEFITS</option>
+                                            <option value="CALAMITIES">CALAMITIES</option>
+                                            <option value="CHILDREN-YOUTH">CHILDREN-YOUTH</option>
+                                            <option value="CURRENT-AFFAIRS">CURRENT AFFAIRS</option>
+                                            <option value="DAJJAL">DAJJAL</option>
+                                            <option value="DAWAH">DAWAH</option>
+                                            <option value="DESIRES">DESIRES</option>
+                                            <option value="ENVY">ENVY</option>
+                                            <option value="ETHICS-MANNERS">ETHICS-MANNERS</option>
+                                            <option value="EVIL">EVIL</option>
+                                            <option value="FATAWA">FATAWA</option> 
+                                            <option value="FITNAH">FITNAH</option>
+                                            <option value="HAJJ-UMRAH">HAJJ-UMRAH</option>
+                                            <option value="HALAL-o-HARAM">HALAL-o-HARAM</option>
+                                            <option value="HARRAM-KHUTABHs">HARRAM KHUTABHs</option>
+                                            <option value="HIJAB">HIJAB</option>
+                                            <option value="HISTORY">HISTORY</option>
+                                            <option value="ILM-ULAMA">ILM-ULAMA</option>
+                                            <option value="ISLAM">ISLAM</option>
+                                            <option value="ISLAMIC HISTORY">ISLAMIC HISTORY</option>
+                                            <option value="JANAZAH">JANAZAH</option>
+                                            <option value="KUFR">KUFR</option>
+                                            <option value="MODESTY">MODESTY</option>
+                                            <option value="MARRIAGE-DIVORCE">MARRIAGE-DIVORCE</option>
+                                            <option value="MORALS">MORALS</option>                                           
+                                            <option value="PARENTS">PARENTS</option>
+                                            <option value="PRAYERS">PRAYERS</option>
+                                            <option value="PROPHET'S-FAMILY">PROPHET'S FAMILY</option>                                            
+                                            <option value="RACISM-INJUSTICE">RACISM - INJUSTICE</option>
+                                            <option value="RELATIONS">RELATIONS</option>
+                                            <option value="RELIGIONS">RELIGIONS</option>
+                                            <option value="REPENTANCE">REPENTANCE</option>
+                                            <option value="RIGHTS">RIGHTS</option>
+                                            <option value="SAHABAH">SAHABAH</option>
+                                            <option value="SECTS">SECTS</option>
+                                            <option value="SEERAH">SEERAH</option>
+                                            <option value="SHARIA">SHARIA</option>
+                                            <option value="SHAYTAAN">SHAYTAAN</option>
+                                            <option value="SISTERS">SISTERS</option>
+                                            <option value="SOUL">SOUL</option>
+                                            <option value="SUFISM">SUFISM</option>
+                                            <option value="TERRORISM">TERRORISM</option>
+                                            <option value="WARNINGS">WARNINGS</option>
+                                            <option value="WASEELA">WASEELA</option>
+                                            <option value="ZAKAT-SADAQAH">ZAKAT-SADAQAH</option>
                                         </select>
                                     </div>
                                     <div class="clearfix"></div>
@@ -611,6 +759,7 @@
                             <ul>
                                 <li><a href="{{route('home')}}">Home</a></li>
                                 <li><a href="{{route('all')}}">BOOKS</a></li>
+                                <li><a href="{{route('contact')}}">Contact us</a></li>
                                 {{-- <li><a href="news-events-list-view.html">News &amp; Events</a></li>
                                 <li><a href="#">Kids &amp; Teens</a></li>
                                 <li><a href="services.html">Services</a></li>
