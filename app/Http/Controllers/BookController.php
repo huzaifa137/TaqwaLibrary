@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Stroage;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\contact;
 use App\Models\Admin;
@@ -309,6 +311,17 @@ class BookController extends Controller
 
         public function SearchBar(Request $request)
         {
-            return $request->all();
+             $keyword =$request->keyword;
+             $catagory1 =$request->Catagory1;
+             $catagory2 =$request->Catagory2;
+
+             $keyword= DB::table('books')->where('Catagory',$keyword)->get();
+             $catagory1= DB::table('books')->where('Catagory',$catagory1)->get();
+             $catagory2= DB::table('books')->where('Catagory',$catagory2)->get();
+
+             $all=$keyword->merge($catagory1);
+             $finalresult=$all->merge($catagory2);
+
+             return view('gridviews.result',compact('finalresult'));
         }
 }

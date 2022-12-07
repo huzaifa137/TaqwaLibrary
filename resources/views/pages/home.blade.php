@@ -175,7 +175,7 @@
                                         <input class="form-control" placeholder="Search by Keyword" name="keyword" >
                                     </div>
                                     <div class="form-group">
-                                        <select class="form-control" name="Catagory1" value="{{old('Catagory')}}">
+                                        <select class="form-controll" name="Catagory1" value="{{old('Catagory')}}">
                                             <option value="#">CATAGORY</option>
                                             <option value="AQEEDAH">AQEEDAH</option>
                                             <option value="SHIRK">SHIRK</option>
