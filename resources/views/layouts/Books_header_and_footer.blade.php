@@ -194,7 +194,8 @@
                                     <div class="container">
                                         <div class="filter-box">
                                             <h3>What are you looking for at the library?</h3>
-                                            <form action="#" method="post">
+                                            <form action="{{route('search-bar')}}" method="post">
+                                                @csrf
                                                 <div class="col-md-4 col-sm-6">
                                                     <div class="form-group">
                                                         <label class="sr-only" for="keywords">Search by Keyword</label>
@@ -203,7 +204,8 @@
                                                 </div>
                                                 <div class="col-md-3 col-sm-6">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="Catagory" value="{{old('Catagory')}}">
+                                                        <select class="form-controll" name="Catagory1" value="{{old('Catagory')}}">
+                                                            <option value="#">CATAGORY</option>
                                                             <option value="AQEEDAH">AQEEDAH</option>
                                                             <option value="SHIRK">SHIRK</option>
                                                             <option value="QURAN">QURAN</option>
@@ -286,7 +288,8 @@
                                                 </div>
                                                 <div class="col-md-3 col-sm-6">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="Catagory" value="{{old('Catagory')}}">
+                                                        <select class="form-control" name="Catagory2" value="{{old('Catagory')}}">
+                                                            <option value="#">CATAGORY</option>
                                                             <option value="AQEEDAH">AQEEDAH</option>
                                                             <option value="SHIRK">SHIRK</option>
                                                             <option value="QURAN">QURAN</option>

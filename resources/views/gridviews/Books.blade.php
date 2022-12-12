@@ -3,22 +3,6 @@
 </div>
 <div class="row">
     <div class="col-md-9 col-md-push-3">
-        <div class="filter-options margin-list">
-            <div class="row">                                            
-                <div class="col-md-4 col-sm-4">
-                    <select name="orderby">
-                        <option selected="selected">Default sorting</option>
-                        <option>Sort by popularity</option>
-                        <option>Sort by rating</option>
-                        <option>Sort by newness</option>
-                        <option>Sort by price</option>
-                    </select>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="filter-result">Showing items 1 to 9 of 19 total</div>
-                </div>
-            </div>
-        </div>
         <div class="books-gird">
           
             <ul>
@@ -111,35 +95,89 @@
                         <h5 class="widget-sub-title" data-control>Subject</h5>
                         <div class="widget_categories" data-content>
                             <ul>
-                                <li><a href="#">Love stories <span>(18)</span></a></li>
-                                <li><a href="#">Texas <span>(04)</span></a></li>
-                                <li><a href="#">Rich people <span>(03)</span></a></li>
-                                <li><a href="#">Humorous stories <span>(02)</span></a></li>
-                                <li><a href="#">Widows <span>(02)</span></a></li>
-                                <li><a href="#">Women <span>(11)</span></a></li>
-                                <li><a href="#">Babysitters <span>(25)</span></a></li>
-                                <li><a href="#">Law firms <span>(09)</span></a></li>
+                                <li><a href="#">AQEEDAH <span>(02)</span></a></li>
+                                <li><a href="#">SHIRK <span>(11)</span></a></li>
+                                <li><a href="#">QURAN<span>(25)</span></a></li>
+                                <li><a href="#">HADITH<span>(09)</span></a></li>
+                                <li><a href="#">PROPHETS <span>(02)</span></a></li>
+                                <li><a href="#">TAFSIR<span>(11)</span></a></li>
+                                <li><a href="#">TAWHEED<span>(25)</span></a></li>
+                                <li><a href="#">ALLAH<span>(09)</span></a></li>
+                                <li><a href="#">ANGELS <span>(02)</span></a></li>
+                                <li><a href="#">DUA-ZIKR <span>(11)</span></a></li>
+                                <li><a href="#">JINN<span>(25)</span></a></li>
+                                <li><a href="#">SUNNAH<span>(09)</span></a></li>
+                                <li><a href="#">BIDAH<span>(02)</span></a></li>
+                                <li><a href="#">BIOGRAPHIES<span>(11)</span></a></li>
+                                <li><a href="#">DEATH-GRAVE<span>(25)</span></a></li>
+                                <li><a href="#">FIQH<span>(09)</span></a></li>
+                                <li><a href="#">NEW MUSLIMS<span>(02)</span></a></li>
+                                <li><a href="#">Non-Muslims<span>(11)</span></a></li>
+                                <li><a href="#">HEALING<span>(25)</span></a></li>
+                                <li><a href="#">HEART<span>(09)</span></a></li>
+                                <li><a href="#">KUFAR-Celebrations<span>(02)</span></a></li>
+                                <li><a href="#">Qayamat-HEREAFTER<span>(11)</span></a></li>
+                                <li><a href="#">RAMADHAN<span>(25)</span></a></li>
+                                <li><a href="#">RUQYA <span>(02)</span></a></li>
+                                <li><a href="#">SALAF <span>(11)</span></a></li>
+                                <li><a href="#">SINS<span>(25)</span></a></li>
+                                <li><a href="#">ISLAM-4-KIDs<span>(09)</span></a></li>
+                                <li><a href="#">ISLAMI-SHARIA-WILL <span>(02)</span></a></li>
+                                <li><a href="#">PROPHET-SAWS<span>(11)</span></a></li>
+                                <li><a href="#">SACRED-MONTHS<span>(25)</span></a></li>
+                                <li><a href="#">ADVICE<span>(09)</span></a></li>
+                                <li><a href="#">AWLIYAH-ALLAH <span>(02)</span></a></li>
+                                <li><a href="#">BENEFITS<span>(11)</span></a></li>
+                                <li><a href="#">CALAMITIES<span>(25)</span></a></li>
+                                <li><a href="#">CHILDREN-YOUTH<span>(09)</span></a></li>
+                                <li><a href="#">CURRENT-AFFAIRS<span>(02)</span></a></li>
+                                <li><a href="#">DAJJAL<span>(11)</span></a></li>
+                                <li><a href="#">DAWAH<span>(25)</span></a></li>
+                                <li><a href="#">DESIRES<span>(09)</span></a></li>
+                                <li><a href="#">ENVY<span>(02)</span></a></li>
+                                <li><a href="#">ETHICS-MANNERS<span>(11)</span></a></li>
+                                <li><a href="#">EVIL<span>(25)</span></a></li>
+                                <li><a href="#">FATAWA<span>(09)</span></a></li>
+                                <li><a href="#">FITNAH<span>(02)</span></a></li>
+                                <li><a href="#">HAJJ-UMRAH<span>(11)</span></a></li>
+                                <li><a href="#">HALAL-o-HARAM<span>(25)</span></a></li>
+                                <li><a href="#">HARRAM-KHUTABHs<span>(25)</span></a></li>
+                                <li><a href="#">HIJAB<span>(09)</span></a></li>
+                                <li><a href="#">HISTORY <span>(02)</span></a></li>
+                                <li><a href="#">ILM-ULAMA<span>(11)</span></a></li>
+                                <li><a href="#">ISLAM<span>(25)</span></a></li>
+                                <li><a href="#">ISLAMIC HISTORY<span>(09)</span></a></li>
+                                <li><a href="#">JANAZAH<span>(02)</span></a></li>
+                                <li><a href="#">KUFR<span>(11)</span></a></li>
+                                <li><a href="#">MODESTY<span>(25)</span></a></li>
+                                <li><a href="#">MARRIAGE-DIVORCE<span>(09)</span></a></li>
+                                <li><a href="#">MORALS<span>(02)</span></a></li>
+                                <li><a href="#">PARENTS<span>(11)</span></a></li>
+                                <li><a href="#">PRAYERS<span>(25)</span></a></li>
+                                <li><a href="#">PROPHET'S-FAMILY<span>(09)</span></a></li>
+                                <li><a href="#">RACISM-INJUSTICE<span>(02)</span></a></li>
+                                <li><a href="#">RELATIONS<span>(11)</span></a></li>
+                                <li><a href="#">RELIGIONS<span>(25)</span></a></li>
+                                <li><a href="#">REPENTANCE<span>(09)</span></a></li>
+                                <li><a href="#">RIGHTS<span>(02)</span></a></li>
+                                <li><a href="#">ZAKAT-SADAQAH<span>(25)</span></a></li>
+                                <li><a href="#">SAHABAH<span>(25)</span></a></li>
+                                <li><a href="#">SECTS<span>(09)</span></a></li>
+                                <li><a href="#">SEERAH<span>(02)</span></a></li>
+                                <li><a href="#">SHARIA<span>(11)</span></a></li>
+                                <li><a href="#">SHAYTAAN<span>(25)</span></a></li>
+                                <li><a href="#">SISTERS<span>(09)</span></a></li>
+                                <li><a href="#">SOUL<span>(02)</span></a></li>
+                                <li><a href="#">SUFISM<span>(11)</span></a></li>
+                                <li><a href="#">TERRORISM<span>(25)</span></a></li>
+                                <li><a href="#">WARNINGS<span>(09)</span></a></li>
+                                <li><a href="#">WASEELA<span>(02)</span></a></li>
+                                
                             </ul>
                         </div>
                     </div>
                     <div data-accordion>
                         <h5 class="widget-sub-title" data-control>Authors</h5>
-                        <div class="widget_categories" data-content>
-                            <ul>
-                                <li><a href="#">Love stories <span>(18)</span></a></li>
-                                <li><a href="#">Texas <span>(04)</span></a></li>
-                                <li><a href="#">Rich people <span>(03)</span></a></li>
-                                <li><a href="#">Humorous stories <span>(02)</span></a></li>
-                                <li><a href="#">Widows <span>(02)</span></a></li>
-                                <li><a href="#">Women <span>(11)</span></a></li>
-                                <li><a href="#">Babysitters <span>(25)</span></a></li>
-                                <li><a href="#">Law firms <span>(09)</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div data-accordion>
-                        <h5 class="widget-sub-title" data-control>Series</h5>
                         <div class="widget_categories" data-content>
                             <ul>
                                 <li><a href="#">Love stories <span>(18)</span></a></li>
