@@ -169,6 +169,13 @@ class BookController extends Controller
             return view('pages.book_details',compact('data',$data));
         }
 
+        public function search_lastpage($id)
+        {
+            $data = Book::find($id);
+            return view('pages.book_details',compact('data',$data));
+        }
+
+
         public function download(Request $request,$Book_pdf)
         {
             return response()->download(public_path('assets_7/'.$Book_pdf));
@@ -323,5 +330,11 @@ class BookController extends Controller
              $finalresult=$all->merge($catagory2);
 
              return view('gridviews.result',compact('finalresult'));
+        }
+
+        public function searchInfo($keyword)
+        {
+            $finalresult= DB::table('books')->where('Catagory',$keyword)->get();
+            return view('gridviews.result',compact('finalresult'));
         }
 }
