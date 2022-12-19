@@ -8901,6 +8901,7 @@ a:focus {
   border-style: solid;
   float: left;
   width: 100%;
+  margin-top: -3%;
 }
 .layout-v3 .menu-wrap .navbar-header {
   width: 19.5%;
@@ -9257,6 +9258,7 @@ a:focus {
 }
 .mm-list > li.mobile-title:hover {
   background-color: transparent;
+  /* padding-top: 2% !important; */
 }
 .mm-list > li.mm-selected > a.close:not(.mm-subopen) {
   background: url(images/close_icon.png) no-repeat;
@@ -19229,4 +19231,9 @@ a:focus {
 }
 .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #3686ff;
+}
+
+#hadith_intro{
+  color: #3686ff;
+  font-style: italic;
 }

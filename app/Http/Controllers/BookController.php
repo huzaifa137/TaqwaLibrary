@@ -175,6 +175,10 @@ class BookController extends Controller
             return view('pages.book_details',compact('data',$data));
         }
 
+        public function about_us()
+        {
+            return view('gridviews.about');
+        }
 
         public function download(Request $request,$Book_pdf)
         {

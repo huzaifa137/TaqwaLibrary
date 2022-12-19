@@ -16,46 +16,46 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-7 col-md-6">
                                     <div class="post-center-content">
-                                        <h2>The Great Gatsby</h2>
-                                        <p><strong>Author:</strong> F. Scott Fitzgerald</p>
+                                        <h2>{{$data->Book_Name}}</h2>
+                                        <p><strong>Author:</strong> {{$data->Author_Name}}</p>
                                         <p><strong>ISBN:</strong> 9781581573268, 9780062419385</p>
-                                        <p><strong>Rating:</strong> </p>
-                                        <p><strong>Edition:</strong> First edition</p>
+                                        <p><strong>Rating:</strong> 5 </p>
+                                        <p><strong>Edition:</strong> Latest edition</p>
                                         <p><strong>Publisher:</strong> New York : Shaye Areheart Books, c2008</p>
-                                        <p><strong>Length:</strong> 518 pages.</p>
-                                        <p><strong>Format:</strong> DVD</p>
-                                        <p><strong>Language Note:</strong> Icelandic dialogue; English subtitles.</p>
-                                        <p><strong>Genre :</strong> Feature films, Fiction films, Drama</p>
+                                        <p><strong>Length:</strong> {{$data->pages}}</p>
+                                        <p><strong>Format:</strong> {{$data->Format}}</p>
+                                        <p><strong>Language :</strong> {{$data->Language}}</p>
+                                        <p><strong>Catagory :</strong> {{$data->Catagory}}</p>
                                         <p><strong>Topics:</strong> Friendship, Bullies, Pranks, School</p>
                                         <div class="actions">
                                             <ul>
                                                 <li>
-                                                    <a href="#" target="_blank" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Add To Cart">
+                                                    <a href="javascript:void()" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Add To Cart">
                                                         <i class="fa fa-shopping-cart"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" target="_blank" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Like">
+                                                    <a href="javascript:void()" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Like">
                                                         <i class="fa fa-heart"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" target="_blank" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Mail">
+                                                    <a href="javascript:void()" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Mail">
                                                         <i class="fa fa-envelope"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" target="_blank" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Search">
+                                                    <a href="javascript:void()" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Search">
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" target="_blank" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Print">
+                                                    <a href="javascript:void()" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Print">
                                                         <i class="fa fa-print"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" target="_blank" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Print">
+                                                    <a href="javascript:void()" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Print">
                                                         <i class="fa fa-share-alt"></i>
                                                     </a>
                                                 </li>
@@ -67,7 +67,7 @@
                                     <div class="post-right-content"> 
                                         <a href="{{url('/view',$data->id)}}" class="btn btn-dark-gray">View Book</a> 
                                         <a href="{{url('/download',$data->Book_pdf)}}" class="btn btn-dark-gray">Download Book</a> 
-                                        <a href="#" class="btn btn-dark-gray">Find Similar Books like this</a>
+                                        <a href="{{url('search/'.$data->Catagory)}}" class="btn btn-dark-gray">Find Similar Books like this</a>
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
@@ -93,42 +93,42 @@
             </div>
             <ul>
                 <li>
-                    <a class="facebook" href="#" target="_blank">
+                    <a class="facebook" href="javascript:void()" >
                         <span>
                             <i class="fa fa-facebook-f"></i>
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a class="twitter" href="#" target="_blank">
+                    <a class="twitter" href="javascript:void()" >
                         <span>
                             <i class="fa fa-twitter"></i>
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a class="google" href="#" target="_blank">
+                    <a class="google" href="javascript:void()" >
                         <span>
                             <i class="fa fa-google-plus"></i>
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a class="rss" href="#" target="_blank">
+                    <a class="rss" href="javascript:void()" >
                         <span>
                             <i class="fa fa-rss"></i>
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a class="linkedin" href="#" target="_blank">
+                    <a class="linkedin" href="javascript:void()" >
                         <span>
                             <i class="fa fa-linkedin"></i>
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a class="youtube" href="#" target="_blank">
+                    <a class="youtube" href="javascript:void()" >
                         <span>
                             <i class="fa fa-youtube"></i>
                         </span>

@@ -46,7 +46,7 @@
                                 <div class="navbar-brand">
                                     <h1>
                                         <a href="{{route('home')}}">
-                                            <img src="/assets/images/libraria-logo-v3.png" alt="LIBRARIA" />
+                                            <img src="/assets/images/libraria-logo-v3.png" width="180px" alt="LIBRARIA" />
                                         </a>
                                     </h1>
                                 </div>
@@ -68,31 +68,31 @@
                                             <li><a href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                         </ul>
                                     </li>
-
+                                    <li><a href="{{route('about-us')}}">About us</a></li>
                                     <li><a href="{{route('contact')}}">Contact us</a></li>
                                 </ul>
                                 
                             </div>
                             <div class="header-socialbar hidden-sm hidden-xs">
                                 <ul class="social-links">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-rss"></i></a></li>
                                 </ul>
                                 <ul class="share-links">
                                     <li class="dropdown">
-                                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                        <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:void()">
                                             <i class="fa fa-share"></i>
                                         </a>
                                         <div class="dropdown-menu social-dropdown">
                                             <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                                <li><a href="javascript:void()"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="javascript:void()"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="javascript:void()"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="javascript:void()"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="javascript:void()"><i class="fa fa-rss"></i></a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -105,14 +105,14 @@
                                 <ul>
                                     <li class="mobile-title">
                                         <h4>Navigation</h4>
-                                        <a href="#" class="close"></a>
+                                        <a href="javascript:void()" class="close"></a>
                                     </li>
                                     <li>
                                         <a href="{{route('home')}}">Home</a>
         
                                     </li>
                                     <li>
-                                        <a href="#">Books</a>
+                                        <a href="javascript:void()">Books</a>
                                         <ul>
                                             <li><a href="{{route('all')}}">All Books</a></li>
                                             <li><a href="{{route('All_Arabic_Books')}}">Arabic Books</a></li>
@@ -129,7 +129,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">Pages</a>
+                                        <a href="javascript:void()">Pages</a>
                                         <ul>
                                             <li><a href="cart.html">Cart</a></li>
                                             <li><a href="checkout.html">Checkout</a></li>
@@ -165,8 +165,8 @@
                     </figure>
                     <div class="container">
                         <div class="carousel-caption">
-                            <h2>What’s all the Taqwa Library?</h2>
-                            <p>Libraria gives you access to <strong>Audiobooks,</strong> <strong>eBooks,</strong> <strong>Music,</strong> <strong>Movies and Comics.</strong></p>
+                            <h2>You're Welcome to Taqwa Library !</h2>
+                            <p >Taqwa Library gives you access to free <strong>Islamic Books,</strong> <strong>Quran,</strong> <strong>Dua & Adhkar,</strong> <strong>Arabic study,</strong><strong> Islamic Audio and Islamic Videos</strong></p>
                             <div class="filter-box">
                                 <form action="{{route('search-bar')}}" class="banner-filter-box" method="POST">
                                     @csrf
@@ -176,7 +176,7 @@
                                     </div>
                                     <div class="form-group">
                                         <select class="form-controll" name="Catagory1" value="{{old('Catagory')}}">
-                                            <option value="#">CATAGORY</option>
+                                            <option value="javascript:void()">CATAGORY</option>
                                             <option value="AQEEDAH">AQEEDAH</option>
                                             <option value="SHIRK">SHIRK</option>
                                             <option value="QURAN">QURAN</option>
@@ -258,7 +258,7 @@
                                     </div>
                                     <div class="form-group">
                                         <select class="form-control" name="Catagory2" value="{{old('Catagory')}}">
-                                            <option value="#">CATAGORY</option>
+                                            <option value="javascript:void()">CATAGORY</option>
                                             <option value="AQEEDAH">AQEEDAH</option>
                                             <option value="SHIRK">SHIRK</option>
                                             <option value="QURAN">QURAN</option>
@@ -357,48 +357,48 @@
                         <li class="bg-yellow">
                             <div class="feature-box">
                                 <i class="yellow"></i>
-                                <h3>Books</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar varius dui id.</p>
+                                <h3>Islamic Books</h3>
+                                <p>We have a collection of free islamic books from authentic scholars in pdf, doc and other formats to be downloaded freely.</p>
             
                             </div>
                         </li>
                         <li class="bg-light-green">
                             <div class="feature-box">
                                 <i class="light-green"></i>
-                                <h3>eBooks</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar varius dui id.</p>
+                                <h3>Quran</h3>
+                                <p>We have Quran in different formats of pdf, doc and others to be read online and even download freely.</p>
                                
                             </div>
                         </li>
                         <li class="bg-blue">
                             <div class="feature-box">
                                 <i class="blue"></i>
-                                <h3>DVDs</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar varius dui id.</p>
+                                <h3>Dua & Adhkar</h3>
+                                <p>We have a collection of different authentic dua and Adhkar in pdf, doc and other formats to be downloaded freely.</p>
                                 
                             </div>
                         </li>
                         <li class="bg-red">
                             <div class="feature-box">
                                 <i class="red"></i>
-                                <h3>Magazines</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar varius dui id.</p>
+                                <h3>Arabic study</h3>
+                                <p>were working on a basic and most interactive way for beginners to learn Arabic and start reciting the holy Quran with ease.</p>
                                
                             </div>
                         </li>
                         <li class="bg-violet">
                             <div class="feature-box">
                                 <i class="violet"></i>
-                                <h3>Audio</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar varius dui id.</p>
+                                <h3>islamic Audio</h3>
+                                <p>We Have in library a collection of different islamic authentic audio's and podcasts to be listened online and downloaded freely.</p>
                                 
                             </div>
                         </li>
                         <li class="bg-green">
                             <div class="feature-box">
                                 <i class="green"></i>
-                                <h3>eAudio</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar varius dui id.</p>
+                                <h3>islamic Videos</h3>
+                                <p>We Have in library a collection of different islamic authentic videos's and series to be viewed online and downloaded freely.</p>
                                 
                             </div>
                         </li>
@@ -415,10 +415,10 @@
                     <div class="col-md-6">
                         <div class="welcome-wrap">
                             <div class="welcome-text">
-                              <h2 class="section-title"  >Welcome to the libraria</h2>
+                              <h2 class="section-title"  >Welcome to TAQWA LIBRARY</h2>
                                 <span class="underline left"></span>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor,  or randomized words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, <br> <br> making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.  The generated Lorem Ipsum is therefore always free from repetition, injected humor, or non-characteristic words etc. <br> <br> making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.  The generated Lorem Ipsum is therefore always free from repetition</p>
-                                <a class="btn btn-dark-gray" href="#">Read More</a>
+                                <a class="btn btn-dark-gray" href="{{route('about-us')}}">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -436,7 +436,7 @@
                         <div class="center-content">
                             <h2 class="section-title">Subscribe to our Newsletters</h2>
                             <span class="underline center"></span>
-                            <p class="lead">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                            <p class="lead">Subscribe to Taqwa Library newsletter to access any update and information.</p>
                         </div>
                         <div class="form-group">
                             <input class="form-control" placeholder="Enter your Email!" id="newsletter" name="newsletter" type="email">
@@ -454,7 +454,7 @@
                 <div class="center-content">
                     <h2 class="section-title">Check Out The New Releases</h2>
                     <span class="underline center"></span>
-                    <p class="lead">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                    <p class="lead" id="hadith_intro">All the recently uploaded islamic-books and pdfs in different languages from Taqwa library collection are shown here.</p>
                 </div>
                 {{-- <div class="filter-buttons">
                     <div class="filter btn" data-filter="all">All Releases</div>
@@ -476,8 +476,8 @@
                             <img class="image-size" src="{{url('public/BookImage/'.$info->Book_Image)}}"  alt="New Releaase" />
                             <figcaption class="bg-blue">
                                 <div class="info-block">
-                                    <h4>The Great Gatsby</h4>
-                                    <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
+                                    <h4>{{$info->Book_Name}}</h4>
+                                    <span class="author"><strong>Author:</strong> {{$info->Author_Name}}</span>
                                     <span class="author"><strong>ISBN:</strong> 9781581573268</span>
                                     <div class="rating">
                                         <span>☆</span>
@@ -486,31 +486,31 @@
                                         <span>☆</span>
                                         <span>☆</span>
                                     </div>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
+                                    <p>Go a head and explore , read and access this book freely.</p>
                                     <a href="{{'final-page/'.$info->id}}">Read More <i class="fa fa-long-arrow-right"></i></a>
                                     <ol>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void()">
                                                 <i class="fa fa-shopping-cart"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void()">
                                                 <i class="fa fa-heart"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void()">
                                                 <i class="fa fa-envelope"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void()">
                                                 <i class="fa fa-share-alt"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void()">
                                                 <i class="fa fa-search"></i>
                                             </a>
                                         </li>
@@ -535,7 +535,7 @@
                                     <div class="fact-icon">
                                         <img src="/assets/images/icon-ebooks.png" alt="" />
                                     </div>
-                                    <span>eBooks<strong class="fact-counter">45780</strong></span>
+                                    <span> BOOKS<strong class="fact-counter">45780</strong></span>
                                 </div>
                             </li>
                             <li class="col-sm-3">
@@ -543,7 +543,7 @@
                                     <div class="fact-icon">
                                         <img src="/assets/images/icon-eaudio.png" alt="" />
                                     </div>
-                                    <span>eAudio<strong class="fact-counter">32450</strong></span>
+                                    <span> AUDIO<strong class="fact-counter">32450</strong></span>
                                 </div>
                             </li>
                             <li class="col-sm-3">
@@ -551,7 +551,7 @@
                                     <div class="fact-icon">
                                         <img src="/assets/images/icon-magazine.png" alt="" />
                                     </div>
-                                    <span>Magazine<strong class="fact-counter">14450</strong></span>
+                                    <span>QURAN<strong class="fact-counter">14450</strong></span>
                                 </div>
                             </li>
                             <li class="col-sm-3">
@@ -574,9 +574,9 @@
         <section class="community-testimonial">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-title">Words From our Community</h2>
+                    <h2 class="section-title">HADITH</h2>
                     <span class="underline center"></span>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span id="hadith_intro"><strong>  Abu Hurairah (رضي الله عنه)reported:The Messenger of Allah (ﷺ) said,“The world, with all that it contains, is accursed except for the remembrance of Allah that which pleases Allah; and the religious schools and seekers of knowledge.” </strong></p></span>
                 </div>
                 <div class="owl-carousel">
                     <div class="single-testimonial-box">
@@ -584,23 +584,24 @@
                             <img src="/assets/images/home-testimonial.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
-                                <blockquote cite="#">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna magna, rhoncus eget commodo et, dignissim non nulla. Sed sit amet vestibulum ex. Donec dolor velit
+                                <blockquote cite="javascript:void()">
+                                    <strong>Abu Huraira reported Allah’s Messenger (ﷺ) as saying:</strong>
+                                    (When) the time would draw close to the Last Hour, knowledge would be snatched away, turmoil would be rampant, miserliness would be put (in the hearts of the people) and therewould be much blotshed. They said: What is al-harj? Thereupon he said: It is bloodshed.
                                 </blockquote>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <div class="bottom-portion">
-                            <a href="#" class="author">
-                                Maria B (<small>Student )</small>
+                            <a href="javascript:void()" class="author">
+                                 — Sahih Muslim 157 d 
                             </a>
                             <div class="social-share-links">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                             <div class="clearfix"></div>
@@ -612,23 +613,24 @@
                             <img src="/assets/images/home-testimonial-01.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
-                                <blockquote cite="#">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna magna, rhoncus eget commodo et, dignissim non nulla. Sed sit amet vestibulum ex. Donec dolor velit
+                                <blockquote cite="javascript:void()">
+                                    <strong>A’ishah (رضي الله عنه)  narrated that the Prophet (ﷺ) said : </strong> <br>
+                                    One who is proficient in reciting the Qur’an is associated with the noble, pious (angel) scribes. As for he who stammers when reciting the Qur’an and find it difficult for him, he will be granted a double reward
                                 </blockquote>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <div class="bottom-portion">
-                            <a href="#" class="author">
-                                Adrey Pachai (<small>Student )</small>
+                            <a href="javascript:void()" class="author">
+                                [Al-Bukhari and Muslim]  
                             </a>
                             <div class="social-share-links">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                             <div class="clearfix"></div>
@@ -640,23 +642,111 @@
                             <img src="/assets/images/home-testimonial-01.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
-                                <blockquote cite="#">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna magna, rhoncus eget commodo et, dignissim non nulla. Sed sit amet vestibulum ex. Donec dolor velit
+                                <blockquote cite="javascript:void()"> 
+                                    <strong>Abu Hurairah (رضي الله عنه)  reported : </strong> <br> <br>
+                                    O Messenger of Allah! Who is most deserving of my fine treatment?" He (ﷺ) said, "Your mother, then your mother, then your mother, then your father, then your nearest, then nearest". <br> <br>
                                 </blockquote>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <div class="bottom-portion">
-                            <a href="#" class="author">
-                                Adrey Pachai (<small>Student )</small>
+                            <a href="javascript:void()" class="author">
+                                [Al-Bukhari and Muslim] 
                             </a>
                             <div class="social-share-links">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="single-testimonial-box">
+                        <div class="top-portion">
+                            <img src="/assets/images/home-testimonial.jpg" alt="Testimonial Image" />
+                            <div class="user-comment">
+                                <div class="arrow-left"></div>
+                                <blockquote cite="javascript:void()">
+                                    <strong>Ibn Abbas  (رضي الله عنه)  reported : Allah's Messenger (ﷺ) said : </strong>
+                                    A woman who has been previously married (Thayyib) has more right to her person than her guardian.And a virgin should also be consulted, and her silence implies her consent. <br> <br>
+                                </blockquote>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="bottom-portion">
+                            <a href="javascript:void()" class="author">
+                                — Sahih Muslim 1421c 
+                            </a>
+                            <div class="social-share-links">
+                                <ul>
+                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="single-testimonial-box">
+                        <div class="top-portion">
+                            <img src="/assets/images/home-testimonial-01.jpg" alt="Testimonial Image" />
+                            <div class="user-comment">
+                                <div class="arrow-left"></div>
+                                <blockquote cite="javascript:void()">
+                                    <strong>Narrated Anas:  (رضي الله عنه)  The Prophet (ﷺ) said: </strong> <br> <br> 
+                                    A Muslim whose three children die before the age of puberty will be granted Paradise by Allah due to his mercy for them. <br> <br>
+                                </blockquote>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="bottom-portion">
+                            <a href="javascript:void()" class="author">
+                                — Sahih al-Bukhari 1248 
+                            </a>
+                            <div class="social-share-links">
+                                <ul>
+                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="single-testimonial-box">
+                        <div class="top-portion">
+                            <img src="/assets/images/home-testimonial-01.jpg" alt="Testimonial Image" />
+                            <div class="user-comment">
+                                <div class="arrow-left"></div>
+                                <blockquote cite="javascript:void()">
+                                    <strong>Narrated Abu Huraira:  (رضي الله عنه)  The Prophet (ﷺ) said: </strong>
+                                    Allah says, ‘Spend, O son of Adam, and I shall spend on you. The right hand of Allah is full and overflowing and in nothing would diminish it, by overspending day and night. <br> <br>
+                                </blockquote> 
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="bottom-portion">
+                            <a href="javascript:void()" class="author">
+                                — Sahih Muslim, Book 5, 2178
+                            </a>
+                            <div class="social-share-links">
+                                <ul>
+                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                             <div class="clearfix"></div>
@@ -676,7 +766,7 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-6 widget-container">
                             <div id="text-2" class="widget widget_text">
-                                <h3 class="footer-widget-title">About Libraria</h3>
+                                <h3 class="footer-widget-title">About &nbsp; Taqwa Library</h3>
                                 <span class="underline left"></span>
                                 <div class="textwidget">
                                     It is a long established fact that a reader will be distracted by the readable content of a page when looking.
@@ -684,15 +774,15 @@
                                 <address>
                                     <div class="info">
                                         <i class="fa fa-location-arrow"></i>
-                                        <span>21 King Street, Melbourne, Victoria 3000 Australia</span>
+                                        <span>Coral Close, Kampala, Uganda</span>
                                     </div>
                                     <div class="info">
                                         <i class="fa fa-envelope"></i>
-                                        <span><a href="mailto:support@libraria.com">support@libraria.com</a></span>
+                                        <span><a href="mailto:Taqwalibrary123@gmail.com">Taqwalibrary123@gmail.com</a></span>
                                     </div>
                                     <div class="info">
                                         <i class="fa fa-phone"></i>
-                                        <span><a href="tel:012-345-6789">+ 012-345-6789</a></span>
+                                        <span><a href="tel:+ 256-700574979">+ 256-700574979</a></span>
                                     </div>
                                 </address>
                             </div>
@@ -703,12 +793,10 @@
                                 <span class="underline left"></span>
                                 <div class="menu-quick-links-container">
                                     <ul id="menu-quick-links" class="menu">
-                                        <li><a href="#">Library News</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Meet Our Staff</a></li>
-                                        <li><a href="#">Board of Trustees</a></li>
-                                        <li><a href="#">Budget</a></li>
-                                        <li><a href="#">Annual Report</a></li>
+                                        <li><a href="{{route('home')}}">Home</a></li>
+                                        <li><a href="{{('all')}}">Books</a></li>
+                                        <li><a href="{{route('about-us')}}">About us</a></li>
+                                        <li><a href="{{route('contact')}}">Contact us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -719,14 +807,8 @@
                                 <h3 class="footer-widget-title">Timing</h3>
                                 <span class="underline left"></span>
                                 <div class="timming-text-widget">
-                                    <time datetime="2017-02-13">Mon - Thu: 9 am - 9 pm</time>
-                                    <time datetime="2017-02-13">Fri: 9 am - 6 pm</time>
-                                    <time datetime="2017-02-13">Sat: 9 am - 5 pm</time>
-                                    <time datetime="2017-02-13">Sun: 1 pm - 6 pm</time>
-                                    <ul>
-                                        <li><a href="#">Closings</a></li>
-                                        <li><a href="#">Branches</a></li>
-                                    </ul>
+                                    <time datetime="2017-02-13">Mon - Fri</time>
+                                    <time datetime="2017-02-13">24/7 hr</time>
                                 </div>
                             </div>			
                         </div>
@@ -737,10 +819,10 @@
                                 <div id="twitter-feed">
                                     <ul>
                                         <li>
-                                            <p><a href="#">@TemplateLibraria</a> Sed ut perspiciatis unde omnis iste natus error sit voluptatem. <a href="#">template-libraria.com</a></p>
+                                            <p><a href="javascript:void()">@TemplateLibraria</a> Sed ut perspiciatis unde omnis iste natus error sit voluptatem. <a href="javascript:void()">template-libraria.com</a></p>
                                         </li>
                                         <li>
-                                            <p><a href="#">@TemplateLibraria</a> Sed ut perspiciatis unde omnis iste natus error sit voluptatem. <a href="#">template-libraria.com</a></p>
+                                            <p><a href="javascript:void()">@TemplateLibraria</a> Sed ut perspiciatis unde omnis iste natus error sit voluptatem. <a href="javascript:void()">template-libraria.com</a></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -759,11 +841,12 @@
                             <ul>
                                 <li><a href="{{route('home')}}">Home</a></li>
                                 <li><a href="{{route('all')}}">BOOKS</a></li>
+                                <li><a href="{{route('about-us')}}">ABOUT US</a></li>
                                 <li><a href="{{route('contact')}}">Contact us</a></li>
                                 {{-- <li><a href="news-events-list-view.html">News &amp; Events</a></li>
-                                <li><a href="#">Kids &amp; Teens</a></li>
+                                <li><a href="javascript:void()">Kids &amp; Teens</a></li>
                                 <li><a href="services.html">Services</a></li>
-                                <li><a href="#">Research</a></li>
+                                <li><a href="javascript:void()">Research</a></li>
                                 <li><a href="blog.html">Blog</a></li>
                                 <li><a href="contact.html">Contact</a></li> --}}
                             </ul>

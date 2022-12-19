@@ -25,6 +25,7 @@ Route::get('Arabic',[BookController::class,'ArabicBooks'])->name('All_Arabic_Boo
 Route::get('English',[BookController::class,'EnglishBooks'])->name('All_English_Books');
 Route::get('Luganda',[BookController::class,'LugandaBooks'])->name('All_Luganda_Books');
 Route::get('final-page/{id}',[BookController::class,'lastPage'])->name('final-page');
+Route::get('about-us',[BookController::class,'about_us'])->name('about-us');
 Route::get('search/final-page/{id}',[BookController::class,'search_lastpage'])->name('final-page');
 
 Route::post('store-book',[BookController::class,'store'])->name('store-book');
@@ -57,6 +58,5 @@ Route::post('auth.check',[BookController::class,'verify'])->name('auth.check');
 
 Route::post('send-message',[BookController::class,'SendMessage'])->name('send-message');
 Route::post('search-bar',[BookController::class,'SearchBar'])->name('search-bar');
-
 
 Route::get('search/{keyword}',[BookController::class,'searchInfo'])->name('search-link');
