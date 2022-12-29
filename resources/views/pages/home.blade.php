@@ -165,6 +165,7 @@
                     </figure>
                     <div class="container">
                         <div class="carousel-caption">
+                            <h2 style="color: white" class="Basmallah">بسم الله الرحمن الرحيم</h2>
                             <h2>You're Welcome to Taqwa Library !</h2>
                             <p >Taqwa Library gives you access to free <strong>Islamic Books,</strong> <strong>Quran,</strong> <strong>Dua & Adhkar,</strong> <strong>Arabic study,</strong><strong> Islamic Audio and Islamic Videos</strong></p>
                             <div class="filter-box">
@@ -486,7 +487,7 @@
                                         <span>☆</span>
                                         <span>☆</span>
                                     </div>
-                                    <p>Go a head and explore , read and access this book freely.</p>
+                                    <p>Go ahead  explore , read, access and download this book freely....</p>
                                     <a href="{{'final-page/'.$info->id}}">Read More <i class="fa fa-long-arrow-right"></i></a>
                                     <ol>
                                         <li>

@@ -63,6 +63,11 @@ Version: 1.0.0
     height: 301px !important;
 }
 
+.staff_pic_image
+{
+  width: 65px !important;;
+  height: 65px !important;;
+}
 .image-format{
   width: 500px !important;
   height: 374px !important;
@@ -19237,3 +19242,9 @@ a:focus {
   color: #3686ff;
   font-style: italic;
 }
+
+@media (max-width: 767.98px) { 
+    .Basmallah{
+        padding-top: 25px;
+    }
+ }

@@ -21,7 +21,10 @@ class CreateBooksTable extends Migration
             $table->text('Language');
             $table->text('Format');
             $table->text('pages');
-            $table->text('Translated_By')->default('-');
+            $table->text('Edition');
+            $table->text('publisher')->default('-');
+            $table->text('Topics');
+            $table->text('Summary');
             $table->text('Book_Image');
             $table->text('Book_pdf');
         });

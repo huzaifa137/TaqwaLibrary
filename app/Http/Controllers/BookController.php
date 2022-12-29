@@ -23,7 +23,9 @@ class BookController extends Controller
                 'language'=>'required',
                 'format'=>'required',
                 'pages'=>'required',
-                'translated_by'=>'required',
+                'Edition'=>'required',
+                'Summary'=>'required',
+                'Topics'=>'required',
                 'Book_image'=>'required|mimes:jpeg,jpg,png,bmp',
                 'Book_pdf'=>'required|mimes:pdf,zip'
             ]);
@@ -36,7 +38,9 @@ class BookController extends Controller
             $post->Language=$request->language;
             $post->Format=$request->format;
             $post->pages=$request->pages;
-            $post->Translated_By=$request->translated_by;
+            $post->Edition=$request->Edition;
+            $post->Summary=$request->Summary;
+            $post->Topics=$request->Topics;
 
             if($request->file('Book_image'))
              {
@@ -94,9 +98,12 @@ class BookController extends Controller
                 'language'=>'required',
                 'format'=>'required',
                 'pages'=>'required',
-                'translated_by'=>'required',
+                'Edition'=>'required',
+                'Summary'=>'required',
+                'Topics'=>'required',
                 'Book_image'=>'required|mimes:jpeg,jpg,png,bmp',
-                'Book_pdf'=>'required|mimes:pdf,zip'
+                'Book_pdf'=>'required|mimes:pdf,zip',
+                'Summary'=>'required',
             ]);
             
             $post->Author_Name=$request->author_name;
@@ -105,7 +112,9 @@ class BookController extends Controller
             $post->Language=$request->language;
             $post->Format=$request->format;
             $post->pages=$request->pages;
-            $post->Translated_By=$request->translated_by;
+            $post->Edition=$request->Edition;
+            $post->Summary=$request->Summary;
+            $post->Topics=$request->Topics;
 
 
             if($request->file('Book_image'))
@@ -339,6 +348,8 @@ class BookController extends Controller
         public function searchInfo($keyword)
         {
             $finalresult= DB::table('books')->where('Catagory',$keyword)->get();
-            return view('gridviews.result',compact('finalresult'));
+            $data = Book::paginate(3);
+            return view('gridviews.result',compact('finalresult','data'));
         }
+
 }

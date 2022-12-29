@@ -96,7 +96,7 @@
                         <div class="widget_categories" data-content>
                             <ul>
                                 <li><a href="{{url('search/Aqeedah')}}">AQEEDAH <span>(02)</span></a></li>
-                                <li><a href="{{url('search/Shirik')}}">SHIRK <span>(11)</span></a></li>
+                                <li><a href="{{url('search/Shirk')}}">SHIRK <span>(11)</span></a></li>
                                 <li><a href="{{url('search/Quran')}}">QURAN<span>(25)</span></a></li>
                                 <li><a href="{{url('search/Hadith')}}">HADITH<span>(09)</span></a></li>
                                 <li><a href="{{url('search/Prophets')}}">PROPHETS <span>(02)</span></a></li>
@@ -192,38 +192,7 @@
                         </div>
                         <div class="clearfix"></div>
                     </div>
-                    <div data-accordion>
-                        <h5 class="widget-sub-title" data-control>Series</h5>
-                        <div class="widget_categories" data-content>
-                            <ul>
-                                <li><a href="javascript:void()">Love stories <span>(18)</span></a></li>
-                                <li><a href="javascript:void()">Texas <span>(04)</span></a></li>
-                                <li><a href="javascript:void()">Rich people <span>(03)</span></a></li>
-                                <li><a href="javascript:void()">Humorous stories <span>(02)</span></a></li>
-                                <li><a href="javascript:void()">Widows <span>(02)</span></a></li>
-                                <li><a href="javascript:void()">Women <span>(11)</span></a></li>
-                                <li><a href="javascript:void()">Babysitters <span>(25)</span></a></li>
-                                <li><a href="javascript:void()">Law firms <span>(09)</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div data-accordion>
-                        <h5 class="widget-sub-title" data-control>Other Searches</h5>
-                        <div class="widget_categories" data-content>
-                            <ul>
-                                <li><a href="javascript:void()">Love stories <span>(18)</span></a></li>
-                                <li><a href="javascript:void()">Texas <span>(04)</span></a></li>
-                                <li><a href="javascript:void()">Rich people <span>(03)</span></a></li>
-                                <li><a href="javascript:void()">Humorous stories <span>(02)</span></a></li>
-                                <li><a href="javascript:void()">Widows <span>(02)</span></a></li>
-                                <li><a href="javascript:void()">Women <span>(11)</span></a></li>
-                                <li><a href="javascript:void()">Babysitters <span>(25)</span></a></li>
-                                <li><a href="javascript:void()">Law firms <span>(09)</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
+                    
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -232,139 +201,7 @@
 </div>
 </div>
 
-<!-- Start: Staff Picks -->
-<section class="team staff-picks">
-<div class="container">
-    <div class="center-content">
-        <h2 class="section-title">Staff Picks</h2>
-        <span class="underline center"></span>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="team-list">
-        <div class="team-member">
-            <figure>
-                <img src="/assets/images/books-media/staff-pick/staff-picks-01.jpg" alt="Staff Pick" />
-            </figure>
-            <div class="content-block">
-                <div class="member-info">
-                    <div class="member-thumb">
-                        <img src="/assets/images/books-media/staff-pick/gail.jpg" alt="Katherine">
-                    </div>
-                    <div class="member-content">
-                        <span class="designation">Downtown & Business</span>
-                        <h4>The Collector</h4>
-                        <ul class="social">
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-skype"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here...</p>
-                    <a class="btn btn-primary" href="javascript:void()">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="team-member">
-            <figure>
-                <img src="/assets/images/books-media/staff-pick/staff-picks-02.jpg" alt="Staff Pick" />
-            </figure>
-            <div class="content-block">
-                <div class="member-info">
-                    <div class="member-thumb">
-                        <img src="/assets/images/books-media/staff-pick/katherine.jpg" alt="Katherine">
-                    </div>
-                    <div class="member-content">
-                        <span class="designation">Katherine, West End</span>
-                        <h4>Mongolia</h4>
-                        <ul class="social">
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-skype"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here...</p>
-                    <a class="btn btn-primary" href="javascript:void()">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="team-member">
-            <figure>
-                <img src="/assets/images/books-media/staff-pick/staff-picks-03.jpg" alt="Staff Pick" />
-            </figure>
-            <div class="content-block">
-                <div class="member-info">
-                    <div class="member-thumb">
-                        <img src="/assets/images/books-media/staff-pick/chris.jpg" alt="Katherine">
-                    </div>
-                    <div class="member-content">
-                        <span class="designation">Chris, East Liberty</span>
-                        <h4>The Revolution</h4>
-                        <ul class="social">
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void()" >
-                                    <i class="fa fa-skype"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here...</p>
-                    <a class="btn btn-primary" href="javascript:void()">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-<!-- End: Staff Picks -->
+@include('include.staff_picks')
 </div>
 </main>
 </div>

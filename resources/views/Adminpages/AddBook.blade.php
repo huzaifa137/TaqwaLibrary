@@ -166,14 +166,40 @@
                                     </div>
                                 </div>
                                
-                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label class="form-label">Translated By</label>
-                                        <input type="text" name="translated_by" class="form-control" value="{{old('translated_by')}}">
-                                        <span style="color: red">@error('translated_by'){{$message}} @enderror</span>
+                                        <label class="form-label">Edition </label>
+                                        <select class="form-control" name="Edition" value="{{old('Edition')}}">
+                                            <option value="First Edition">First Edition</option>
+                                            <option value="Second Edition">Second Edition</option>
+                                            <option value="Third Edition">Third Edition</option> 
+                                            <option value="Fourth Edition">Fourth Edition</option>
+                                            <option value="Fifth Edition">Fifth Edition</option>
+                                            <option value="Sixth Edition">Sixth Edition</option>
+                                            <option value="Seventh Edition">Seventh Edition</option>
+                                            <option value="Eight Edition">Eight Edition</option>
+                                            <option value="Ninth Edition">Ninth Edition</option>
+                                        </select>
+                                        <span style="color: red">@error('Edition'){{$message}} @enderror</span>
                                     </div>
                                 </div>
                                 
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Topics</label>
+                                        <input type="text" name="Topics" class="form-control" value="{{old('Topics')}}">
+                                         <span style="color: red">@error('Topics'){{$message}}@enderror</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Summary</label>
+                                        <input type="text" name="Summary" class="form-control" value="{{old('Summary')}}">
+                                         <span style="color: red">@error('Summary'){{$message}}@enderror</span>
+                                    </div>
+                                </div>
+
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="form-group fallback w-100">
                                      <strong>Upload the Book Image :</strong>  <input type="file" name="Book_image" class="dropify" data-default-file="" value="{{old('Book_image')}}">

@@ -194,7 +194,7 @@
                                 <section class="search-filters">
                                     <div class="container">
                                         <div class="filter-box">
-                                            <h3>What are you looking for at the library?</h3>
+                                            <h3>What are you looking for from Taqwa library?</h3>
                                             <form action="{{route('search-bar')}}" method="post">
                                                 @csrf
                                                 <div class="col-md-4 col-sm-6">
@@ -419,7 +419,7 @@
                                 <div class="menu-quick-links-container">
                                     <ul id="menu-quick-links" class="menu">
                                         <li><a href="{{route('home')}}">Home</a></li>
-                                        <li><a href="{{('all')}}">Books</a></li>
+                                        <li><a href="{{route('all')}}">Books</a></li>
                                         <li><a href="{{route('about-us')}}">About us</a></li>
                                         <li><a href="{{route('contact')}}">Contact us</a></li>
                                     </ul>

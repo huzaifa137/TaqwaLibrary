@@ -18,15 +18,15 @@
                                     <div class="post-center-content">
                                         <h2>{{$data->Book_Name}}</h2>
                                         <p><strong>Author:</strong> {{$data->Author_Name}}</p>
-                                        <p><strong>ISBN:</strong> 9781581573268, 9780062419385</p>
-                                        <p><strong>Rating:</strong> 5 </p>
-                                        <p><strong>Edition:</strong> Latest edition</p>
-                                        <p><strong>Publisher:</strong> New York : Shaye Areheart Books, c2008</p>
-                                        <p><strong>Length:</strong> {{$data->pages}}</p>
+                                        <p><strong>ISBN:</strong> 9781581573268</p>
+                                        <p><strong>Rating:</strong> 10/10 </p>
+                                        <p><strong>Edition:</strong> {{$data->Edition}}</p>
+                                        <p><strong>Publisher:</strong> {{$data->Publisher}}</p>
+                                        <p><strong>Pages:</strong> {{$data->pages}}</p>
                                         <p><strong>Format:</strong> {{$data->Format}}</p>
                                         <p><strong>Language :</strong> {{$data->Language}}</p>
                                         <p><strong>Catagory :</strong> {{$data->Catagory}}</p>
-                                        <p><strong>Topics:</strong> Friendship, Bullies, Pranks, School</p>
+                                        <p><strong>Topics:</strong> {{$data->Topics}}</p>
                                         <div class="actions">
                                             <ul>
                                                 <li>
@@ -73,7 +73,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="clearfix"></div>
-                            <p><strong>Summary:</strong> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
+                            <p><strong>Summary:</strong> {{$data->Summary}} </p>
 
                         </div>
                     </div>
