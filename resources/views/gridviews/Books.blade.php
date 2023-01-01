@@ -72,20 +72,18 @@
                 </li>
                 @endforeach
             </ul>
-           
         </div>
-        <nav class="navigation pagination text-center">
-            <h2 class="screen-reader-text">Posts navigation</h2>
-            <div class="nav-links">
-                <a class="prev page-numbers" href="javascript:void()."><i class="fa fa-long-arrow-left"></i> Previous</a>
-                <a class="page-numbers current" href="javascript:void().">1</a>
-                <span class="page-numbers ">2</span>
-                <a class="page-numbers" href="javascript:void().">3</a>
-                <a class="page-numbers" href="javascript:void().">4</a>
-                <a class="next page-numbers" href="javascript:void().">Next <i class="fa fa-long-arrow-right"></i></a>
-            </div>
-        </nav>
+        <span >
+            {{$data->links()}}
+        </span>
+        
+        <style>
+            .w-5{
+                display: none;
+            }
+        </style>
     </div>
+    
     <div class="col-md-3 col-md-pull-9">
         <aside id="secondary" class="sidebar widget-area" data-accordion-group>
             <div class="widget widget_related_search open" data-accordion>

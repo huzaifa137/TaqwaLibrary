@@ -78,6 +78,7 @@
                                                 <li><a href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                             </ul>
                                         </li>
+                                        <li><a href="{{route('about-us')}}">About us</a></li>
                                         <li><a href="{{route('contact')}}">Contact us</a></li>
                                         {{-- <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="news-events-list-view.html">News &amp; Events</a>

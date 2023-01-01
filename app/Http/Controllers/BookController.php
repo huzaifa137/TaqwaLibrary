@@ -154,19 +154,19 @@ class BookController extends Controller
 
         public function ArabicBooks()
         {
-            $data = Book::paginate(9);
+            $data = Book::where('Language','اللغة العربية')->paginate(9);
             return view('gridviews.ArabicBooks',compact('data',$data));
         }
 
         public function EnglishBooks()
         {
-            $data = Book::paginate(9);
+            $data = Book::where('Language','English')->paginate(9);
             return view('gridviews.EnglishBooks',compact('data',$data));
         }
 
         public function LugandaBooks()
         {
-            $data = Book::paginate(9);
+            $data = Book::where('Language','Luganda')->paginate(9);
             return view('gridviews.EnglishBooks',compact('data',$data));
         }
 
@@ -186,7 +186,8 @@ class BookController extends Controller
 
         public function about_us()
         {
-            return view('gridviews.about');
+            $data = Book::paginate(4);
+            return view('gridviews.about',compact('data',$data));
         }
 
         public function download(Request $request,$Book_pdf)
@@ -338,11 +339,15 @@ class BookController extends Controller
              $keyword= DB::table('books')->where('Catagory',$keyword)->get();
              $catagory1= DB::table('books')->where('Catagory',$catagory1)->get();
              $catagory2= DB::table('books')->where('Catagory',$catagory2)->get();
-
+             
+            
+             $data = Book::paginate(3);
              $all=$keyword->merge($catagory1);
              $finalresult=$all->merge($catagory2);
 
-             return view('gridviews.result',compact('finalresult'));
+            
+
+             return view('gridviews.result',compact('finalresult','data'));
         }
 
         public function searchInfo($keyword)

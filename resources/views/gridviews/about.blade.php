@@ -7,7 +7,7 @@
                 <div class="banner-header">
                     <h2>Our Services</h2>
                     <span class="underline center"></span>
-                    <p class="lead">The standard chunk of Lorem Ipsum used since</p>
+                    <p class="lead" style="color: #fff">Access free Islamic Books, Quran, Dua & Adhkar, Arabic study, Islamic Audio and Islamic Videos</p>
                 </div>
                 <div class="breadcrumb">
                     <ul>
@@ -29,7 +29,7 @@
                                     <div class="center-content">
                                         <h2 class="section-title">SERVICE WE ARE OFFERING</h2>
                                         <span class="underline center"></span>
-                                        <p class="lead">The standard chunk of Lorem Ipsum used since</p>
+                                        <p class="lead" style="color: #3686ff">Free Islamic Books, Quran, Dua & Adhkar, Arabic study, Islamic Audio and Islamic Videos</p>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="clearfix"></div>
@@ -268,9 +268,9 @@
                             <section class="community-testimonial">
                                 <div class="container">
                                     <div class="text-center">
-                                        <h2 class="section-title">Words From our Community</h2>
+                                        <h2 class="section-title">Words From Islamic Scholars</h2>
                                         <span class="underline center"></span>
-                                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p class="lead">Great Advices and words of knowldge from Ulamah's of this Ummah.</p>
                                     </div>
                                     <div class="owl-carousel">
                                         <div class="single-testimonial-box">
@@ -279,24 +279,15 @@
                                                 <div class="user-comment">
                                                     <div class="arrow-left"></div>
                                                     <blockquote cite="#">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna magna, rhoncus eget commodo et, dignissim non nulla. Sed sit amet vestibulum ex. Donec dolor velit
+                                                    Be not of those who curse iblis in public yet obey him in private.
                                                     </blockquote>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
                                             <div class="bottom-portion">
                                                     <a href="#" class="author">
-                                                        Adrey Pachai <small> (Student )</small>
+                                                        Umar Ibn Abdul-Aziz 
                                                     </a>
-                                                <div class="social-share-links">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <div class="clearfix"></div>
                                             </div>
                                             <div class="clearfix"></div>
@@ -307,24 +298,16 @@
                                                 <div class="user-comment">
                                                     <div class="arrow-left"></div>
                                                     <blockquote cite="#">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna magna, rhoncus eget commodo et, dignissim non nulla. Sed sit amet vestibulum ex. Donec dolor velit
+                                                        If you sin, you should never give up on repentance. Repent until Shaytan is the one defeated, not you.
                                                     </blockquote>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
                                             <div class="bottom-portion">
                                                     <a href="#" class="author">
-                                                        Maria B <small> (Student )</small>
+                                                        ʿAlī b. Abī Ṭālib 
                                                     </a>
-                                                <div class="social-share-links">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                                    </ul>
-                                                </div>
+                                              
                                                 <div class="clearfix"></div>
                                             </div>
                                             <div class="clearfix"></div>
@@ -335,24 +318,16 @@
                                                 <div class="user-comment">
                                                     <div class="arrow-left"></div>
                                                     <blockquote cite="#">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna magna, rhoncus eget commodo et, dignissim non nulla. Sed sit amet vestibulum ex. Donec dolor velit
+                                                        Knowledge is that which benefits, not that which is memorized.
                                                     </blockquote>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
                                             <div class="bottom-portion">
                                                     <a href="#" class="author">
-                                                        Adrey Pachai <small> (Student )</small>
+                                                        Imam Ash-Shafi’e
                                                     </a>
-                                                <div class="social-share-links">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                                    </ul>
-                                                </div>
+                                               
                                                 <div class="clearfix"></div>
                                             </div>
                                             <div class="clearfix"></div>
@@ -367,19 +342,20 @@
                                         <div class="col-md-6 col-md-offset-3 text-center">
                                             <h2 class="section-title">Check Out The New Releases</h2>
                                             <span class="underline center"></span>
-                                            <p class="lead">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                                            <p class="lead" id="hadith_intro">All the recently uploaded islamic-books and pdfs in different languages from Taqwa library collection are shown here.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="category-filter">
                                     <ul class="category-list">
+                                        @foreach ($data as $info)
                                         <li class="category-item">
                                             <figure>
-                                                <img src="/assets/images/category-filter/home-v1/category-filter-img-01.jpg" alt="New Releaase" />
-                                                <figcaption class="bg-orange">
+                                                <img class="image-size" src="{{url('public/BookImage/'.$info->Book_Image)}}" alt="New Releaase" />
+                                                <figcaption class="bg-blue">
                                                     <div class="info-block">
-                                                        <h4>The Great Gatsby</h4>
-                                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
+                                                        <h4>{{$info->Book_Name}}</h4>
+                                                        <span class="author"><strong>Author:</strong> {{$info->Author_Name}}</span>
                                                         <span class="author"><strong>ISBN:</strong> 9781581573268</span>
                                                         <div class="rating">
                                                             <span>☆</span>
@@ -388,31 +364,31 @@
                                                             <span>☆</span>
                                                             <span>☆</span>
                                                         </div>
-                                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
-                                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                                        <p>Go ahead  explore , read, access and download this book freely....</p>
+                                                        <a href="{{'final-page/'.$info->id}}">Read More <i class="fa fa-long-arrow-right"></i></a>
                                                         <ol>
                                                             <li>
-                                                                <a href="#">
+                                                                <a href="javascript:void()">
                                                                     <i class="fa fa-shopping-cart"></i>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="#">
+                                                                <a href="javascript:void()">
                                                                     <i class="fa fa-heart"></i>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="#">
+                                                                <a href="javascript:void()">
                                                                     <i class="fa fa-envelope"></i>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="#">
+                                                                <a href="javascript:void()">
                                                                     <i class="fa fa-share-alt"></i>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="#">
+                                                                <a href="javascript:void()">
                                                                     <i class="fa fa-search"></i>
                                                                 </a>
                                                             </li>
@@ -421,150 +397,7 @@
                                                 </figcaption>
                                             </figure>
                                         </li>
-                                        <li class="category-item">
-                                            <figure>
-                                                <img src="/assets/images/category-filter/home-v1/category-filter-img-02.jpg" alt="New Releaase" />
-                                                <figcaption class="bg-orange">
-                                                    <div class="info-block">
-                                                        <h4>The Great Gatsby</h4>
-                                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
-                                                        <span class="author"><strong>ISBN:</strong> 9781581573268</span>
-                                                        <div class="rating">
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                        </div>
-                                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
-                                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-                                                        <ol>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-shopping-cart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-envelope"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-share-alt"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ol>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </li>
-                                        <li class="category-item">
-                                            <figure>
-                                                <img src="/assets/images/category-filter/home-v1/category-filter-img-03.jpg" alt="New Releaase" />
-                                                <figcaption class="bg-orange">
-                                                    <div class="info-block">
-                                                        <h4>The Great Gatsby</h4>
-                                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
-                                                        <span class="author"><strong>ISBN:</strong> 9781581573268</span>
-                                                        <div class="rating">
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                        </div>
-                                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
-                                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-                                                        <ol>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-shopping-cart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-envelope"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-share-alt"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ol>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </li>
-                                        <li class="category-item">
-                                            <figure>
-                                                <img src="/assets/images/category-filter/home-v1/category-filter-img-04.jpg" alt="New Releaase" />
-                                                <figcaption class="bg-orange">
-                                                    <div class="info-block">
-                                                        <h4>The Great Gatsby</h4>
-                                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
-                                                        <span class="author"><strong>ISBN:</strong> 9781581573268</span>
-                                                        <div class="rating">
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                            <span>☆</span>
-                                                        </div>
-                                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
-                                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-                                                        <ol>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-shopping-cart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-envelope"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-share-alt"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ol>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </li>
+                                        @endforeach
                                     </ul>                                    
                                     <div class="clearfix"></div>
                                 </div>
