@@ -161,7 +161,7 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <figure>
-                        <img alt="Home Slide" src="/assets/images/header-slider/home-v3/header-slide.jpg" />
+                        <img alt="Home Slide" src="/assets/images/header-slide.jpg" />
                     </figure>
                     <div class="container">
                         <div class="carousel-caption">
@@ -582,7 +582,7 @@
                 <div class="owl-carousel">
                     <div class="single-testimonial-box">
                         <div class="top-portion">
-                            <img src="/assets/images/home-testimonial.jpg" alt="Testimonial Image" />
+                            <img src="/assets/images/testimonial-01.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
                                 <blockquote cite="javascript:void()">
@@ -596,22 +596,14 @@
                             <a href="javascript:void()" class="author">
                                  — Sahih Muslim 157 d 
                             </a>
-                            <div class="social-share-links">
-                                <ul>
-                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                            
                             <div class="clearfix"></div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="single-testimonial-box">
                         <div class="top-portion">
-                            <img src="/assets/images/home-testimonial-01.jpg" alt="Testimonial Image" />
+                            <img src="/assets/images/testimonial-02.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
                                 <blockquote cite="javascript:void()">
@@ -625,22 +617,14 @@
                             <a href="javascript:void()" class="author">
                                 [Al-Bukhari and Muslim]  
                             </a>
-                            <div class="social-share-links">
-                                <ul>
-                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                            
                             <div class="clearfix"></div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="single-testimonial-box">
                         <div class="top-portion">
-                            <img src="/assets/images/home-testimonial-01.jpg" alt="Testimonial Image" />
+                            <img src="/assets/images/testimonial-01.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
                                 <blockquote cite="javascript:void()"> 
@@ -654,27 +638,19 @@
                             <a href="javascript:void()" class="author">
                                 [Al-Bukhari and Muslim] 
                             </a>
-                            <div class="social-share-links">
-                                <ul>
-                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                            
                             <div class="clearfix"></div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="single-testimonial-box">
                         <div class="top-portion">
-                            <img src="/assets/images/home-testimonial.jpg" alt="Testimonial Image" />
+                            <img src="/assets/images/testimonial-02.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
                                 <blockquote cite="javascript:void()">
                                     <strong>Ibn Abbas  (رضي الله عنه)  reported : Allah's Messenger (ﷺ) said : </strong>
-                                    A woman who has been previously married (Thayyib) has more right to her person than her guardian.And a virgin should also be consulted, and her silence implies her consent. <br> <br>
+                                    A woman who has been previously married (Thayyib) has more right to her person than her guardian.And a virgin should also be consulted, and her silence implies her consent. <br> <br> 
                                 </blockquote>
                             </div>
                             <div class="clear"></div>
@@ -683,22 +659,14 @@
                             <a href="javascript:void()" class="author">
                                 — Sahih Muslim 1421c 
                             </a>
-                            <div class="social-share-links">
-                                <ul>
-                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                            
                             <div class="clearfix"></div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="single-testimonial-box">
                         <div class="top-portion">
-                            <img src="/assets/images/home-testimonial-01.jpg" alt="Testimonial Image" />
+                            <img src="/assets/images/testimonial-01.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
                                 <blockquote cite="javascript:void()">
@@ -712,27 +680,19 @@
                             <a href="javascript:void()" class="author">
                                 — Sahih al-Bukhari 1248 
                             </a>
-                            <div class="social-share-links">
-                                <ul>
-                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                            
                             <div class="clearfix"></div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="single-testimonial-box">
                         <div class="top-portion">
-                            <img src="/assets/images/home-testimonial-01.jpg" alt="Testimonial Image" />
+                            <img src="/assets/images/testimonial-02.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
                                 <blockquote cite="javascript:void()">
                                     <strong>Narrated Abu Huraira:  (رضي الله عنه)  The Prophet (ﷺ) said: </strong>
-                                    Allah says, ‘Spend, O son of Adam, and I shall spend on you. The right hand of Allah is full and overflowing and in nothing would diminish it, by overspending day and night. <br> <br>
+                                    Allah says, ‘Spend, O son of Adam, and I shall spend on you. The right hand of Allah is full and overflowing and in nothing would diminish it, by overspending day and night. <br> <br> 
                                 </blockquote> 
                             </div>
                             <div class="clear"></div>
@@ -741,15 +701,7 @@
                             <a href="javascript:void()" class="author">
                                 — Sahih Muslim, Book 5, 2178
                             </a>
-                            <div class="social-share-links">
-                                <ul>
-                                    <li><a href="javascript:void()"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void()"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                            
                             <div class="clearfix"></div>
                         </div>
                         <div class="clearfix"></div>
