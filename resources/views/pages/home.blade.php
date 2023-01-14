@@ -120,6 +120,7 @@
                                             <li><a href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="{{route('about-us')}}">About us</a></li>
                                     <li><a href="{{route('contact')}}">Contact us</a></li>
                                     {{-- <li>
                                         <a href="news-events-list-view.html">News &amp; Events</a>
@@ -418,7 +419,8 @@
                             <div class="welcome-text">
                               <h2 class="section-title"  >Welcome to TAQWA LIBRARY</h2>
                                 <span class="underline left"></span>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor,  or randomized words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, <br> <br> making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.  The generated Lorem Ipsum is therefore always free from repetition, injected humor, or non-characteristic words etc. <br> <br> making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.  The generated Lorem Ipsum is therefore always free from repetition</p>
+                                <p> <b> BismillaahirRahmaanirRaheem</b> – In the Name of Allāh, the Beneficent, the Merciful. <br> <br> Praise be to Allah, and the peace and blessings of Allah be upon the noble Messenger, his family, companions and those who follow them upon excellence till the day of judgement. <br> <br> Taqwa Library has been created to disseminate authentic and beneficial knowledge from Salafi Scholars and Students based on the Blessed and Moderate Methodology of the Sahabah, Taabi’een and Atbaa’ At-Tabi’een. We reject all forms of extremism and religious fanaticism in the name of Salfiyah. We also reject speech from hasty youth who are causing divisions among Salafi communities and rejecting advice of the Scholars. We love and respect our Noble Scholars, past and present, for the sake of Allah (SWT), Who blessed them with knowledge of His Book and Sunnah of the Prophet (SAW), and we shall continue to propagate their work, Insh'a Allah. <br>
+                                  </p>
                                 <a class="btn btn-dark-gray" href="{{route('about-us')}}">Read More</a>
                             </div>
                         </div>

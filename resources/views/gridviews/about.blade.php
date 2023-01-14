@@ -179,8 +179,9 @@
                                                         <div class="company-detail">
                                                             <h3 class="section-title">Who we are</h3>
                                                             <span class="underline left"></span>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec mauris a neque tincidunt iaculis. Sed tristique luctus sapien. Vestibulum arcu magna, ullamcorper quis porta ac, venenatis non ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras commodo sollicitudin felis vel porttitor. Quisque vitae egestas sapien. Ut et neque posuere, interdum purus nec, lobortis eros. Fusce blandit, libero consectetur hendrerit tristique, erat sapien convallis nibh, quis eleifend arcu nisi vitae urna.</p>
-                                                            <p>Praesent ultrices urna in arcu facilisis tempus. Sed facilisis, nisl et tincidunt pharetra, nisi mauris malesuada quam, non imperdiet odio lacus quis elit. Vestibulum arcu magna, ullamcorper quis porta ac, venenatis non ante. Fusce sed justo at orci fermentum varius. Nulla vestibulum luctus ex porta pharetra. Vivamus at varius risus. Etiam eget ligula pharetra, varius mi id, ullamcorper nibh.</p>
+                                                            <p> Our Da'wah (call/ preaching) is established upon Kitaab (the book of Allah) and The Sunnah (Authentic traditions of prophet Muhammad) according to the understanding of The Salaf (righteous predecessors of this Ummah). What they considered to be first and foremost in their da'wah is what is first and foremost in our da'wah. It's nothing else but "Tauhiid", singling out Allah, in His Lordship (Rubuubiyyah), His sole right to be worshipped (Uluuhiyyah) and His perfect names and attributes (Asmaa' wa Asswifaat).</p> <p> Kindly contact us immediately if you find any material contradicting the Quran and the Sunnah or if you come across any errors due to our ignorance and lack of Islamic knowledge. </p>
+                                                            <p>Taqwa Library does not have specific types of members based upon allegiance, identity card, tribe, region, sect, or anything else. Rather, we consider everyone who is pleased with Allah as Lord, with Islam as a religion, and with Muhammad صلى الله عليه وسلم as a Prophet, to automatically be a member of the organization and deserving of the organization’s services. <br> <br> We reject hizbiyyah, (partisanship) and disunity, and we call everyone to be part of the saved sect; To adhere to the Qur'an and the Sunnah according to the understanding of the pious predecessors of this Ummah. </p>
+                                                            <p>This is <b> not-for-profit</b> website and all material contained within this website is published free of charge and in their original format for spreading Islamic knowledge.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -239,9 +240,9 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="company-detail bg-dark margin-left">
-                                                            <h3 class="section-title">Study Rooms</h3>
+                                                            <h3 class="section-title">DISCLAIMER</h3>
                                                             <span class="underline left"></span>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec mauris a neque tincidunt iaculis. Sed tristique luctus sapien. Vestibulum arcu magna, ullamcorper quis porta ac, venenatis non ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras commodo sollicitudin felis vel porttitor. Quisque vitae egestas sapien.</p>
+                                                            <p>All books and lectures here within are provided purely for educational and research purposes, please do not abuse this service by using it for commercial purposes. Give credit to the original content creators and only redistribute in its original format. Everything has been collected from free internet and individual sources. The sharer does not hold any responsibility of any mistakes. Please consult an Aalim / Scholar before making up your mind as books can only provide info up to a certain level and this info is translated into knowledge by a qualified teacher.</p>
                                                             <a href="#." class="btn btn-primary">Get a card</a>
                                                         </div>
                                                     </div>
@@ -294,7 +295,7 @@
                                         </div>
                                         <div class="single-testimonial-box">
                                             <div class="top-portion">
-                                                <img src="/assets/images/testimonial-image-02.jpg" alt="Testimonial Image" />
+                                                <img src="/assets/images/testimonial-image-01.jpg" alt="Testimonial Image" />
                                                 <div class="user-comment">
                                                     <div class="arrow-left"></div>
                                                     <blockquote cite="#">

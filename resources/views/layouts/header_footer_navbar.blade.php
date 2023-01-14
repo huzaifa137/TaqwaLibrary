@@ -128,7 +128,7 @@
                             </li>
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="#" role="button" data-toggle="dropdown">
-                                    <img src="/assets-3/images/profile/education/pic1.jpg" width="20" alt="">
+                                    <img src="/assets-3/images/pic1.jpg" width="20" alt="">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     
@@ -173,16 +173,7 @@
                         </ul>
                     </li>
 
-					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
-							<i class="la la-dollar"></i>
-							<span class="nav-text">Fees</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="fees-collection.html">Fees Collection</a></li>
-                            <li><a href="add-fees.html">Add Fees</a></li>
-                            <li><a href="fees-receipt.html">Fees Receipt</a></li>
-                        </ul>
-                    </li>					
+										
 				</ul>
             </div>
         </div>
