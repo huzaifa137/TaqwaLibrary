@@ -336,7 +336,7 @@ class BookController extends Controller
              $catagory1 =$request->Catagory1;
              $catagory2 =$request->Catagory2;
 
-             $keyword= DB::table('books')->where('Catagory',$keyword)->get();
+             $keyword = DB::table('books')->where('Catagory', 'like', '%'.$keyword.'%')->get();
              $catagory1= DB::table('books')->where('Catagory',$catagory1)->get();
              $catagory2= DB::table('books')->where('Catagory',$catagory2)->get();
              

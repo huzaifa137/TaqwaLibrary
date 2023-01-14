@@ -242,7 +242,9 @@
                                                         <div class="company-detail bg-dark margin-left">
                                                             <h3 class="section-title">DISCLAIMER</h3>
                                                             <span class="underline left"></span>
-                                                            <p>All books and lectures here within are provided purely for educational and research purposes, please do not abuse this service by using it for commercial purposes. Give credit to the original content creators and only redistribute in its original format. Everything has been collected from free internet and individual sources. The sharer does not hold any responsibility of any mistakes. Please consult an Aalim / Scholar before making up your mind as books can only provide info up to a certain level and this info is translated into knowledge by a qualified teacher.</p>
+                                                            <p>All books and lectures here within are provided purely for educational and research purposes, please do not abuse this service by using it for commercial purposes. Give credit to the original content creators and only redistribute in its original format. Everything has been collected from free internet and individual sources.</p>
+                                                            <p>We ask your Du’a for the Ulama, Scholars, Students of Knowledge, Authors and Speakers whose works have been posted on this website, and for us. May Allah سُبْحَانَهُۥ وَتَعَالَىٰ make this website beneficial for all. May Allah سُبْحَانَهُۥ وَتَعَالَىٰ Help us in this challenging task to spread His Deen, as practiced by the Sahabah and Tabe’ein to seek His Pleasure.</p>
+                                                            <b><p>May Allah سُبْحَانَهُۥ وَتَعَالَىٰ the Most High, grants this project His Acceptance and success and reward our Scholars, Parents, Families, ourselves and Readers in the Hereafter, Allahuma Amin!</p></b> 
                                                             <a href="#." class="btn btn-primary">Get a card</a>
                                                         </div>
                                                     </div>
@@ -252,9 +254,12 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="company-detail bg-light margin-right">
-                                                            <h3 class="section-title">Books and more</h3>
+                                                            <h3 class="section-title">COPYRIGHT</h3>
                                                             <span class="underline left"></span>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec mauris a neque tincidunt iaculis. Sed tristique luctus sapien. Vestibulum arcu magna, ullamcorper quis porta ac, venenatis non ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras commodo sollicitudin felis vel porttitor. Quisque vitae egestas sapien.</p>
+                                                            <p>This site may contain images, books, audio and video content delivered to our audience. Some of these maybe copyrighted materials the use of which has not been specifically authorized by the copyright owners.</p>
+                                                            <p>Taqwa Library is making such material available in our effort to advance understanding of Islam and Prophetic teachings among the Muslim brothers and sisters we do not own nor create some of this content.</p>
+                                                            <p>We do believe this constitutes a "Fair Use" of any such copyrighted material however would you wish to have any of your work removed from our site, please inform us and we will remove it immediately. Provide legal proof of your right to demand removal. If verified, the material will be removed immediately. Feel free to email us at <span><a href="mailto:Taqwalibrary123@gmail.com">Taqwalibrary123@gmail.com</a></span>  to raise your complaint.</p>
+                                                            <b><p>All credits go to their rightful owners.</p></b>
                                                             <a href="contact.html" class="btn btn-dark-gray">Make a request</a>
                                                         </div>
                                                     </div>
@@ -417,48 +422,52 @@
                 <div class="center-content">
                     <h2 class="section-title">Follow Us</h2>
                     <span class="underline center"></span>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="lead">We upload islamic content on the most popular social media platforms, follow us to access them freely.</p>
                 </div>
                 <ul>
                     <li>
-                        <a class="facebook" href="#" target="_blank">
+                        <a class="linkedin" href="https://www.facebook.com/TaqwaLibrary123" target="_blank">
                             <span>
                                 <i class="fa fa-facebook-f"></i>
                             </span>
                         </a>
                     </li>
+                    
                     <li>
-                        <a class="twitter" href="#" target="_blank">
+                        <a class="youtube" href="https://www.tiktok.com/@taqwa_library" target="_blank">
                             <span>
-                                <i class="fa fa-twitter"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a class="linkedin" href="https://www.youtube.com/channel/UCbBl171lNYsem6LpWtWjHbw" target="_blank">
+                            <span>
+                                <i class="fa fa-youtube"></i>
                             </span>
                         </a>
                     </li>
                     <li>
-                        <a class="google" href="#" target="_blank">
+                        <a class="youtube" href="https://www.instagram.com/taqwa_library_official/" target="_blank">
                             <span>
-                                <i class="fa fa-google-plus"></i>
+                                <i class="fa fa-instagram"></i>
                             </span>
                         </a>
                     </li>
+
                     <li>
-                        <a class="rss" href="#" target="_blank">
-                            <span>
-                                <i class="fa fa-rss"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="linkedin" href="#" target="_blank">
+                        <a class="linkedin" href="javascript:void()">
                             <span>
                                 <i class="fa fa-linkedin"></i>
                             </span>
                         </a>
                     </li>
+
                     <li>
-                        <a class="youtube" href="#" target="_blank">
+                        <a class="youtube" href="javascript:void()">
                             <span>
-                                <i class="fa fa-youtube"></i>
+                                <i class="fa fa-twitter"></i>
                             </span>
                         </a>
                     </li>
