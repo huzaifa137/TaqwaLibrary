@@ -122,7 +122,7 @@ jQuery(window).on('load',function(){
         }
     });
 
-    //change the nav-header background controller
+    // change the nav-header background controller
     $('input[name="navigation_header"]').on('click', function() {
         body.attr('data-nav-headerbg', this.value);
     });

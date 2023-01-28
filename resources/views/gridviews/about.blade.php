@@ -245,7 +245,7 @@
                                                             <p>All books and lectures here within are provided purely for educational and research purposes, please do not abuse this service by using it for commercial purposes. Give credit to the original content creators and only redistribute in its original format. Everything has been collected from free internet and individual sources.</p>
                                                             <p>We ask your Du’a for the Ulama, Scholars, Students of Knowledge, Authors and Speakers whose works have been posted on this website, and for us. May Allah سُبْحَانَهُۥ وَتَعَالَىٰ make this website beneficial for all. May Allah سُبْحَانَهُۥ وَتَعَالَىٰ Help us in this challenging task to spread His Deen, as practiced by the Sahabah and Tabe’ein to seek His Pleasure.</p>
                                                             <b><p>May Allah سُبْحَانَهُۥ وَتَعَالَىٰ the Most High, grants this project His Acceptance and success and reward our Scholars, Parents, Families, ourselves and Readers in the Hereafter, Allahuma Amin!</p></b> 
-                                                            <a href="#." class="btn btn-primary">Get a card</a>
+                                                            <a href="#." class="btn btn-primary">Donate</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -260,7 +260,7 @@
                                                             <p>Taqwa Library is making such material available in our effort to advance understanding of Islam and Prophetic teachings among the Muslim brothers and sisters we do not own nor create some of this content.</p>
                                                             <p>We do believe this constitutes a "Fair Use" of any such copyrighted material however would you wish to have any of your work removed from our site, please inform us and we will remove it immediately. Provide legal proof of your right to demand removal. If verified, the material will be removed immediately. Feel free to email us at <span><a href="mailto:Taqwalibrary123@gmail.com">Taqwalibrary123@gmail.com</a></span>  to raise your complaint.</p>
                                                             <b><p>All credits go to their rightful owners.</p></b>
-                                                            <a href="contact.html" class="btn btn-dark-gray">Make a request</a>
+                                                            <a href="javascript:void()" class="btn btn-dark-gray">Donate</a>
                                                         </div>
                                                     </div>
                                                 </div>

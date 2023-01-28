@@ -302,7 +302,13 @@ class BookController extends Controller
         public function dashboard()
         {
             $data=['LoggedUserInfo'=>Admin::where('id','=',session('LoggedUser'))->first()];
-            return view('Adminpages.Dashboard',$data);
+
+            $all = Book::all();
+            $arabic = Book::where('Language','Arabic')->get();
+            $luganda = Book::where('Language','luganda')->get();
+            $english = Book::where('Language','english')->get();
+
+            return view('Adminpages.Dashboard',compact('data','all','arabic','luganda','english'));
         }
 
         public function SendMessage(Request $request)
@@ -330,30 +336,67 @@ class BookController extends Controller
             }
         }
 
+        public function fetchRecords($value)
+        {
+             return redirect('search/'.$value);
+        }
+
         public function SearchBar(Request $request)
         {
              $keyword =$request->keyword;
              $catagory1 =$request->Catagory1;
              $catagory2 =$request->Catagory2;
 
-             $keyword = DB::table('books')->where('Catagory', 'like', '%'.$keyword.'%')->get();
-             $catagory1= DB::table('books')->where('Catagory',$catagory1)->get();
-             $catagory2= DB::table('books')->where('Catagory',$catagory2)->get();
-             
-            
-             $data = Book::paginate(3);
-             $all=$keyword->merge($catagory1);
-             $finalresult=$all->merge($catagory2);
+            if($keyword != null && $catagory1 == null && $catagory2 == null)
+            {   
+                
+                $data = Book::paginate(3);
 
-            
+                $finalresult =  DB::table('books')->where('Catagory', 'like', '%'.$keyword.'%')
+                                                  ->orWhere('Author_Name', 'like', '%'.$keyword.'%')
+                                                  ->orWhere('Book_Name', 'like', '%'.$keyword.'%')
+                                                  ->paginate(150);
+              
+               return view('gridviews.result',compact('finalresult','data'));
+            }
+            else if($keyword == null && $catagory1 != null && $catagory2 == null)
+            {
+                $value = $catagory1;
+                return $this->fetchRecords($value);
+            }
 
-             return view('gridviews.result',compact('finalresult','data'));
+            else if($keyword == null && $catagory1 == null && $catagory2 != null)
+            {
+                $value = $catagory2;
+                return $this->fetchRecords($value);
+            }
+
+            else{
+   
+                $keyword = DB::table('books')->where('Catagory', 'like', '%'.$keyword.'%')
+                                             ->orWhere('Author_Name', 'like', '%'.$keyword.'%')
+                                             ->orWhere('Book_Name', 'like', '%'.$keyword.'%')->get();
+
+                $catagory1= DB::table('books')->where('Catagory',$catagory1)->get();
+
+                $catagory2= DB::table('books')->where('Catagory',$catagory2)->get();
+                
+               
+                $data = Book::paginate(3);
+                $all=$keyword->merge($catagory1);
+                $finalresult=$all->merge($catagory2);
+     
+                return view('gridviews.result1',compact('finalresult','data'));
+            }
+    
         }
 
+        
         public function searchInfo($keyword)
         {
-            $finalresult= DB::table('books')->where('Catagory',$keyword)->get();
+
             $data = Book::paginate(3);
+            $finalresult = Book::where('Catagory',$keyword)->paginate(9);
             return view('gridviews.result',compact('finalresult','data'));
         }
 

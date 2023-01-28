@@ -57,6 +57,12 @@ Route::post('auth.save',[BookController::class,'store1'])->name('auth.save');
 Route::post('auth.check',[BookController::class,'verify'])->name('auth.check');
 
 Route::post('send-message',[BookController::class,'SendMessage'])->name('send-message');
-Route::post('search-bar',[BookController::class,'SearchBar'])->name('search-bar');
+
+// Route::post('search-bar',[BookController::class,'SearchBar'])->name('search-bar');
+
+Route::get('search-bar',[BookController::class,'SearchBar'])->name('search-bar');
+
+
+Route::get('fetchRecords/{keyword}',[BookController::class,'fetchRecords'])->name('fetchRecords-link');
 
 Route::get('search/{keyword}',[BookController::class,'searchInfo'])->name('search-link');

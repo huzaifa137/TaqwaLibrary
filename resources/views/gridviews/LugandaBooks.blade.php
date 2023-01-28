@@ -173,7 +173,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div data-accordion>
+                    {{-- <div data-accordion>
                         <h5 class="widget-sub-title" data-control>Authors</h5>
                         <div class="widget_categories" data-content>
                             <ul>
@@ -188,7 +188,7 @@
                             </ul>
                         </div>
                         <div class="clearfix"></div>
-                    </div>
+                    </div> --}}
                     
                 </div>
                 <div class="clearfix"></div>

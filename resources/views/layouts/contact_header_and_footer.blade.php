@@ -173,7 +173,7 @@
                 <div class="banner-header">
                     <h2>CONTACT US</h2>
                     <span class="underline center"></span>
-                    <p class="lead">Proin ac eros pellentesque dolor pharetra tempo.</p>
+                    <p class="lead" style="color: white">Incase of any advice, complaint, request etc... please contact us , we shall respond immediately, insha'Allah</p>
                 </div>
                 <div class="breadcrumb">
                     <ul>
@@ -202,13 +202,13 @@
                                                 <div class="col-md-4 col-sm-6">
                                                     <div class="form-group">
                                                         <label class="sr-only" for="keywords">Search by Keyword</label>
-                                                        <input class="form-control" placeholder="Search by Keyword" id="keywords" name="keyword" type="text">
+                                                        <input class="form-control" placeholder="Search by Keyword" name="keyword" >
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3 col-sm-6">
                                                     <div class="form-group">
                                                         <select class="form-control" name="Catagory1" value="{{old('Catagory')}}">
-                                                            <option value="#">CATAGORY</option>
+                                                            <option value="">CATAGORY</option>
                                                             <option value="AQEEDAH">AQEEDAH</option>
                                                             <option value="SHIRK">SHIRK</option>
                                                             <option value="QURAN">QURAN</option>
@@ -292,7 +292,7 @@
                                                 <div class="col-md-3 col-sm-6">
                                                     <div class="form-group">
                                                         <select class="form-control" name="Catagory2" value="{{old('Catagory')}}">
-                                                            <option value="#">CATAGORY</option>
+                                                            <option value="">CATAGORY</option>
                                                             <option value="AQEEDAH">AQEEDAH</option>
                                                             <option value="SHIRK">SHIRK</option>
                                                             <option value="QURAN">QURAN</option>

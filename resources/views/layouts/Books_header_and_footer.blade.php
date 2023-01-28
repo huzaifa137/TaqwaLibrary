@@ -131,6 +131,7 @@
                                             <li><a href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="{{route('about-us')}}">About us</a></li>
                                     <li><a href="{{route('contact')}}">Contact us</a></li> 
                                     {{-- <li>
                                         <a href="news-events-list-view.html">News &amp; Events</a>
@@ -170,9 +171,9 @@
         <section class="page-banner services-banner">
             <div class="container">
                 <div class="banner-header">
-                    <h2>Books & Media Listing</h2>
+                    <h2>islamic-books</h2>
                     <span class="underline center"></span>
-                    <p class="lead">Proin ac eros pellentesque dolor pharetra tempo.</p>
+                    <p class="lead" style="color: white">Free Islamic Books, Quran, Dua & Adhkar, Arabic study, Islamic Audio and Islamic Videos</p>
                 </div>
                 <div class="breadcrumb">
                     <ul>
@@ -196,8 +197,8 @@
                                     <div class="container">
                                         <div class="filter-box">
                                             <h3>What are you looking for from Taqwa library?</h3>
-                                            <form action="{{route('search-bar')}}" method="post">
-                                                @csrf
+                                            <form action="{{route('search-bar')}}" method="get">
+                                                {{-- @csrf --}}
                                                 <div class="col-md-4 col-sm-6">
                                                     <div class="form-group">
                                                         <label class="sr-only" for="keywords">Search by Keyword</label>
@@ -207,7 +208,7 @@
                                                 <div class="col-md-3 col-sm-6">
                                                     <div class="form-group">
                                                         <select class="form-controll" name="Catagory1" value="{{old('Catagory')}}">
-                                                            <option value="#">CATAGORY</option>
+                                                            <option value="">CATAGORY</option>
                                                             <option value="AQEEDAH">AQEEDAH</option>
                                                             <option value="SHIRK">SHIRK</option>
                                                             <option value="QURAN">QURAN</option>
@@ -291,7 +292,7 @@
                                                 <div class="col-md-3 col-sm-6">
                                                     <div class="form-group">
                                                         <select class="form-control" name="Catagory2" value="{{old('Catagory')}}">
-                                                            <option value="#">CATAGORY</option>
+                                                            <option value="">CATAGORY</option>
                                                             <option value="AQEEDAH">AQEEDAH</option>
                                                             <option value="SHIRK">SHIRK</option>
                                                             <option value="QURAN">QURAN</option>

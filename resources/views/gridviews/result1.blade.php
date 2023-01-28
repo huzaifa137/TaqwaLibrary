@@ -71,9 +71,9 @@
                     </div>                                       
                 </li>
                 @endforeach
-                <span >
+                {{-- <span >
                     {{$finalresult->links()}}
-                </span>
+                </span> --}}
                 
                 <style>
                     .w-5{

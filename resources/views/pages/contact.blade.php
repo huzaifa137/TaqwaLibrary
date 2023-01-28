@@ -25,9 +25,9 @@
                                             <div class="bottom-info">
                                                 <span class="top-arrow"></span>
                                                 <ul>
-                                                    <li>121 King Street, Melbourne </li>
-                                                    <li>Victoria 3000 Australia</li>
-                                                    <li>PO Box 16122</li>
+                                                    <li>Coral Close, Kikajjo Namasuba </li>
+                                                    <li>Kampala, Uganda</li>
+                                                    <li>PO Box 00100</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -35,9 +35,9 @@
                                             <div class="bottom-info orange-bg">
                                                 <span class="bottom-arrow"></span>
                                                 <ul>
-                                                    <li>121 King Street, Melbourne </li>
-                                                    <li>Victoria 3000 Australia</li>
-                                                    <li>PO Box 16122</li>
+                                                    <li>Coral Close, Kikajjo Namasuba </li>
+                                                    <li>Kampala, Uganda</li>
+                                                    <li>PO Box 00100</li>
                                                 </ul>
                                             </div>
                                             <div class="top-info dark-bg">
@@ -53,9 +53,9 @@
                                             <div class="bottom-info">
                                                 <span class="top-arrow"></span>
                                                 <ul>
-                                                    <li><a href="tel:+123-456-7890">Local: +123-456-7890</a></li>
-                                                    <li><a href="tel:+123-456-7890">Local: +123-456-7890</a></li>
-                                                    <li><a href="fax:(001)-254-7359">Fax: (001)-254-7359</a></li>
+                                                    <li><a href="tel:+256700574979">Local: +256700574979</a></li>
+                                                    <li><a href="tel:+256702082209">Local: +256702082209</a></li>
+                                                    <li><a href="tel:++256700574979">Whatsapp : +256700574979</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -63,9 +63,9 @@
                                             <div class="bottom-info orange-bg">
                                                 <span class="bottom-arrow"></span>
                                                 <ul>
-                                                    <li><a href="tel:+123-456-7890">Local: +123-456-7890</a></li>
-                                                    <li><a href="tel:+123-456-7890">Local: +123-456-7890</a></li>
-                                                    <li><a href="fax:(001)-254-7359">Fax: (001)-254-7359</a></li>
+                                                    <li><a href="tel:+256700574979">Local: +256700574979</a></li>
+                                                    <li><a href="tel:+256702082209">Local: +256702082209</a></li>
+                                                    <li><a href="tel:+256700574979">Whatsapp:+256700574979</a></li>
                                                 </ul>
                                             </div>
                                             <div class="top-info dark-bg">
@@ -81,9 +81,8 @@
                                             <div class="bottom-info">
                                                 <span class="top-arrow"></span>
                                                 <ul>
-                                                    <li>www.libraria.com</li>
-                                                    <li>support@libraria.com</li>
-                                                    <li>info@libraria.com</li>
+                                                    <li>www.TaqwaLibrary123@gmail.com</li>
+                                                    
                                                 </ul>
                                             </div>
                                         </div>
@@ -91,9 +90,8 @@
                                             <div class="bottom-info orange-bg">
                                                 <span class="bottom-arrow"></span>
                                                 <ul>
-                                                    <li><a href="http://www.libraria.com/">www.libraria.com </a></li>
-                                                    <li><a href="mailto:support@libraria.com">support@libraria.com</a></li>
-                                                    <li><a href="mailto:info@libraria.com">info@libraria.com</a></li>
+                                                    <li><a href="mailto:www.TaqwaLibrary123@gmail.com">www.TaqwaLibrary123@gmail.com</a></li>
+                                                    
                                                 </ul>
                                             </div>
                                             <div class="top-info dark-bg">
@@ -174,7 +172,7 @@
                 <div class="center-content">
                     <h2 class="section-title">Follow Us</h2>
                     <span class="underline center"></span>
-                    <p class="lead">We upload islamic content on the most popular social media platforms, follow us to access them freely.</p>
+                    <p class="lead" style="color: black">We upload islamic content on the most popular social media platforms, follow us to access them freely.</p>
                 </div>
                 <ul>
                     <li>

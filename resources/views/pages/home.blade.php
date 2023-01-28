@@ -84,11 +84,11 @@
                                         </a>
                                         <div class="dropdown-menu social-dropdown">
                                             <ul>
-                                                <li><a href="https://www.facebook.com/TaqwaLibrary123"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="https://www.tiktok.com/@taqwa_library"><i class="fa-brands fa-tiktok"></i></a></li>
-                                                <li><a href="https://www.youtube.com/channel/UCbBl171lNYsem6LpWtWjHbw"><i class="fa fa-youtube"></i></a></li>
-                                                <li><a href="https://www.instagram.com/taqwa_library_official/"><i class="fa fa-instagram"></i></a></li>
-                                                {{-- <li><a href="javascript:void()"><i class="fa fa-rss"></i></a></li> --}}
+                                                <li><a href="https://www.facebook.com/TaqwaLibrary123" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://www.tiktok.com/@taqwa_library" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a></li>
+                                                <li><a href="https://www.youtube.com/channel/UCbBl171lNYsem6LpWtWjHbw" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a></li>
+                                                <li><a href="https://www.instagram.com/taqwa_library_official/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+                                                
                                             </ul>
                                         </div>
                                     </li>
@@ -166,15 +166,14 @@
                             <h2>You're Welcome to Taqwa Library !</h2>
                             <p >Taqwa Library gives you access to free <strong>Islamic Books,</strong> <strong>Quran,</strong> <strong>Dua & Adhkar,</strong> <strong>Arabic study,</strong><strong> Islamic Audio and Islamic Videos</strong></p>
                             <div class="filter-box">
-                                <form action="{{route('search-bar')}}" class="banner-filter-box" method="POST">
-                                    @csrf
+                                <form action="{{route('search-bar')}}" class="banner-filter-box" method="get">
                                     <div class="form-group">
                                         <label class="sr-only" for="keywords">Search by Keyword</label>
                                         <input class="form-control" placeholder="Search by Keyword" name="keyword" >
                                     </div>
                                     <div class="form-group">
-                                        <select class="form-controll" name="Catagory1" value="{{old('Catagory')}}">
-                                            <option value="javascript:void()">CATAGORY</option>
+                                        <select class="form-control" name="Catagory1" value="{{old('Catagory')}}">
+                                            <option value="">CATAGORY</option>
                                             <option value="AQEEDAH">AQEEDAH</option>
                                             <option value="SHIRK">SHIRK</option>
                                             <option value="QURAN">QURAN</option>
@@ -256,7 +255,7 @@
                                     </div>
                                     <div class="form-group">
                                         <select class="form-control" name="Catagory2" value="{{old('Catagory')}}">
-                                            <option value="javascript:void()">CATAGORY</option>
+                                            <option value="">CATAGORY</option>
                                             <option value="AQEEDAH">AQEEDAH</option>
                                             <option value="SHIRK">SHIRK</option>
                                             <option value="QURAN">QURAN</option>
@@ -364,7 +363,7 @@
                             <div class="feature-box">
                                 <i class="light-green"></i>
                                 <h3>Quran</h3>
-                                <p>We have Quran in different formats of pdf, doc and others to be read online and even download freely.</p>
+                                <p>We have Quran in different formats of audio, pdf, doc and others to be read , listened online and even download freely.</p>
                                
                             </div>
                         </li>
@@ -415,7 +414,7 @@
                             <div class="welcome-text">
                               <h2 class="section-title"  >Welcome to TAQWA LIBRARY</h2>
                                 <span class="underline left"></span>
-                                <p> <b> BismillaahirRahmaanirRaheem</b> – In the Name of Allāh, the Beneficent, the Merciful. <br> <br> Praise be to Allah, and the peace and blessings of Allah be upon the noble Messenger, his family, companions and those who follow them upon excellence till the day of judgement. <br> <br> Taqwa Library has been created to disseminate authentic and beneficial knowledge from Salafi Scholars and Students based on the Blessed and Moderate Methodology of the Sahabah, Taabi’een and Atbaa’ At-Tabi’een. We reject all forms of extremism and religious fanaticism in the name of Salfiyah. We also reject speech from hasty youth who are causing divisions among Salafi communities and rejecting advice of the Scholars. We love and respect our Noble Scholars, past and present, for the sake of Allah (SWT), Who blessed them with knowledge of His Book and Sunnah of the Prophet (SAW), and we shall continue to propagate their work, Insh'a Allah. <br>
+                                <p> <b> Bismillaahi Rahmaan Raheem</b> – In the Name of Allāh, the Beneficent, the Merciful. <br> <br> Praise be to Allah سُبْحَانَهُۥ وَتَعَالَ, and the peace and blessings of Allah be upon the noble Messenger, his family, companions and those who follow them upon excellence till the day of judgement. <br> <br> Taqwa Library has been created to disseminate authentic and beneficial knowledge from Salafi Scholars and Students based on the Blessed and Moderate Methodology of the Sahabah, Taabi’een and Atbaa’ At-Tabi’een. We reject all forms of extremism and religious fanaticism in the name of Salfiyah. We also reject speech from hasty youth who are causing divisions among Salafi communities and rejecting advice of the Scholars. We love and respect our Noble Scholars, past and present, for the sake of Allah سُبْحَانَهُۥ وَتَعَالَ, Who blessed them with knowledge of His Book and Sunnah of the Prophet صلى الله عليه وسلم, and we shall continue to propagate their work, Insh'a Allah. <br>
                                   </p>
                                 <a class="btn btn-dark-gray" href="{{route('about-us')}}">Read More</a>
                             </div>
