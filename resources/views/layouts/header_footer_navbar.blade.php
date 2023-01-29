@@ -128,7 +128,7 @@
                             </li>
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="#" role="button" data-toggle="dropdown">
-                                    <img src="/assets-3/images/pic1.jpg" width="20" alt="">
+                                    <img src="/assets-3/images/pic1.png" width="20" alt="">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     
@@ -172,8 +172,14 @@
                             <li><a href="{{route('AddBook')}}">Add Book</a></li>
                         </ul>
                     </li>
-
-										
+                    
+					<li><a class="has-arrow" href="{{route('contact-info')}}" aria-expanded="false">
+                        <i class="la la-phone"></i>
+                        <span class="nav-text">Contact_us Info</span>
+                    </a>
+                </li>
+                
+                
 				</ul>
             </div>
         </div>
@@ -237,7 +243,7 @@
 	<!-- Svganimation scripts -->
     <script src="/assets-3/vendor/svganimation/vivus.min.js"></script>
     <script src="/assets-3/vendor/svganimation/svg.animation.js"></script>
-    <script src="/assets-3/js/styleSwitcher.js"></script>
+    {{-- <script src="/assets-3/js/styleSwitcher.js"></script> --}}
 	
 </body>
 </html>

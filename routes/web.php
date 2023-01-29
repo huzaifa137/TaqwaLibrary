@@ -44,11 +44,14 @@ Route::middleware(['middleware'=>'AuthCheck'])->group(function () {
     Route::view('AddBook','Adminpages.AddBook')->name('AddBook');
     Route::view('EditBook','Adminpages.EditBook')->name('EditBook');
     Route::view('dashboard','Adminpages.Dashboard')->name('dashboard');
+    Route::get('dashboard',[BookController::class,'dashboard'])->name('dashboard');
     Route::view('BookDetails','Adminpages.BookDetails')->name('BookDetails');
     Route::get('delete/{id}',[BookController::class,'delete']);
     Route::get('Edit/{id}',[BookController::class,'updateRecord']);
     Route::get('AllBooks',[BookController::class,'show'])->name('AllBooks');
+    Route::get('contact-info',[BookController::class,'contact_info'])->name('contact-info');
 }); 
+
 
 Route::get('auth.register',[BookController::class,'register'])->name('auth.register');
 Route::get('auth.login',[BookController::class,'login'])->name('auth.login');
@@ -58,10 +61,7 @@ Route::post('auth.check',[BookController::class,'verify'])->name('auth.check');
 
 Route::post('send-message',[BookController::class,'SendMessage'])->name('send-message');
 
-// Route::post('search-bar',[BookController::class,'SearchBar'])->name('search-bar');
-
 Route::get('search-bar',[BookController::class,'SearchBar'])->name('search-bar');
-
 
 Route::get('fetchRecords/{keyword}',[BookController::class,'fetchRecords'])->name('fetchRecords-link');
 

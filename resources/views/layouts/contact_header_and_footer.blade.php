@@ -197,7 +197,7 @@
                                     <div class="container">
                                         <div class="filter-box">
                                             <h3>What are you looking for at the library?</h3>
-                                            <form action="{{route('search-bar')}}" method="post">
+                                            <form action="{{route('search-bar')}}" method="get">
                                                 @csrf
                                                 <div class="col-md-4 col-sm-6">
                                                     <div class="form-group">

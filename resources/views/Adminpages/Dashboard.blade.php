@@ -13,7 +13,7 @@
 						<div class="widget-stat card">
 							<div class="card-body">
 								<h4 class="card-title">All Books</h4>
-								<h3>0</h3>
+								<h3>{{$all}}</h3>
 								<div class="progress mb-2">
 									<div class="progress-bar progress-animated bg-primary" style="width: 100%"></div>
 								</div>
@@ -25,7 +25,7 @@
 						<div class="widget-stat card">
 							<div class="card-body">
 								<h4 class="card-title">Luganda Books</h4>
-								<h3>0</h3>
+								<h3>{{$luganda}}</h3>
 								<div class="progress mb-2">
 									<div class="progress-bar progress-animated bg-warning" style="width: 100%"></div>
 								</div>
@@ -37,7 +37,7 @@
 						<div class="widget-stat card">
 							<div class="card-body">
 								<h4 class="card-title">Arabic Books</h4>
-								<h3>0</h3>
+								<h3>{{$arabic}}</h3>
 								<div class="progress mb-2">
 									<div class="progress-bar progress-animated bg-red" style="width: 100%"></div>
 								</div>
@@ -49,7 +49,7 @@
 						<div class="widget-stat card">
 							<div class="card-body">
 								<h4 class="card-title">English Books</h4>
-								<h3>0</h3>
+								<h3>{{$english}}</h3>
 								<div class="progress mb-2">
 									<div class="progress-bar progress-animated bg-success" style="width: 100%"></div>
 								</div>

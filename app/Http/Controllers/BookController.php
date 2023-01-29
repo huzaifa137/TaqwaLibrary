@@ -303,12 +303,18 @@ class BookController extends Controller
         {
             $data=['LoggedUserInfo'=>Admin::where('id','=',session('LoggedUser'))->first()];
 
-            $all = Book::all();
-            $arabic = Book::where('Language','Arabic')->get();
-            $luganda = Book::where('Language','luganda')->get();
-            $english = Book::where('Language','english')->get();
+            $all = DB::table('books')->count();
+            $luganda = Book::where('Language','luganda')->count();
+            $arabic = Book::where('Language','اللغة العربية')->count();
+            $english = Book::where('Language','english')->count();
 
-            return view('Adminpages.Dashboard',compact('data','all','arabic','luganda','english'));
+            return view('Adminpages.Dashboard',compact(['data','all','arabic','luganda','english']));
+        }
+
+        public function contact_info()
+        {
+             $info = DB::table('contacts')->orderByDesc('id')->get();
+             return view('Adminpages.info_contact',compact('info',$info));
         }
 
         public function SendMessage(Request $request)
@@ -369,6 +375,12 @@ class BookController extends Controller
             {
                 $value = $catagory2;
                 return $this->fetchRecords($value);
+            }
+            else if($keyword == null && $catagory1 == null && $catagory2 == null){
+                
+                $data = Book::paginate(3);
+                $finalresult= DB::table('books')->where('Catagory', '')->get();
+                return view('gridviews.result1',compact('finalresult','data'));
             }
 
             else{
