@@ -56,7 +56,7 @@
                                 </ul>
                             </div>
                             <header class="entry-header">
-                                <h3 class="entry-title"><a href="books-media-detail-v1.html">{{$info->Book_Name}}</a></h3>
+                                <h3 class="entry-title"><a href="{{'final-page/'.$info->id}}">{{$info->Book_Name}}</a></h3>
                                 <ul>
                                     <li><strong>Author:</strong> {{$info->Author_Name}}</li>
                                     <li><strong>Language :</strong> {{$info->Language}}</li>
@@ -71,15 +71,7 @@
                     </div>                                       
                 </li>
                 @endforeach
-                {{-- <span >
-                    {{$finalresult->links()}}
-                </span> --}}
-                
-                <style>
-                    .w-5{
-                        display: none;
-                    }
-                </style>
+            
             </ul>
            
         </div>

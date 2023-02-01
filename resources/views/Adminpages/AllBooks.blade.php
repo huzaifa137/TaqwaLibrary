@@ -3,7 +3,11 @@
 <div class="content-body">
 	<!-- row -->
 	<div class="container-fluid">
-			
+		@if (Session::get('success'))
+        <div class="alert alert-primary">
+            {{Session::get('success')}}
+        </div>
+    @endif
 		<div class="row page-titles mx-0">
 			<div class="col-sm-6 p-md-0">
 				<div class="welcome-text">
@@ -41,7 +45,7 @@
 												<th>Language</th>
 												<th>Format</th>
 												<th>Number of pages</th>
-												<th>Translated By</th>
+												
 												<th>Edit</th>
 											</tr>
 										</thead>
@@ -57,7 +61,7 @@
 												<td>{{$info->Language}}</td>
 												<td>{{$info->Format}}</td>
 												<td>{{$info->pages}}</td>
-												<td>{{$info->Translated_By}}</td>
+												
 												<td>
 													<a href="{{'Edit/'.$info->id}}" class="btn btn-sm btn-primary" ><i class="la la-pencil"></i></a>
 													<a href="{{'delete/'.$info->id}}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete a record ?')"><i class="la la-trash-o"></i></a>

@@ -60,7 +60,7 @@ class BookController extends Controller
 
             if($save)
             {   
-                return redirect()->back()->with('success','Book has been Added successfully');
+                return redirect('AllBooks')->with('success','Book has been Added successfully');
             }
         }
 
@@ -79,7 +79,7 @@ class BookController extends Controller
             return redirect()->back();
         }
 
-        public function updateRecord($id)
+        public function updateRecord($id,Request $request)
         {
              $info = Book::find($id);
 
@@ -89,7 +89,7 @@ class BookController extends Controller
 
         public function update(Request $request)
         {
-            $post = Book::find($request->id);
+              $post = Book::find($request->id);
 
             $request->validate([
                 'author_name'=>'required',
@@ -102,9 +102,9 @@ class BookController extends Controller
                 'Summary'=>'required',
                 'Topics'=>'required',
                 'Book_image'=>'required|mimes:jpeg,jpg,png,bmp',
-                'Book_pdf'=>'required|mimes:pdf,zip',
-                'Summary'=>'required',
+                'Book_pdf'=>'required|mimes:pdf,zip'
             ]);
+                
             
             $post->Author_Name=$request->author_name;
             $post->Book_Name=$request->book_name;
@@ -116,6 +116,7 @@ class BookController extends Controller
             $post->Summary=$request->Summary;
             $post->Topics=$request->Topics;
 
+            $save=$post->save();
 
             if($request->file('Book_image'))
              {
@@ -124,7 +125,7 @@ class BookController extends Controller
             $file->move(public_path('public/BookImage'),$filename);
             $post['Book_image']=$filename;
             }
-         
+            
             $file=$request->Book_pdf;
             $filename=date('YmdHi').'.'.$file->getClientOriginalExtension();
 		    $file->move('assets_7',$filename);
@@ -134,14 +135,16 @@ class BookController extends Controller
 
             if($save)
             {   
-                return redirect()->back()->with('success','Book has been updated successfully');
+                return redirect('AllBooks')->with('success','Book has been Updated successfully');
             }
+            
         }
 
         public function home()
         {
-            $data = Book::paginate(8);
-            return view('pages.home',compact('data',$data));
+            
+            $new_release = DB::table('books')->orderByDesc('id')->paginate(8);
+            return view('pages.home',compact('new_release',$new_release));  
         }
 
         public function AllBooksHome()
@@ -378,6 +381,7 @@ class BookController extends Controller
             }
             else if($keyword == null && $catagory1 == null && $catagory2 == null){
                 
+                
                 $data = Book::paginate(3);
                 $finalresult= DB::table('books')->where('Catagory', '')->get();
                 return view('gridviews.result1',compact('finalresult','data'));
@@ -402,11 +406,9 @@ class BookController extends Controller
             }
     
         }
-
-        
+       
         public function searchInfo($keyword)
         {
-
             $data = Book::paginate(3);
             $finalresult = Book::where('Catagory',$keyword)->paginate(9);
             return view('gridviews.result',compact('finalresult','data'));

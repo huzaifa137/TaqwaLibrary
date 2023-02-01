@@ -81,8 +81,8 @@
                                             <div class="bottom-info">
                                                 <span class="top-arrow"></span>
                                                 <ul>
-                                                    <li>www.TaqwaLibrary123@gmail.com</li>
-                                                    
+                                                    <li>TaqwaLibrary123@gmail.com</li>
+                                                    <li>info@taqwalibrary.me</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -90,8 +90,8 @@
                                             <div class="bottom-info orange-bg">
                                                 <span class="bottom-arrow"></span>
                                                 <ul>
-                                                    <li><a href="mailto:www.TaqwaLibrary123@gmail.com">www.TaqwaLibrary123@gmail.com</a></li>
-                                                    
+                                                    <li><a href="mailto:TaqwaLibrary123@gmail.com">TaqwaLibrary123@gmail.com</a></li>
+                                                    <li><a href="mailto:info@taqwalibrary.me">info@taqwalibrary.me</a></li>
                                                 </ul>
                                             </div>
                                             <div class="top-info dark-bg">

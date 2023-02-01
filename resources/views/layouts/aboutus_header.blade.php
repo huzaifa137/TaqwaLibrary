@@ -59,7 +59,7 @@
                                             <div class="topbar-info">
                                                 <a href="tel:+ 256-700574979"><i class="fa fa-phone"></i>+ 256-700574979</a>
                                                 <span>/</span>
-                                                <a href="mailto:support@libraria.com"><i class="fa fa-envelope"></i>TAQWALIBRARY123@GMAIL.COM</a>
+                                                <a href="mailto:info@taqwalibrary.me"><i class="fa fa-envelope"></i>TAQWALIBRARY123@GMAIL.COM</a>
                                             </div>
                                         </div>
                                       
@@ -187,7 +187,7 @@
                             </div>
                             <div class="info">
                                 <i class="fa fa-envelope"></i>
-                                <span><a href="mailto:Taqwalibrary123@gmail.com">Taqwalibrary123@gmail.com</a></span>
+                                <span><a href="mailto:info@taqwalibrary.me">info@taqwalibrary.me</a></span>
                             </div>
                             <div class="info">
                                 <i class="fa fa-phone"></i>

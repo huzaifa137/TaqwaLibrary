@@ -468,7 +468,7 @@
             
             <div id="category-filter">
                 <ul class="category-list">
-                    @foreach ($data as $info)  
+                    @foreach ($new_release as $info)  
                     <li class="category-item adults">
                         <figure>
                             <img class="image-size" src="{{url('public/BookImage/'.$info->Book_Image)}}"  alt="New Releaase" />
@@ -727,7 +727,7 @@
                             </div>
                             <div class="info">
                                 <i class="fa fa-envelope"></i>
-                                <span><a href="mailto:Taqwalibrary123@gmail.com">Taqwalibrary123@gmail.com</a></span>
+                                <span><a href="mailto:info@taqwalibrary.me">info@taqwalibrary.me</a></span>
                             </div>
                             <div class="info">
                                 <i class="fa fa-phone"></i>
