@@ -36,7 +36,7 @@
                                 <input type="hidden" name="id" value="{{$info->id}}">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label class="form-label">Author Name</label>
+                                        <label class="form-label">Author Name</label>               
                                         <input type="text" name="author_name" class="form-control" value="{{$info->Author_Name}}">
                                          <span style="color: red">@error('author_name'){{$message}}@enderror</span>
                                     </div>

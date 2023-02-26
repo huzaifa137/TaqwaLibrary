@@ -79,6 +79,16 @@
                                                 <li><a href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                             </ul>
                                         </li>
+                                        <li class="dropdown">
+                                            <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('morning-adhkar')}}">dua &  Adhkar</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="{{route('morning-adhkar')}}">Morning Adhkar</a></li>
+                                                <li><a href="{{route('evening-adhkar')}}">Evening Adhkar</a></li>
+                                                <li><a href="{{route('Adhkar-After-Swalah')}}">Adhkar after swalah</a></li>
+                                                <li><a href="{{route('Famous-Duas-from-the-Quran')}}">Famous Duas from the Quran</a></li>
+                                                <li><a href="{{route('Other-Duas')}}">Other Dua's</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="{{route('about-us')}}">About us</a></li>
                                         <li><a href="{{route('contact')}}">Contact us</a></li>
                                         {{-- <li class="dropdown">
@@ -123,14 +133,29 @@
         
                                     </li>
                                     <li>
-                                        <a href="#">Books</a>
+                                        <a href="javascript:void()">Books</a>
                                         <ul>
-                                            <li><a href="{{route('all')}}">All Books</a></li>
-                                            <li><a href="{{route('All_Arabic_Books')}}">Arabic Books</a></li>
-                                            <li><a href="{{route('All_English_Books')}}">English Books</a></li>
-                                            <li><a href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
+                                            <li><a id="links-highlight" href="{{route('all')}}">All Books</a></li>
+                                            <li><a id="links-highlight" href="{{route('All_Arabic_Books')}}">Arabic Books</a></li>
+                                            <li><a id="links-highlight" href="{{route('All_English_Books')}}">English Books</a></li>
+                                            <li><a id="links-highlight" href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                         </ul>
                                     </li>
+
+                                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                                        <i class="la la-book"></i>
+                                        <span class="nav-text">dua and adhkar</span>
+                                    </a>
+                                    <ul aria-expanded="false">
+                                        
+                                        <li><a id="links-highlight" href="{{route('morning-adhkar')}}">Morning Adkar</a></li>
+                                        <li><a id="links-highlight" href="{{route('evening-adhkar')}}">Evening Adkar</a></li>
+                                        <li><a id="links-highlight" href="{{route('Adhkar-After-Swalah')}}">Adhkar after swalah</a></li>
+                                        <li><a id="links-highlight" href="{{route('Famous-Duas-from-the-Quran')}}">Famous Duas from the Quran</a></li>
+                                        <li><a id="links-highlight" href="{{route('Other-Duas')}}">Other Dua's</a></li>
+                                        
+                                    </ul>
+                                </li>
                                     <li><a href="{{route('about-us')}}">About us</a></li>
                                     <li><a href="{{route('contact')}}">Contact</a></li> 
                                     {{-- <li>
@@ -421,6 +446,7 @@
                             <ul id="menu-quick-links" class="menu">
                                 <li><a href="{{route('home')}}">Home</a></li>
                                 <li><a href="{{('all')}}">Books</a></li>
+                                <li><a href="{{('morning-adhkar')}}">Dua & Adhkar</a></li>
                                 <li><a href="{{route('about-us')}}">About us</a></li>
                                 <li><a href="{{route('contact')}}">Contact us</a></li>
                             </ul>
@@ -465,6 +491,7 @@
                     <ul>
                         <li><a href="{{route('home')}}">Home</a></li>
                         <li><a href="{{route('all')}}">BOOKS</a></li>
+                        <li><a href="{{('morning-adhkar')}}">Dua & Adhkar</a></li>
                         <li><a href="{{route('about-us')}}">ABOUT US</a></li>
                         <li><a href="{{route('contact')}}">Contact us</a></li>
                         {{-- <li><a href="news-events-list-view.html">News &amp; Events</a></li>

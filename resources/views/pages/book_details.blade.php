@@ -11,7 +11,7 @@
                             <div class="detailed-box">
                                 <div class="col-xs-12 col-sm-5 col-md-3">
                                     <div class="post-thumbnail">
-                                        <img class="image-format" src="{{'/public/BookImage/'.$data->Book_Image}}" >
+                                        <img class="image-format" id="pic_bd" src="{{'/public/BookImage/'.$data->Book_Image}}" >
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-7 col-md-6">

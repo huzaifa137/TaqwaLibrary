@@ -16,7 +16,7 @@
 			</div>
 			<div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
 				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
 					<li class="breadcrumb-item active"><a href="javascript:void(0);">Books</a></li>
 					<li class="breadcrumb-item active"><a href="javascript:void(0);">All Books</a></li>
 				</ol>

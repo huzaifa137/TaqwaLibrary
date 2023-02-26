@@ -42,6 +42,7 @@ Route::middleware(['middleware'=>'AuthCheck'])->group(function () {
     Route::get('Adminpages.Dashboard',[BookController::class,'dashboard']);
     Route::get('auth.logout',[BookController::class,'logout'])->name('auth.logout');
     Route::view('AddBook','Adminpages.AddBook')->name('AddBook');
+    Route::view('AddAdhkar','Adminpages.AddAdhkar')->name('AddAdhkar');
     Route::view('EditBook','Adminpages.EditBook')->name('EditBook');
     Route::view('dashboard','Adminpages.Dashboard')->name('dashboard');
     Route::get('dashboard',[BookController::class,'dashboard'])->name('dashboard');
@@ -58,11 +59,27 @@ Route::get('auth.login',[BookController::class,'login'])->name('auth.login');
 
 Route::post('auth.save',[BookController::class,'store1'])->name('auth.save');
 Route::post('auth.check',[BookController::class,'verify'])->name('auth.check');
-
 Route::post('send-message',[BookController::class,'SendMessage'])->name('send-message');
-
 Route::get('search-bar',[BookController::class,'SearchBar'])->name('search-bar');
-
 Route::get('fetchRecords/{keyword}',[BookController::class,'fetchRecords'])->name('fetchRecords-link');
-
 Route::get('search/{keyword}',[BookController::class,'searchInfo'])->name('search-link');
+
+
+
+//Dua and Adhkar routes
+
+Route::get('morning-adhkar',[BookController::class,'morning_adhkar'])->name('morning-adhkar');
+Route::get('evening-adhkar',[BookController::class,'evening_adhkar'])->name('evening-adhkar');
+Route::get('Adhkar-After-Swalah',[BookController::class,'Adhkar_After_Swalah'])->name('Adhkar-After-Swalah');
+Route::get('Famous-Duas-from-the-Quran',[BookController::class,'Famous_Duas_from_the_Quran'])->name('Famous-Duas-from-the-Quran');
+Route::get('Other-Duas',[BookController::class,'Other_Duas'])->name('Other-Duas');
+
+
+
+Route::get('adhkar-details/{id}',[BookController::class,'adhkarDetails'])->name('adhkar-details');
+Route::get('AllAdhkar',[BookController::class,'ShowAllAdhkar'])->name('AllAdhkar');
+Route::get('Edit-Adhkar/{id}',[BookController::class,'EditAdhkar'])->name('Edit-Adhkar');
+Route::get('delete-Adhkar/{id}',[BookController::class,'deleteAdhkar']);
+
+Route::post('add-post',[BookController::class,'add_post'])->name('add-post');
+Route::post('update-post',[BookController::class,'updateAdhkar'])->name('update-post');

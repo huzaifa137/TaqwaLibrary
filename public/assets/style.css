@@ -19249,5 +19249,35 @@ a:focus {
     }
  }
 
+ #ayat-header
+ {
+    /* color: #3686ff; */
+    color: white;
+    font-size: 2em;
+ }
 
+ #img_id
+{
+    border: 5px solid #3686ff;
+}
+
+ @media (min-width: 1200px) and (max-width: 1599px) {
+#img_id
+{
+    padding-bottom: 7em;
+    border: 5px solid #3686ff;
+}
+ }
  
+ #pic_bd{
+  border: 3px solid #3686ff;
+ }
+
+ #pic_bd1{
+  border:2px solid gainsboro;
+ }
+
+
+#links-highlight {
+  color: #3686ff;
+}

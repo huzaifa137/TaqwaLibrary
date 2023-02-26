@@ -118,6 +118,17 @@
                         </ul>
                     </li>
                     
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="la la-eye"></i>
+                        <span class="nav-text">Dua &  Adhkar</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="{{route('AllAdhkar')}}">All Adhkar</a></li>
+                        <li><a href="{{route('AddAdhkar')}}">Add Adhkar</a></li>
+                    </ul>
+                </li>
+
+
 					<li><a class="has-arrow" href="{{route('contact-info')}}" aria-expanded="false">
                         <i class="la la-phone"></i>
                         <span class="nav-text">Contact_us Info</span>

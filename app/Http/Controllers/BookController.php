@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\Models\Adhkar;
 use App\Models\contact;
 use App\Models\Admin;
 use App\Models\Book;
@@ -414,4 +415,158 @@ class BookController extends Controller
             return view('gridviews.result',compact('finalresult','data'));
         }
 
+        // DUA AND ADHKAR SECTION
+
+        public function add_post(Request $request)
+        {
+            $request->validate([
+                'dua_name'=>'required',
+                'dua_catagory'=>'required',
+                'number_in_words'=>'required',
+                'number_in_figures'=>'required',
+                'para_1'=>'required',
+                'para_2'=>'required',
+                'para_3'=>'required',
+                'para_4'=>'required',
+                'para_5'=>'required',
+                'para_6'=>'required',
+                'para_7'=>'required',
+                'Adhkar_image'=>'required|mimes:jpeg,jpg,png,bmp'
+            ]);
+
+            $post = new Adhkar();
+            $post->dua_name=$request->dua_name;
+            $post->dua_catagory=$request->dua_catagory;
+            $post->number_in_words=$request->number_in_words;
+            $post->number_in_figures=$request->number_in_figures;
+            $post->para_1=$request->para_1;
+            $post->para_2=$request->para_2;
+            $post->para_3=$request->para_3;
+            $post->para_4=$request->para_4;
+            $post->para_5=$request->para_5;
+            $post->para_6=$request->para_6;
+            $post->para_7=$request->para_7;
+
+            if($request->file('Adhkar_image'))
+             {
+            $file=$request->file('Adhkar_image');
+            $filename=date('YmdHi').$file->getClientOriginalName();
+            $file->move(public_path('public/Adhkar_image'),$filename);
+            $post['Adhkar_image']=$filename;
+            }
+
+            $save=$post->save();
+
+            if($save)
+            {   
+                return redirect('AllAdhkar')->with('success','Adhkar has been Added successfully');
+            }
+        }
+
+        public function morning_adhkar()
+        {
+
+            $data = Adhkar::where('dua_catagory','MORNING')->get();
+            return view('Adhkar.morning',compact('data',$data));
+        }
+
+        public function evening_adhkar()
+        {
+            $data = Adhkar::where('dua_catagory','EVENING')->get();
+            return view('Adhkar.evening',compact('data',$data));
+        }
+
+        public function Adhkar_After_Swalah()
+        {
+            $data = Adhkar::where('dua_catagory','Adhkar After Swalah')->get();
+            return view('Adhkar.AdhkarAfterSwalah',compact('data',$data));
+        }
+
+        public function Famous_Duas_from_the_Quran()
+        {
+            $data = Adhkar::where('dua_catagory','Famous Duas From Quran')->get();
+            return view('Adhkar.FamousQuranicDuas',compact('data',$data));
+        }
+
+        public function Other_Duas()
+        {
+            $data = Adhkar::where('dua_catagory','Other Duas')->get();
+            return view('Adhkar.Other_Duas',compact('data',$data));
+        }
+
+        public function adhkarDetails($id)
+        {
+            $data = Adhkar::find($id);
+            return view('Adhkar.adhkarDetails',compact('data',$data));
+        }
+
+        public function ShowAllAdhkar()
+        {
+            $data = Adhkar::all();
+            return view('Adhkar.AllAdhkar',compact('data',$data));
+        }
+
+        public function deleteAdhkar($id)
+        {
+             $data = Adhkar::find($id);
+             $data->delete();
+
+             return redirect('AllAdhkar')->with('success','Adhkar has been deleted successfully');
+        }
+
+
+        public function EditAdhkar($id)
+        {
+            $data =  Adhkar::find($id);
+
+            return view('Adhkar.EditAdhkar',compact('data',$data));
+        }
+
+        public function updateAdhkar(Request $request)
+        {
+             $post = Adhkar::find($request->id);
+
+            $request->validate([
+                'dua_name'=>'required',
+                'dua_catagory'=>'required',
+                'number_in_words'=>'required',
+                'number_in_figures'=>'required',
+                'para_1'=>'required',
+                'para_2'=>'required',
+                'para_3'=>'required',
+                'para_4'=>'required',
+                'para_5'=>'required',
+                'para_6'=>'required',
+                'para_7'=>'required',
+                'Adhkar_image'=>'required|mimes:jpeg,jpg,png,bmp'
+            ]);
+
+       
+            $post->dua_name=$request->dua_name;
+            $post->dua_catagory=$request->dua_catagory;
+            $post->number_in_words=$request->number_in_words;
+            $post->number_in_figures=$request->number_in_figures;
+            $post->para_1=$request->para_1;
+            $post->para_2=$request->para_2;
+            $post->para_3=$request->para_3;
+            $post->para_4=$request->para_4;
+            $post->para_5=$request->para_5;
+            $post->para_6=$request->para_6;
+            $post->para_7=$request->para_7;
+
+            if($request->file('Adhkar_image'))
+             {
+            $file=$request->file('Adhkar_image');
+            $filename=date('YmdHi').$file->getClientOriginalName();
+            $file->move(public_path('public/Adhkar_image'),$filename);
+            $post['Adhkar_image']=$filename;
+            }
+
+            $save=$post->save();
+
+            if($save)
+            {   
+                return redirect('AllAdhkar')->with('success','Adhkar has been Updated successfully');
+            }
+        }
 }

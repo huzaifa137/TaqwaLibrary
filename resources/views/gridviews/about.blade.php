@@ -357,7 +357,7 @@
                                         @foreach ($data as $info)
                                         <li class="category-item">
                                             <figure>
-                                                <img class="image-size" src="{{url('public/BookImage/'.$info->Book_Image)}}" alt="New Releaase" />
+                                                <img class="image-size" id="pic_bd1" src="{{url('public/BookImage/'.$info->Book_Image)}}" alt="New Releaase" />
                                                 <figcaption class="bg-blue">
                                                     <div class="info-block">
                                                         <h4>{{$info->Book_Name}}</h4>
