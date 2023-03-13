@@ -64,6 +64,8 @@ Route::get('search-bar',[BookController::class,'SearchBar'])->name('search-bar')
 Route::get('fetchRecords/{keyword}',[BookController::class,'fetchRecords'])->name('fetchRecords-link');
 Route::get('search/{keyword}',[BookController::class,'searchInfo'])->name('search-link');
 
+Route::get('search-ulaamah/{keyword}',[BookController::class,'search_Scholar'])->name('search-link');
+
 
 
 //Dua and Adhkar routes

@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Stroage;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Models\Adhkar;
 use App\Models\contact;
@@ -388,22 +389,57 @@ class BookController extends Controller
                 return view('gridviews.result1',compact('finalresult','data'));
             }
 
+            else if($keyword == null && $catagory1 != null && $catagory2 != null){
+                
+                if($catagory1 === $catagory2)
+                {
+                    $value = $catagory2;
+                    return $this->fetchRecords($value);
+                }
+                
+                $data = Book::paginate(3);
+                $catagory1 = collect(DB::table('books')->where('Catagory',$catagory1)->get());
+                $catagory2 = collect(DB::table('books')->where('Catagory',$catagory2)->get());
+                
+                $result=$catagory1->merge($catagory2);
+                $finalresult = $result->all();
+
+                return view('gridviews.result1',compact(['finalresult','data']));
+            }
             else{
+
+                if($catagory1 === $catagory2)
+                {
+                    $keyword = collect(DB::table('books')->where('Catagory', 'like', '%'.$keyword.'%')
+                                ->orWhere('Author_Name', 'like', '%'.$keyword.'%')
+                                ->orWhere('Book_Name', 'like', '%'.$keyword.'%')->get());      
+
+                    $catagory1 = collect(DB::table('books')->where('Catagory',$catagory1)->get());
+
+                    $data = Book::paginate(3);
+                    $result=$keyword->merge($catagory1);
+                    $finalresult = $result->all();
+
+                    return view('gridviews.result1',compact(['finalresult','data']));
+                }
    
-                $keyword = DB::table('books')->where('Catagory', 'like', '%'.$keyword.'%')
-                                             ->orWhere('Author_Name', 'like', '%'.$keyword.'%')
-                                             ->orWhere('Book_Name', 'like', '%'.$keyword.'%')->get();
+                $keyword = collect(DB::table('books')->where('Catagory', 'like', '%'.$keyword.'%')
+                                ->orWhere('Author_Name', 'like', '%'.$keyword.'%')
+                                ->orWhere('Book_Name', 'like', '%'.$keyword.'%')->get());      
 
-                $catagory1= DB::table('books')->where('Catagory',$catagory1)->get();
-
-                $catagory2= DB::table('books')->where('Catagory',$catagory2)->get();
+                 $catagory1 = collect(DB::table('books')->where('Catagory',$catagory1)->get());
+                 $catagory2 = collect(DB::table('books')->where('Catagory',$catagory2)->get());
                 
                
                 $data = Book::paginate(3);
+                
                 $all=$keyword->merge($catagory1);
-                $finalresult=$all->merge($catagory2);
+                $result=$all->merge($catagory2);
+
+                 $finalresult = $result->all();
      
-                return view('gridviews.result1',compact('finalresult','data'));
+                return view('gridviews.result1',compact(['finalresult','data']));
+
             }
     
         }
@@ -412,6 +448,14 @@ class BookController extends Controller
         {
             $data = Book::paginate(3);
             $finalresult = Book::where('Catagory',$keyword)->paginate(9);
+            return view('gridviews.result',compact('finalresult','data'));
+        }
+
+        public function search_Scholar($keyword)
+        {
+    
+            $data = Book::paginate(3);
+            $finalresult = Book::where('Author_Name',$keyword)->paginate(9);
             return view('gridviews.result',compact('finalresult','data'));
         }
 

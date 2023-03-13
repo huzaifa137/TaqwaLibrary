@@ -167,22 +167,14 @@
                             </ul>
                         </div>
                     </div>
-                    {{-- <div data-accordion>
-                        <h5 class="widget-sub-title" data-control>Authors</h5>
+                   
+                    <div data-accordion>
+                        <h5 class="widget-sub-title" data-control>Sheikhs</h5>
                         <div class="widget_categories" data-content>
                             <ul>
-                                <li><a href="javascript:void()">Love stories <span>(18)</span></a></li>
-                                <li><a href="javascript:void()">Texas <span>(04)</span></a></li>
-                                <li><a href="javascript:void()">Rich people <span>(03)</span></a></li>
-                                <li><a href="javascript:void()">Humorous stories <span>(02)</span></a></li>
-                                <li><a href="javascript:void()">Widows <span>(02)</span></a></li>
-                                <li><a href="javascript:void()">Women <span>(11)</span></a></li>
-                                <li><a href="javascript:void()">Babysitters <span>(25)</span></a></li>
-                                <li><a href="javascript:void()">Law firms <span>(09)</span></a></li>
+                                <li><a href="{{url('search-ulaamah/sheikh Quraish Mazinga')}}">sheikh Quraish Mazinga</span></a></li>
                             </ul>
                         </div>
-                        <div class="clearfix"></div>
-                    </div> --}}
                 </div>
                 <div class="clearfix"></div>
             </div>
