@@ -8,10 +8,12 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Models\Audio;
 use App\Models\Adhkar;
 use App\Models\contact;
 use App\Models\Admin;
 use App\Models\Book;
+use Carbon\Carbon;
 
 
 class BookController extends Controller
@@ -613,4 +615,127 @@ class BookController extends Controller
                 return redirect('AllAdhkar')->with('success','Adhkar has been Updated successfully');
             }
         }
+
+        // AUDIO PAGE 
+
+        public function AudioPage(){
+
+            $UgandanSheikhs = Audio::select('First_name','sheikh_name')->distinct()->get();
+
+            return view('Audio.UgandanAudios',compact(['UgandanSheikhs']));
+        }
+
+
+        public function IndividualSheikh(){
+
+            return view('Audio.IndvidualSheikh');
+        }
+
+
+        public function AudioUpload(){
+            return view('Audio.UploadAudio');
+        }
+
+
+        public function UploadAudio(Request $request){
+
+            $request->validate([
+                'First_name'=>'required',
+                'sheikh_name'=>'required',
+                'topic'=>"required",
+                'audio'=>'required|file|mimes:mp3,ogg',
+            ]);
+
+         
+        $post = new Audio();
+        
+        $post->First_name=$request->First_name;
+        $post->sheikh_name=$request->sheikh_name;
+        $post->topic=$request->topic;
+
+        //Storing an Audio
+        $file=$request->audio;
+        $filename=date('YmdHi').'.'.$file->getClientOriginalExtension();
+		$file->move('audioz',$filename);
+        $post['audio']=$filename;
+
+        $save=$post->save();
+
+        if($save)
+        {   
+            return redirect()->back()->with('success','Audio has been Added successfully');
+            
+        }
+     }
+
+     public function SheikhLectures($name){
+
+        $SheikhAudios = Audio::where('First_name',$name)->get();
+
+        return view('Audio.IndvidualSheikh')->with('name',$name)->with('SheikhAudios',$SheikhAudios);
+     }
+
+     public function downloadAudio(Request $request,$audio){
+            return response()->download(public_path('audioz/'.$audio));
+    }
+
+    public function AllAudios(){
+
+        $data = Audio::all();
+        return view('Audio.AllAudio',compact(['data']));
+    }
+
+    public function EditAudio(Request $request)
+    {
+        $data = Audio::find($request->id);
+        return view('Audio.EditAudio',compact('data',$data));
+    }
+
+    public function UpdateAudio(Request $request)
+    {
+        $request->validate([
+            'First_name'=>'required',
+            'sheikh_name'=>'required',
+            'topic'=>"required",
+            'audio'=>'required|file|mimes:mp3,ogg',
+        ]);
+
+     
+    $post = Audio::find($request->id);
+    
+    $post->First_name=$request->First_name;
+    $post->sheikh_name=$request->sheikh_name;
+    $post->topic=$request->topic;
+
+    //Storing an Audio
+    $file=$request->audio;
+    $filename=date('YmdHi').'.'.$file->getClientOriginalExtension();
+    $file->move('audioz',$filename);
+    $post['audio']=$filename;
+
+    $save=$post->save();
+
+    if($save)
+    {   
+        return redirect()->back()->with('success','Audio has been Updated successfully');
+        
+    }
+    }
+
+    public function deleteAudio($id)
+    {
+        $data = Audio::find($id);
+        $data->delete();
+        return redirect('All-Audio')->with('success','Audio has been deleted successfully');
+    }
+
+// Video Configurations.
+
+    public function AllVideos(){
+        return view('Videos.AllVideos');
+    }
+
+    public function VideoDetails(){
+        return view('Videos.VideoDetails');
+    }
 }

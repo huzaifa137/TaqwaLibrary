@@ -45,7 +45,6 @@
 												<th>Language</th>
 												<th>Format</th>
 												<th>Number of pages</th>
-												
 												<th>Edit</th>
 											</tr>
 										</thead>

@@ -118,6 +118,17 @@
                         </ul>
                     </li>
                     
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="la la-music"></i>
+                            <span class="nav-text">Audios</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{route('All-Audio')}}">All Audios</a></li>
+                            <li><a href="{{route('Upload-Audio')}}">Add Audio</a></li>
+                        </ul>
+                  </li>
+
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
                         <i class="la la-eye"></i>
                         <span class="nav-text">Dua &  Adhkar</span>

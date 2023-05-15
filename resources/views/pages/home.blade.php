@@ -72,6 +72,22 @@
                                     </li>
                                     
                                     <li class="dropdown">
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('Ugandan-Sheikhs')}}">Audios</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="{{route('Ugandan-Sheikhs')}}">Ugandan Sheikhs</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('All-videos')}}">Videos</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="{{route('Ugandan-Sheikhs')}}">Ugandan Sheikhs</a></li>
+                                            <li><a href="javascript:void(0);">Arabic Sheikhs</a></li>
+                                            <li><a href="javascript:void(0);">English Sheikhs</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
                                         <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('morning-adhkar')}}">dua &  Adhkar</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="{{route('morning-adhkar')}}">Morning Adhkar</a></li>
@@ -129,10 +145,18 @@
                                         </ul>
                                     </li>
 
+                                    <li>
+                                        <a href="javascript:void()">Audios</a>
+                                        <ul>
+                                            <li><a id="links-highlight" href="{{route('Ugandan-Sheikhs')}}">Ugandan Sheikhs</a></li>
+                                        </ul>
+                                    </li>
+
                                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
                                         <i class="la la-book"></i>
                                         <span class="nav-text">dua and adhkar</span>
                                     </a>
+                                    
                                     <ul aria-expanded="false">
                                         
                                         <li><a id="links-highlight" href="{{route('morning-adhkar')}}">Morning Adkar</a></li>
@@ -773,6 +797,7 @@
                             <ul id="menu-quick-links" class="menu">
                                 <li><a href="{{route('home')}}">Home</a></li>
                                 <li><a href="{{('all')}}">Books</a></li>
+                                <li><a href="{{route('Ugandan-Sheikhs')}}">Audios</a></li>
                                 <li><a href="{{('morning-adhkar')}}">Dua & Adhkar</a></li>
                                 <li><a href="{{route('about-us')}}">About us</a></li>
                                 <li><a href="{{route('contact')}}">Contact us</a></li>
@@ -818,6 +843,7 @@
                     <ul>
                         <li><a href="{{route('home')}}">Home</a></li>
                         <li><a href="{{route('all')}}">BOOKS</a></li>
+                        <li><a href="{{route('Ugandan-Sheikhs')}}">AUDIOS</a></li>
                         <li><a href="{{route('morning-adhkar')}}">Dua & Adhkar</a></li>
                         <li><a href="{{route('about-us')}}">ABOUT US</a></li>
                         <li><a href="{{route('contact')}}">Contact us</a></li>

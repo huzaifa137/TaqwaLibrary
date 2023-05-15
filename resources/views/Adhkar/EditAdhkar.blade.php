@@ -13,15 +13,15 @@
         <div class="row page-titles mx-0">
             <div class="col-sm-6 p-md-0">
                 <div class="welcome-text">
-                    <h4>Add Adhkar</h4>
+                    <h4>Edit Adhkar</h4>
                 </div>
 
             </div>
             <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void()">Home</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                     <li class="breadcrumb-item active"><a href="javascript:void(0)">Adhkar</a></li>
-                    <li class="breadcrumb-item active"><a href="javascript:void(0)">Add Adhkar</a></li>
+                    <li class="breadcrumb-item active"><a href="javascript:void(0)">Edit Adhkar</a></li>
                 </ol>
             </div>
         </div>

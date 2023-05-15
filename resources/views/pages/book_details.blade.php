@@ -54,11 +54,6 @@
                                                         <i class="fa fa-print"></i>
                                                     </a>
                                                 </li>
-                                                <li>
-                                                    <a href="javascript:void()" data-toggle="blog-tags" data-placement="top" title="" data-original-title="Print">
-                                                        <i class="fa fa-share-alt"></i>
-                                                    </a>
-                                                </li>
                                             </ul>
                                         </div>
                                     </div>

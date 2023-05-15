@@ -80,8 +80,35 @@ Route::get('Other-Duas',[BookController::class,'Other_Duas'])->name('Other-Duas'
 
 Route::get('adhkar-details/{id}',[BookController::class,'adhkarDetails'])->name('adhkar-details');
 Route::get('AllAdhkar',[BookController::class,'ShowAllAdhkar'])->name('AllAdhkar');
+
+// Admin Routes
 Route::get('Edit-Adhkar/{id}',[BookController::class,'EditAdhkar'])->name('Edit-Adhkar');
 Route::get('delete-Adhkar/{id}',[BookController::class,'deleteAdhkar']);
 
 Route::post('add-post',[BookController::class,'add_post'])->name('add-post');
 Route::post('update-post',[BookController::class,'updateAdhkar'])->name('update-post');
+
+
+//AUDIO Page  routes
+
+Route::get('Ugandan-Sheikhs',[BookController::class,'AudioPage'])->name('Ugandan-Sheikhs');
+Route::get('Indvidual-Sheikh',[BookController::class,'IndividualSheikh'])->name('Indvidual-Sheikh');
+
+// Admin Routes
+Route::get('Upload-Audio',[BookController::class,'AudioUpload'])->name('Upload-Audio');
+Route::get('All-Audio',[BookController::class,'AllAudios'])->name('All-Audio');
+
+Route::get('Edit-Audio/{id}',[BookController::class,'EditAudio'])->name('Edit-Audio');
+Route::get('delete-Audio/{id}',[BookController::class,'deleteAudio']);
+
+Route::get('sheikh/{name}',[BookController::class,'SheikhLectures']);
+Route::get('/download-Audio/{file}',[BookController::class,'downloadAudio']);
+
+Route::post('Audio-Upload',[BookController::class,'UploadAudio'])->name('Audio-Upload');
+Route::post('update-Audio',[BookController::class,'UpdateAudio'])->name('update-Audio');
+
+
+//Video Routes
+
+Route::get('All-videos',[BookController::class,'AllVideos'])->name('All-videos');
+Route::get('Video-Details',[BookController::class,'VideoDetails'])->name('Video-Details');

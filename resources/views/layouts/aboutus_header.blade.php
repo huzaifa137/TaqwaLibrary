@@ -79,6 +79,23 @@
                                                 <li><a href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                             </ul>
                                         </li>
+
+                                        <li class="dropdown">
+                                            <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('Ugandan-Sheikhs')}}">Audios</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="{{route('Ugandan-Sheikhs')}}">Ugandan Sheikhs</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('All-videos')}}">Videos</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="{{route('Ugandan-Sheikhs')}}">Ugandan Sheikhs</a></li>
+                                                <li><a href="javascript:void(0);">Arabic Sheikhs</a></li>
+                                                <li><a href="javascript:void(0);">English Sheikhs</a></li>
+                                            </ul>
+                                        </li>
+                                        
                                         <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('morning-adhkar')}}">dua &  Adhkar</a>
                                             <ul class="dropdown-menu">
@@ -139,6 +156,13 @@
                                             <li><a id="links-highlight" href="{{route('All_Arabic_Books')}}">Arabic Books</a></li>
                                             <li><a id="links-highlight" href="{{route('All_English_Books')}}">English Books</a></li>
                                             <li><a id="links-highlight" href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void()">Audios</a>
+                                        <ul>
+                                            <li><a id="links-highlight" href="{{route('Ugandan-Sheikhs')}}">Ugandan Sheikhs</a></li>
                                         </ul>
                                     </li>
 
