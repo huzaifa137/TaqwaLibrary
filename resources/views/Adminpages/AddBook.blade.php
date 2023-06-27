@@ -39,14 +39,14 @@
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label class="form-label">Author Name</label>
-                                        <input type="text" name="author_name" class="form-control" value="{{old('author_name')}}">
+                                        <input type="text" name="author_name" class="form-control" value="{{old('author_name')}}" required>
                                          <span style="color: red">@error('author_name'){{$message}}@enderror</span>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label class="form-label">Book Name <strong style="color: green">& </strong> Release year</label>
-                                        <input type="text" name="book_name" class="form-control" value="{{old('book_name')}}">
+                                        <input type="text" name="book_name" class="form-control" value="{{old('book_name')}}" required>
                                         <span style="color: red"> @error('book_name'){{$message}} @enderror</span>
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label class="form-label">Number of pages</label>
-                                        <input type="text" name="pages" class="form-control" value="{{old('pages')}}">
+                                        <input type="text" name="pages" class="form-control" value="{{old('pages')}}" required>
                                         <span style="color: red">@error('pages'){{$message}} @enderror</span>
                                     </div>
                                 </div>
@@ -187,7 +187,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label class="form-label">Topics</label>
-                                        <input type="text" name="Topics" class="form-control" value="{{old('Topics')}}">
+                                        <input type="text" name="Topics" class="form-control" value="{{old('Topics')}}" required>
                                          <span style="color: red">@error('Topics'){{$message}}@enderror</span>
                                     </div>
                                 </div>
@@ -195,21 +195,21 @@
                                 <div class="col-lg-12 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label class="form-label">Summary</label>
-                                        <input type="text" name="Summary" class="form-control" value="{{old('Summary')}}">
+                                        <input type="text" name="Summary" class="form-control" value="{{old('Summary')}}" required>
                                          <span style="color: red">@error('Summary'){{$message}}@enderror</span>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="form-group fallback w-100">
-                                     <strong>Upload the Book Image :</strong>  <input type="file" name="Book_image" class="dropify" data-default-file="" value="{{old('Book_image')}}">
+                                     <strong>Upload the Book Image :</strong>  <input type="file" name="Book_image" class="dropify" data-default-file="" value="{{old('Book_image')}}" required>
                                      <span style="color: red">@error('Book_image'){{$message}} @enderror</span>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="form-group fallback w-100">
-                                     <strong>Upload Book pdf / docx :</strong>  <input type="file" name="Book_pdf" class="dropify" data-default-file="" value="{{old('Book_pdf')}}">
+                                     <strong>Upload Book pdf / docx :</strong>  <input type="file" name="Book_pdf" class="dropify" data-default-file="" value="{{old('Book_pdf')}}" required>
                                      <span style="color: red">@error('Book_pdf'){{$message}} @enderror</span>
                                     </div>
                                 </div>

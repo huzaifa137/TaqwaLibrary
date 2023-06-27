@@ -10,39 +10,20 @@
                         <div class="member-info">
                             <div class="content_meta_category">
                                 <span class="arrow-right"></span>
-                                <a href="#." rel="category tag">Topic</a>
+                                <a href="javascript:void(0);" rel="category tag">Topic : {{$data->topic}}</a>
                             </div>
-                            <ul class="news-event-info">
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class="fa fa-calendar"></i>
-                                        July 25, 2016
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class="fa fa-clock-o"></i>
-                                        10:15 AM - 10:15 PM 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class="fa fa-map-marker"></i>
-                                        New York, USA
-                                    </a>
-                                </li>
-                            </ul>
-                            
-                            <iframe width="100%" height="397" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" ></iframe>
+                
+                            <iframe width="100%" height="397" src="{{$data->video_link}}" frameborder="0" ></iframe>
 
-                            <h2>Curabitur leo elit, interdum nec pretium eu, convallis ut erat. Curabitur sagittis feugiat tortor eget vehicula.</h2>
-                            <p>Proin tincidunt molestie urna, non fringilla est pretium et. Proin dignissim porttitor quam, eget gravida ante accumsan et. Cras quis commodo massa. Nullam id mauris vel arcu ultricies hendrerit. Praesent hendrerit posuere risus, quis iaculis erat auctor non. Fusce bibendum in lorem ac pharetra. Mauris bibendum placerat massa non pellentesque. Maecenas interdum, nisl quis molestie gravida, sapien dui dictum urna, at pretium odio massa ut nibh. Nam sit amet eros ultricies leo ultrices sodales nec vel dui. Mauris imperdiet turpis sit amet lobortis efficitur. Mauris commodo nunc non risus auctor finibus. Ut egestas urna quis elit egestas, ac bibendum orci maximus. Maecenas risus magna, mollis et purus sit amet, pellentesque tempor lacus. Quisque dictum tortor ac est auctor, ut dapibus risus rutrum. Quisque porttitor turpis in sagittis porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean egestas consequat porttitor. </p>
+                            <h2>Sheikh: {{$data->sheikh_name}}</h2>
+                           <strong><p>Catagory :</strong>  {{$data->Catagory}}</p>
+                           <strong><p>Summary : </strong>{{$data->Summary}}</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <div class="col-md-3 col-md-pull-9">
@@ -54,83 +35,83 @@
                         <h5 class="widget-sub-title" data-control>Subject</h5>
                         <div class="widget_categories" data-content>
                             <ul>
-                                <li><a href="{{url('search/Aqeedah')}}">AQEEDAH </span></a></li>
-                                <li><a href="{{url('search/Shirk')}}">SHIRK </span></a></li>
-                                <li><a href="{{url('search/Quran')}}">QURAN</span></a></li>
-                                <li><a href="{{url('search/Hadith')}}">HADITH</a></li>
-                                <li><a href="{{url('search/Prophets')}}">PROPHETS </span></a></li>
-                                <li><a href="{{url('search/Tafsir')}}">TAFSIR</span></a></li>
-                                <li><a href="{{url('search/Tawheed')}}">TAWHEED</span></a></li>
-                                <li><a href="{{url('search/Allah')}}">ALLAH</a></li>
-                                <li><a href="{{url('search/Angels')}}">ANGELS </span></a></li>
-                                <li><a href="{{url('search/Dua-zikr')}}">DUA-ZIKR </span></a></li>
-                                <li><a href="{{url('search/Jiin')}}">JINN</span></a></li>
-                                <li><a href="{{url('search/Sunnah')}}">SUNNAH</a></li>
-                                <li><a href="{{url('search/Bidah')}}">BIDAH</span></a></li>
-                                <li><a href="{{url('search/Biographies')}}">BIOGRAPHIES</span></a></li>
-                                <li><a href="{{url('search/Death-grave')}}">DEATH-GRAVE</span></a></li>
-                                <li><a href="{{url('search/Fiqh')}}">FIQH</a></li>
-                                <li><a href="{{url('search/New muslims')}}">NEW MUSLIMS</span></a></li>
-                                <li><a href="{{url('search/Non-Muslims')}}">Non-Muslims</span></a></li>
-                                <li><a href="{{url('search/Healing')}}">HEALING</span></a></li>
-                                <li><a href="{{url('search/Heart')}}">HEART</a></li>
-                                <li><a href="{{url('search/Kufar-Celebrations')}}">KUFAR-Celebrations</span></a></li>
-                                <li><a href="{{url('search/Qayamat-Hereafter')}}">Qayamat-HEREAFTER</span></a></li>
-                                <li><a href="{{url('search/Ramadhan')}}">RAMADHAN</span></a></li>
-                                <li><a href="{{url('search/Ruqya')}}">RUQYA </span></a></li>
-                                <li><a href="{{url('search/Salaf')}}">SALAF </span></a></li>
-                                <li><a href="{{url('search/Sins')}}">SINS</span></a></li>
-                                <li><a href="{{url('search/Islam-4-kids')}}">ISLAM-4-KIDs</a></li>
-                                <li><a href="{{url('search/Islam-sharia-will')}}">ISLAMI-SHARIA-WILL </span></a></li>
-                                <li><a href="{{url('search/Prophet-saws')}}">PROPHET-SAWS</span></a></li>
-                                <li><a href="{{url('search/Sacred-months')}}">SACRED-MONTHS</span></a></li>
-                                <li><a href="{{url('search/Advice')}}">ADVICE</a></li>
-                                <li><a href="{{url('search/Awliyah-Allah')}}">AWLIYAH-ALLAH </span></a></li>
-                                <li><a href="{{url('search/Benefits')}}">BENEFITS</span></a></li>
-                                <li><a href="{{url('search/Calamities')}}">CALAMITIES</span></a></li>
-                                <li><a href="{{url('search/Children-youth')}}">CHILDREN-YOUTH</a></li>
-                                <li><a href="{{url('search/Current-affairs')}}">CURRENT-AFFAIRS</span></a></li>
-                                <li><a href="{{url('search/Dajjal')}}">DAJJAL</span></a></li>
-                                <li><a href="{{url('search/Dawah')}}">DAWAH</span></a></li>
-                                <li><a href="{{url('search/Desires')}}">DESIRES</a></li>
-                                <li><a href="{{url('search/Envy')}}">ENVY</span></a></li>
-                                <li><a href="{{url('search/Ethics-manner')}}">ETHICS-MANNERS</span></a></li>
-                                <li><a href="{{url('search/Evil')}}">EVIL</span></a></li>
-                                <li><a href="{{url('search/Fatawa')}}">FATAWA</a></li>
-                                <li><a href="{{url('search/Fitnah')}}">FITNAH</span></a></li>
-                                <li><a href="{{url('search/Hajj-Umrah')}}">HAJJ-UMRAH</span></a></li>
-                                <li><a href="{{url('search/Halal-o-Haram')}}">HALAL-o-HARAM</span></a></li>
-                                <li><a href="{{url('search/Harram-Khutabhs')}}">HARRAM-KHUTABHs</span></a></li>
-                                <li><a href="{{url('search/Hijab')}}">HIJAB</a></li>
-                                <li><a href="{{url('search/History')}}">HISTORY </span></a></li>
-                                <li><a href="{{url('search/Ilm-Ulama')}}">ILM-ULAMA</span></a></li>
-                                <li><a href="{{url('search/Islam')}}">ISLAM</span></a></li>
-                                <li><a href="{{url('search/Islamic History')}}">ISLAMIC HISTORY</a></li>
-                                <li><a href="{{url('search/Janazah')}}">JANAZAH</span></a></li>
-                                <li><a href="{{url('search/Kufr')}}">KUFR</span></a></li>
-                                <li><a href="{{url('search/Modesty')}}">MODESTY</span></a></li>
-                                <li><a href="{{url('search/Marriage-divorce')}}">MARRIAGE-DIVORCE</a></li>
-                                <li><a href="{{url('search/Morals')}}">MORALS</span></a></li>
-                                <li><a href="{{url('search/Parents')}}">PARENTS</span></a></li>
-                                <li><a href="{{url('search/Prayers')}}">PRAYERS</span></a></li>
-                                <li><a href="{{url('search/Prophet\'S-family')}}">PROPHET'S-FAMILY</a></li>
-                                <li><a href="{{url('search/racism-injustice')}}">RACISM-INJUSTICE</span></a></li>
-                                <li><a href="{{url('search/Relations')}}">RELATIONS</span></a></li>
-                                <li><a href="{{url('search/Religions')}}">RELIGIONS</span></a></li>
-                                <li><a href="{{url('search/Repentance')}}">REPENTANCE</a></li>
-                                <li><a href="{{url('search/Rights')}}">RIGHTS</span></a></li>
-                                <li><a href="{{url('search/Zakat-sadaq')}}">ZAKAT-SADAQAH</span></a></li>
-                                <li><a href="{{url('search/Sahabah')}}">SAHABAH</span></a></li>
-                                <li><a href="{{url('search/sects')}}">SECTS</a></li>
-                                <li><a href="{{url('search/Seerah')}}">SEERAH</span></a></li>
-                                <li><a href="{{url('search/Sharia')}}">SHARIA</span></a></li>
-                                <li><a href="{{url('search/Shaytaan')}}">SHAYTAAN</span></a></li>
-                                <li><a href="{{url('search/Sisters')}}">SISTERS</a></li>
-                                <li><a href="{{url('search/Soul')}}">SOUL</span></a></li>
-                                <li><a href="{{url('search/Sufism')}}">SUFISM</span></a></li>
-                                <li><a href="{{url('search/Terrorism')}}">TERRORISM</span></a></li>
-                                <li><a href="{{url('search/Warnings')}}">WARNINGS</a></li>
-                                <li><a href="{{url('search/Waseela')}}">WASEELA</span></a></li>
+                                <li><a href="{{url('search/subject/Aqeedah')}}">AQEEDAH </span></a></li>
+                                <li><a href="{{url('search/subject/Shirk')}}">SHIRK </span></a></li>
+                                <li><a href="{{url('search/subject/Quran')}}">QURAN</span></a></li>
+                                <li><a href="{{url('search/subject/Hadith')}}">HADITH</a></li>
+                                <li><a href="{{url('search/subject/Prophets')}}">PROPHETS </span></a></li>
+                                <li><a href="{{url('search/subject/Tafsir')}}">TAFSIR</span></a></li>
+                                <li><a href="{{url('search/subject/Tawheed')}}">TAWHEED</span></a></li>
+                                <li><a href="{{url('search/subject/Allah')}}">ALLAH</a></li>
+                                <li><a href="{{url('search/subject/Angels')}}">ANGELS </span></a></li>
+                                <li><a href="{{url('search/subject/Dua-zikr')}}">DUA-ZIKR </span></a></li>
+                                <li><a href="{{url('search/subject/Jiin')}}">JINN</span></a></li>
+                                <li><a href="{{url('search/subject/Sunnah')}}">SUNNAH</a></li>
+                                <li><a href="{{url('search/subject/Bidah')}}">BIDAH</span></a></li>
+                                <li><a href="{{url('search/subject/Biographies')}}">BIOGRAPHIES</span></a></li>
+                                <li><a href="{{url('search/subject/Death-grave')}}">DEATH-GRAVE</span></a></li>
+                                <li><a href="{{url('search/subject/Fiqh')}}">FIQH</a></li>
+                                <li><a href="{{url('search/subject/New muslims')}}">NEW MUSLIMS</span></a></li>
+                                <li><a href="{{url('search/subject/Non-Muslims')}}">Non-Muslims</span></a></li>
+                                <li><a href="{{url('search/subject/Healing')}}">HEALING</span></a></li>
+                                <li><a href="{{url('search/subject/Heart')}}">HEART</a></li>
+                                <li><a href="{{url('search/subject/Kufar-Celebrations')}}">KUFAR-Celebrations</span></a></li>
+                                <li><a href="{{url('search/subject/Qayamat-Hereafter')}}">Qayamat-HEREAFTER</span></a></li>
+                                <li><a href="{{url('search/subject/Ramadhan')}}">RAMADHAN</span></a></li>
+                                <li><a href="{{url('search/subject/Ruqya')}}">RUQYA </span></a></li>
+                                <li><a href="{{url('search/subject/Salaf')}}">SALAF </span></a></li>
+                                <li><a href="{{url('search/subject/Sins')}}">SINS</span></a></li>
+                                <li><a href="{{url('search/subject/Islam-4-kids')}}">ISLAM-4-KIDs</a></li>
+                                <li><a href="{{url('search/subject/Islam-sharia-will')}}">ISLAMI-SHARIA-WILL </span></a></li>
+                                <li><a href="{{url('search/subject/Prophet-saws')}}">PROPHET-SAWS</span></a></li>
+                                <li><a href="{{url('search/subject/Sacred-months')}}">SACRED-MONTHS</span></a></li>
+                                <li><a href="{{url('search/subject/Advice')}}">ADVICE</a></li>
+                                <li><a href="{{url('search/subject/Awliyah-Allah')}}">AWLIYAH-ALLAH </span></a></li>
+                                <li><a href="{{url('search/subject/Benefits')}}">BENEFITS</span></a></li>
+                                <li><a href="{{url('search/subject/Calamities')}}">CALAMITIES</span></a></li>
+                                <li><a href="{{url('search/subject/Children-youth')}}">CHILDREN-YOUTH</a></li>
+                                <li><a href="{{url('search/subject/Current-affairs')}}">CURRENT-AFFAIRS</span></a></li>
+                                <li><a href="{{url('search/subject/Dajjal')}}">DAJJAL</span></a></li>
+                                <li><a href="{{url('search/subject/Dawah')}}">DAWAH</span></a></li>
+                                <li><a href="{{url('search/subject/Desires')}}">DESIRES</a></li>
+                                <li><a href="{{url('search/subject/Envy')}}">ENVY</span></a></li>
+                                <li><a href="{{url('search/subject/Ethics-manner')}}">ETHICS-MANNERS</span></a></li>
+                                <li><a href="{{url('search/subject/Evil')}}">EVIL</span></a></li>
+                                <li><a href="{{url('search/subject/Fatawa')}}">FATAWA</a></li>
+                                <li><a href="{{url('search/subject/Fitnah')}}">FITNAH</span></a></li>
+                                <li><a href="{{url('search/subject/Hajj-Umrah')}}">HAJJ-UMRAH</span></a></li>
+                                <li><a href="{{url('search/subject/Halal-o-Haram')}}">HALAL-o-HARAM</span></a></li>
+                                <li><a href="{{url('search/subject/Harram-Khutabhs')}}">HARRAM-KHUTABHs</span></a></li>
+                                <li><a href="{{url('search/subject/Hijab')}}">HIJAB</a></li>
+                                <li><a href="{{url('search/subject/History')}}">HISTORY </span></a></li>
+                                <li><a href="{{url('search/subject/Ilm-Ulama')}}">ILM-ULAMA</span></a></li>
+                                <li><a href="{{url('search/subject/Islam')}}">ISLAM</span></a></li>
+                                <li><a href="{{url('search/subject/Islamic History')}}">ISLAMIC HISTORY</a></li>
+                                <li><a href="{{url('search/subject/Janazah')}}">JANAZAH</span></a></li>
+                                <li><a href="{{url('search/subject/Kufr')}}">KUFR</span></a></li>
+                                <li><a href="{{url('search/subject/Modesty')}}">MODESTY</span></a></li>
+                                <li><a href="{{url('search/subject/Marriage-divorce')}}">MARRIAGE-DIVORCE</a></li>
+                                <li><a href="{{url('search/subject/Morals')}}">MORALS</span></a></li>
+                                <li><a href="{{url('search/subject/Parents')}}">PARENTS</span></a></li>
+                                <li><a href="{{url('search/subject/Prayers')}}">PRAYERS</span></a></li>
+                                <li><a href="{{url('search/subject/Prophet\'S-family')}}">PROPHET'S-FAMILY</a></li>
+                                <li><a href="{{url('search/subject/racism-injustice')}}">RACISM-INJUSTICE</span></a></li>
+                                <li><a href="{{url('search/subject/Relations')}}">RELATIONS</span></a></li>
+                                <li><a href="{{url('search/subject/Religions')}}">RELIGIONS</span></a></li>
+                                <li><a href="{{url('search/subject/Repentance')}}">REPENTANCE</a></li>
+                                <li><a href="{{url('search/subject/Rights')}}">RIGHTS</span></a></li>
+                                <li><a href="{{url('search/subject/Zakat-sadaq')}}">ZAKAT-SADAQAH</span></a></li>
+                                <li><a href="{{url('search/subject/Sahabah')}}">SAHABAH</span></a></li>
+                                <li><a href="{{url('search/subject/sects')}}">SECTS</a></li>
+                                <li><a href="{{url('search/subject/Seerah')}}">SEERAH</span></a></li>
+                                <li><a href="{{url('search/subject/Sharia')}}">SHARIA</span></a></li>
+                                <li><a href="{{url('search/subject/Shaytaan')}}">SHAYTAAN</span></a></li>
+                                <li><a href="{{url('search/subject/Sisters')}}">SISTERS</a></li>
+                                <li><a href="{{url('search/subject/Soul')}}">SOUL</span></a></li>
+                                <li><a href="{{url('search/subject/Sufism')}}">SUFISM</span></a></li>
+                                <li><a href="{{url('search/subject/Terrorism')}}">TERRORISM</span></a></li>
+                                <li><a href="{{url('search/subject/Warnings')}}">WARNINGS</a></li>
+                                <li><a href="{{url('search/subject/Waseela')}}">WASEELA</span></a></li>
                                 
                             </ul>
                         </div>
@@ -140,7 +121,7 @@
                         <h5 class="widget-sub-title" data-control>Sheikhs</h5>
                         <div class="widget_categories" data-content>
                             <ul>
-                                <li><a href="{{url('search-ulaamah/sheikh Quraish Mazinga')}}">sheikh Quraish Mazinga</span></a></li>
+                                <li><a href="{{url('search/sheikh/Saleh al Fawzan')}}">Sheikh Saleh al Fawzan</span></a></li>
                             </ul>
                         </div>
                 </div>

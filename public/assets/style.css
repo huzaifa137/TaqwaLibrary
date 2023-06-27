@@ -19281,3 +19281,27 @@ a:focus {
 #links-highlight {
   color: #3686ff;
 }
+
+
+.table-tabs .table thead:first-child tr:first-child th {
+  border-top: 1px solid #3686ff;
+}
+
+.table-tabs .table th {
+  background-color: #3686ff;
+  border-color: #3686ff;
+  border-top: 1px solid #3686ff;
+  color: #fff;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+td{
+  font-weight: bold;
+}
+
+.alignInfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

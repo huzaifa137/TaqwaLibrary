@@ -76,8 +76,6 @@ Route::get('Adhkar-After-Swalah',[BookController::class,'Adhkar_After_Swalah'])-
 Route::get('Famous-Duas-from-the-Quran',[BookController::class,'Famous_Duas_from_the_Quran'])->name('Famous-Duas-from-the-Quran');
 Route::get('Other-Duas',[BookController::class,'Other_Duas'])->name('Other-Duas');
 
-
-
 Route::get('adhkar-details/{id}',[BookController::class,'adhkarDetails'])->name('adhkar-details');
 Route::get('AllAdhkar',[BookController::class,'ShowAllAdhkar'])->name('AllAdhkar');
 
@@ -89,7 +87,7 @@ Route::post('add-post',[BookController::class,'add_post'])->name('add-post');
 Route::post('update-post',[BookController::class,'updateAdhkar'])->name('update-post');
 
 
-//AUDIO Page  routes
+//AUDIO Page  routes 
 
 Route::get('Ugandan-Sheikhs',[BookController::class,'AudioPage'])->name('Ugandan-Sheikhs');
 Route::get('Indvidual-Sheikh',[BookController::class,'IndividualSheikh'])->name('Indvidual-Sheikh');
@@ -111,4 +109,24 @@ Route::post('update-Audio',[BookController::class,'UpdateAudio'])->name('update-
 //Video Routes
 
 Route::get('All-videos',[BookController::class,'AllVideos'])->name('All-videos');
+Route::get('All-Admin-videos',[BookController::class,'AdminVideos'])->name('All-Admin-videos');
+Route::get('Edit-Video/{id}',[BookController::class,'EditVideo'])->name('Edit-Video');
+Route::get('delete-Video/{id}',[BookController::class,'deleteVideo']);
+Route::get('Add-video',[BookController::class,'AddVideo'])->name('Add-video');
 Route::get('Video-Details',[BookController::class,'VideoDetails'])->name('Video-Details');
+Route::get('search/subject/{keyword}',[BookController::class,'SearchSubject']);
+Route::get('search/sheikh/{keyword}',[BookController::class,'SearchSheikh']);
+Route::get('watch-video/{keyword}',[BookController::class,'WatchVideo']);
+Route::get('search-bar-video',[BookController::class,'SearchBarVideo'])->name('search-bar-video');
+Route::get('fetchRecordsVideo/{keyword}',[BookController::class,'fetchRecordsVideo'])->name('fetchRecordsVideo-link');
+
+Route::post('upload-video',[BookController::class,'uploadVideo'])->name('upload-video');
+Route::post('update-video',[BookController::class,'UpdateVideo'])->name('update-video');
+
+// Islamic Calendar
+Route::get('showDate',[BookController::class,'carbonDate']);
+
+
+//Quran Routes
+
+Route::get('Quran-Audio',[BookController::class,'QuranAudio'])->name('Quran-Audio');

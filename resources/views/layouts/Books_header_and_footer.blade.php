@@ -90,7 +90,7 @@
                                         <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('All-videos')}}">Videos</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="{{route('Ugandan-Sheikhs')}}">Ugandan Sheikhs</a></li>
+                                                <li><a href="{{route('All-videos')}}">Ugandan Sheikhs</a></li>
                                                 <li><a href="javascript:void(0);">Arabic Sheikhs</a></li>
                                                 <li><a href="javascript:void(0);">English Sheikhs</a></li>
                                             </ul>
@@ -108,31 +108,6 @@
                                         </li>
                                         <li><a href="{{route('about-us')}}">About us</a></li>
                                         <li><a href="{{route('contact')}}">Contact us</a></li>
-                                        {{-- <li class="dropdown">
-                                            <a data-toggle="dropdown" class="dropdown-toggle disabled" href="news-events-list-view.html">News &amp; Events</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="news-events-list-view.html">News &amp; Events List View</a></li>
-                                                <li><a href="news-events-detail.html">News &amp; Events Detail</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a data-toggle="dropdown" class="dropdown-toggle disabled" href="#">Pages</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="signin.html">Signin/Register</a></li>
-                                                <li><a href="404.html">404/Error</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a data-toggle="dropdown" class="dropdown-toggle disabled" href="blog.html">Blog</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="blog.html">Blog Grid View</a></li>
-                                                <li><a href="blog-detail.html">Blog Detail</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="contact.html">Contact</a></li> --}}
                                     </ul>
                                 </div>
                             </div>
@@ -166,6 +141,13 @@
                                         </ul>
                                     </li>
 
+                                    <li>
+                                        <a href="javascript:void()">Videos</a>
+                                        <ul>
+                                            <li><a id="links-highlight" href="{{route('All-videos')}}">Ugandan Sheikhs</a></li>
+                                        </ul>
+                                    </li>
+
                                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
                                         <i class="la la-book"></i>
                                         <span class="nav-text">dua and adhkar</span>
@@ -182,30 +164,6 @@
                                 </li>
                                     <li><a href="{{route('about-us')}}">About us</a></li>
                                     <li><a href="{{route('contact')}}">Contact us</a></li> 
-                                    {{-- <li>
-                                        <a href="news-events-list-view.html">News &amp; Events</a>
-                                        <ul>
-                                            <li><a href="news-events-list-view.html">News &amp; Events List View</a></li>
-                                            <li><a href="news-events-detail.html">News &amp; Events Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="signin.html">Signin/Register</a></li>
-                                            <li><a href="404.html">404/Error</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog Grid View</a></li>
-                                            <li><a href="blog-detail.html">Blog Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li> --}}
                                     
                                 </ul>
                             </div>
@@ -223,6 +181,13 @@
                     <h2>islamic-books</h2>
                     <span class="underline center"></span>
                     <p class="lead" style="color: white">Free Islamic Books, Quran, Dua & Adhkar, Arabic study, Islamic Audio and Islamic Videos</p>
+                    <?php 
+
+                     use Carbon\Carbon;
+                     $dt = Carbon::now();
+                     $dt->addDays(1);
+                    echo "<p style='color:#0088ff;'>" . $dt->toHijri()->isoFormat('LL') . " A.H.". "</p>" ;
+                    ?>
                 </div>
                 <div class="breadcrumb">
                     <ul>
@@ -444,7 +409,7 @@
                     <div id="text-2" class="widget widget_text">
                         <h3 class="footer-widget-title">About &nbsp; Taqwa Library</h3>
                         <span class="underline left"></span>
-                        <div class="textwidget">
+                        <div class="textwidget" style="text-align: justify">
                             We ask your Du’a for the Ulama, Scholars, Students of Knowledge, Authors and Speakers whose works have been posted on this website, and for us. May Allah سُبْحَانَهُۥ وَتَعَالَىٰ make this website beneficial for all.                         </div>
                         <address>
                             <div class="info">
@@ -470,6 +435,8 @@
                             <ul id="menu-quick-links" class="menu">
                                 <li><a href="{{route('home')}}">Home</a></li>
                                 <li><a href="{{('all')}}">Books</a></li>
+                                <li><a href="{{('All-videos')}}">Videos</a></li>
+                                <li><a href="{{('Ugandan-Sheikhs')}}">Audio</a></li>
                                 <li><a href="{{('morning-adhkar')}}">Dua & Adhkar</a></li>
                                 <li><a href="{{route('about-us')}}">About us</a></li>
                                 <li><a href="{{route('contact')}}">Contact us</a></li>
@@ -495,7 +462,7 @@
                         <div id="twitter-feed">
                             <ul>
                                 
-                                    <p>“The life of this world is made up of three days: yesterday has gone with all that was done; tomorrow, you may never reach; but today is for you so do what you should do today.” <br> <b> Imaam Hasan Al Basri</b></p>
+                                    <p style="text-align: justify">“The life of this world is made up of three days: yesterday has gone with all that was done; tomorrow, you may never reach; but today is for you so do what you should do today.” <br> <b> Imaam Hasan Al Basri</b></p>
                                     <br>
                                     <p style="font-size: 1.5em">اَلسَّلاَ مُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ</p>
                             </ul>
@@ -515,15 +482,11 @@
                     <ul>
                         <li><a href="{{route('home')}}">Home</a></li>
                         <li><a href="{{route('all')}}">BOOKS</a></li>
+                        <li><a href="{{('All-videos')}}">Videos</a></li>
+                        <li><a href="{{('Ugandan-Sheikhs')}}">Audio</a></li>
                         <li><a href="{{('morning-adhkar')}}">DUA & ADHKAR</a></li>
                         <li><a href="{{route('about-us')}}">ABOUT US</a></li>
                         <li><a href="{{route('contact')}}">Contact us</a></li>
-                        {{-- <li><a href="news-events-list-view.html">News &amp; Events</a></li>
-                        <li><a href="#">Kids &amp; Teens</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li> --}}
                     </ul>
                 </div>
             </div>

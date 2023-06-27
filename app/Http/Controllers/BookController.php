@@ -13,6 +13,7 @@ use App\Models\Adhkar;
 use App\Models\contact;
 use App\Models\Admin;
 use App\Models\Book;
+use App\Models\video;
 use Carbon\Carbon;
 
 
@@ -72,7 +73,7 @@ class BookController extends Controller
         {
             $data = Book::all();
 
-            return view('Adminpages.AllBooks',compact('data',$data));
+            return view('Adminpages.AllBooks',compact(['data']));
         }
 
         public function delete($id)
@@ -85,15 +86,15 @@ class BookController extends Controller
 
         public function updateRecord($id,Request $request)
         {
-             $info = Book::find($id);
+              $info = Book::find($id);
 
-             return view('Adminpages.EditBook',compact('info',$info));
+             return view('Adminpages.EditBook',compact(['info']));
         }
 
 
         public function update(Request $request)
         {
-              $post = Book::find($request->id);
+            $post = Book::find($request->id);
 
             $request->validate([
                 'author_name'=>'required',
@@ -148,13 +149,13 @@ class BookController extends Controller
         {
             
             $new_release = DB::table('books')->orderByDesc('id')->paginate(8);
-            return view('pages.home',compact('new_release',$new_release));  
+            return view('pages.home',compact(['new_release']));
         }
 
         public function AllBooksHome()
         {
              $data = Book::paginate(9);
-             return view('gridviews.Books',compact('data',$data));
+             return view('gridviews.Books',compact(['data']));
         }
 
         // Arabic , Luganda, English books collection.
@@ -162,19 +163,19 @@ class BookController extends Controller
         public function ArabicBooks()
         {
             $data = Book::where('Language','اللغة العربية')->paginate(9);
-            return view('gridviews.ArabicBooks',compact('data',$data));
+            return view('gridviews.ArabicBooks',compact(['data']));
         }
 
         public function EnglishBooks()
         {
             $data = Book::where('Language','English')->paginate(9);
-            return view('gridviews.EnglishBooks',compact('data',$data));
+            return view('gridviews.EnglishBooks',compact(['data']));
         }
 
         public function LugandaBooks()
         {
             $data = Book::where('Language','Luganda')->paginate(9);
-            return view('gridviews.EnglishBooks',compact('data',$data));
+            return view('gridviews.EnglishBooks',compact(['data']));
         }
 
         //Last , final page ---> view, download, find similar books.
@@ -182,19 +183,19 @@ class BookController extends Controller
         public function lastPage($id)
         {
             $data = Book::find($id);
-            return view('pages.book_details',compact('data',$data));
+            return view('pages.book_details',compact(['data']));
         }
 
         public function search_lastpage($id)
         {
             $data = Book::find($id);
-            return view('pages.book_details',compact('data',$data));
+            return view('pages.book_details',compact(['data']));
         }
 
         public function about_us()
         {
             $data = Book::paginate(4);
-            return view('gridviews.about',compact('data',$data));
+            return view('gridviews.about',compact(['data']));
         }
 
         public function download(Request $request,$Book_pdf)
@@ -206,7 +207,7 @@ class BookController extends Controller
         public function view($id)
         {
             $data = Book::find($id);
-            return view('pages.ViewBook',compact('data',$data));
+            return view('pages.ViewBook',compact(['data']));
         }
 
         public function login()
@@ -321,7 +322,7 @@ class BookController extends Controller
         public function contact_info()
         {
              $info = DB::table('contacts')->orderByDesc('id')->get();
-             return view('Adminpages.info_contact',compact('info',$info));
+             return view('Adminpages.info_contact',compact(['info']));
         }
 
         public function SendMessage(Request $request)
@@ -370,7 +371,7 @@ class BookController extends Controller
                                                   ->orWhere('Book_Name', 'like', '%'.$keyword.'%')
                                                   ->paginate(150);
               
-               return view('gridviews.result',compact('finalresult','data'));
+               return view('gridviews.result',compact(['finalresult','data']));
             }
             else if($keyword == null && $catagory1 != null && $catagory2 == null)
             {
@@ -388,7 +389,7 @@ class BookController extends Controller
                 
                 $data = Book::paginate(3);
                 $finalresult= DB::table('books')->where('Catagory', '')->get();
-                return view('gridviews.result1',compact('finalresult','data'));
+                return view('gridviews.result1',compact(['finalresult','data']));
             }
 
             else if($keyword == null && $catagory1 != null && $catagory2 != null){
@@ -450,7 +451,7 @@ class BookController extends Controller
         {
             $data = Book::paginate(3);
             $finalresult = Book::where('Catagory',$keyword)->paginate(9);
-            return view('gridviews.result',compact('finalresult','data'));
+            return view('gridviews.result',compact(['finalresult','data']));
         }
 
         public function search_Scholar($keyword)
@@ -458,7 +459,7 @@ class BookController extends Controller
     
             $data = Book::paginate(3);
             $finalresult = Book::where('Author_Name',$keyword)->paginate(9);
-            return view('gridviews.result',compact('finalresult','data'));
+            return view('gridviews.result',compact(['finalresult','data']));
         }
 
         // DUA AND ADHKAR SECTION
@@ -513,43 +514,43 @@ class BookController extends Controller
         {
 
             $data = Adhkar::where('dua_catagory','MORNING')->get();
-            return view('Adhkar.morning',compact('data',$data));
+            return view('Adhkar.morning',compact(['data']));
         }
 
         public function evening_adhkar()
         {
             $data = Adhkar::where('dua_catagory','EVENING')->get();
-            return view('Adhkar.evening',compact('data',$data));
+            return view('Adhkar.evening',compact(['data']));
         }
 
         public function Adhkar_After_Swalah()
         {
             $data = Adhkar::where('dua_catagory','Adhkar After Swalah')->get();
-            return view('Adhkar.AdhkarAfterSwalah',compact('data',$data));
+            return view('Adhkar.AdhkarAfterSwalah',compact(['data']));
         }
 
         public function Famous_Duas_from_the_Quran()
         {
             $data = Adhkar::where('dua_catagory','Famous Duas From Quran')->get();
-            return view('Adhkar.FamousQuranicDuas',compact('data',$data));
+            return view('Adhkar.FamousQuranicDuas',compact(['data']));
         }
 
         public function Other_Duas()
         {
             $data = Adhkar::where('dua_catagory','Other Duas')->get();
-            return view('Adhkar.Other_Duas',compact('data',$data));
+            return view('Adhkar.Other_Duas',compact(['data']));
         }
 
         public function adhkarDetails($id)
         {
             $data = Adhkar::find($id);
-            return view('Adhkar.adhkarDetails',compact('data',$data));
+            return view('Adhkar.adhkarDetails',compact(['data']));
         }
 
         public function ShowAllAdhkar()
         {
             $data = Adhkar::all();
-            return view('Adhkar.AllAdhkar',compact('data',$data));
+            return view('Adhkar.AllAdhkar',compact(['data']));
         }
 
         public function deleteAdhkar($id)
@@ -565,7 +566,7 @@ class BookController extends Controller
         {
             $data =  Adhkar::find($id);
 
-            return view('Adhkar.EditAdhkar',compact('data',$data));
+            return view('Adhkar.EditAdhkar',compact(['data']));
         }
 
         public function updateAdhkar(Request $request)
@@ -688,7 +689,7 @@ class BookController extends Controller
     public function EditAudio(Request $request)
     {
         $data = Audio::find($request->id);
-        return view('Audio.EditAudio',compact('data',$data));
+        return view('Audio.EditAudio',compact(['data']));
     }
 
     public function UpdateAudio(Request $request)
@@ -732,10 +733,201 @@ class BookController extends Controller
 // Video Configurations.
 
     public function AllVideos(){
-        return view('Videos.AllVideos');
+        
+        $data = video::all();
+        return view('Videos.AllVideos',compact(['data']));
     }
+
+    public function AdminVideos(){
+
+        $data = Video::all();
+        return view('Videos.AllAdminVideos',compact(['data']));
+    }
+
 
     public function VideoDetails(){
         return view('Videos.VideoDetails');
     }
+
+    public function AddVideo(){
+        return view('Videos.AddVideo');
+    }
+
+    public function EditVideo(Request $request)
+    {
+        $data = Video::find($request->id);
+        return view('Videos.EditVideo',compact(['data']));
+    }
+
+    
+    public function deleteVideo($id){
+        $data = Video::find($id);
+        $data->delete();
+
+        return redirect()->back()->with('success','Video has been Deleted successfully');
+    }
+
+    public function UpdateVideo(Request $request){
+
+        $request->validate([
+            'sheikh_name'=>'required',
+            'topic'=>'required',
+            'Summary'=>'required',
+            'video_link'=>'required',
+            'Catagory'=>'required',
+        ]);
+
+        $post = Video::find($request->id);
+
+        $post->sheikh_name = $request->sheikh_name;
+        $post->topic = $request->topic;
+        $post->Summary = $request->Summary;
+        $post->video_link = $request->video_link;
+        $post->Catagory=$request->Catagory;
+        $post->save();
+
+        return redirect()->back()->with('success','Video has been Updated successfully');
+    }
+
+
+    public function uploadVideo(Request $request){
+
+        $request->validate([
+            'sheikh_name'=>'required',
+            'topic'=>'required',
+            'Summary'=>'required',
+            'video_link'=>'required',
+            'Catagory'=>'required',
+        ]);
+
+        $post = new video();
+
+        $post->sheikh_name = $request->sheikh_name;
+        $post->topic = $request->topic;
+        $post->Summary = $request->Summary;
+        $post->video_link = $request->video_link;
+        $post->Catagory=$request->Catagory;
+        $post->save();
+
+        return redirect()->back()->with('success','Video has been uploaded successfully');
+    }
+
+
+    public function SearchSubject($keyword)
+    {
+        $finalresult = video::where('Catagory',$keyword)->get();
+        return view('Videos.CatagoryResult',compact(['finalresult']));
+    }
+
+    public function SearchSheikh($keyword){
+
+        $finalresult =  DB::table('videos')->where('sheikh_name', 'like', '%'.$keyword.'%')->get();
+        return view('Videos.CatagoryResult2',compact(['finalresult']));
+    }
+
+
+    public function WatchVideo($id)
+    {
+        $data = video::find($id);
+        return view('Videos.VideoDetails',compact(['data']));
+    }
+
+
+    public function SearchBarVideo(Request $request)
+    {
+             $keyword =$request->keyword;
+             $catagory1 =$request->Catagory1;
+             $catagory2 =$request->Catagory2;
+
+            if($keyword != null && $catagory1 == null && $catagory2 == null)
+            {   
+                
+                $data = video::paginate(3);
+
+                $finalresult =  DB::table('videos')->where('Catagory', 'like', '%'.$keyword.'%')
+                                                  ->orWhere('sheikh_name', 'like', '%'.$keyword.'%')
+                                                  ->paginate(500);
+              
+               return view('Videos.CatagoryResult',compact(['finalresult']));
+            }
+            else if($keyword == null && $catagory1 != null && $catagory2 == null)
+            {
+                $value = $catagory1;
+                return $this->fetchRecordsVideo($value);
+            }
+
+            else if($keyword == null && $catagory1 == null && $catagory2 != null)
+            {
+                $value = $catagory2;
+                return $this->fetchRecordsVideo($value);
+            }
+            else if($keyword == null && $catagory1 == null && $catagory2 == null){
+                
+                $finalresult= DB::table('videos')->get();
+                return view('Videos.CatagoryResult',compact(['finalresult']));
+            }
+
+            else if($keyword == null && $catagory1 != null && $catagory2 != null){
+                
+                if($catagory1 === $catagory2)
+                {
+                     $value = $catagory2;
+                    return $this->fetchRecordsVideo($value);
+                }
+                
+                $catagory1 = collect(DB::table('videos')->where('Catagory',$catagory1)->get());
+                $catagory2 = collect(DB::table('videos')->where('Catagory',$catagory2)->get());
+                
+                $result=$catagory1->merge($catagory2);
+                $finalresult = $result->all();
+
+                return view('Videos.CatagoryResult',compact(['finalresult']));
+            }
+            else{
+
+                if($catagory1 === $catagory2)
+                {
+                    $keyword = collect(DB::table('videos')->where('Catagory', 'like', '%'.$keyword.'%')
+                                ->orWhere('sheikh_name', 'like', '%'.$keyword.'%')->get());      
+
+                    $catagory1 = collect(DB::table('videos')->where('Catagory',$catagory1)->get());
+
+                    $result=$keyword->merge($catagory1);
+                    $finalresult = $result->all();
+
+                    return view('Videos.CatagoryResult',compact(['finalresult']));
+                }
+   
+                $keyword = collect(DB::table('videos')->where('Catagory', 'like', '%'.$keyword.'%')
+                                ->orWhere('sheikh_name', 'like', '%'.$keyword.'%')->get());      
+
+                 $catagory1 = collect(DB::table('videos')->where('Catagory',$catagory1)->get());
+                 $catagory2 = collect(DB::table('videos')->where('Catagory',$catagory2)->get());
+                
+                $all=$keyword->merge($catagory1);
+                $result=$all->merge($catagory2);
+
+                 $finalresult = $result->all();
+     
+                 return view('Videos.CatagoryResult',compact(['finalresult']));
+
+            }
+        }
+
+        public function fetchRecordsVideo($value)
+        {
+             return redirect('search/subject/'.$value);
+        }
+
+        public function carbonDate(){
+
+            $dt = Carbon::now();
+            echo $dt->toHijri()->isoFormat('LL');
+        }
+    
+        //Implementation of Quran
+
+        public function QuranAudio(){
+            return view('Quran.QuranAudio');
+        }
 }

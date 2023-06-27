@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pod Talk - Free Bootstrap 5 CSS Template</title>
+    <title>..:: Taqwa Library Audios ::..</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +28,7 @@
    <link rel="stylesheet" href="/audio_assets/css/owl.theme.default.min.css">  
 
     <link href="/audio_assets/css/templatemo-pod-talk.css" rel="stylesheet">
+    
 
 </head>
 

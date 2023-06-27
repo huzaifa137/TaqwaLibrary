@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pod Talk - Free Bootstrap 5 CSS Template</title>
+    <title>..:: Taqwa Library Audios ::..</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -260,6 +260,10 @@
     
                             <li class="site-footer-link-item">
                                 <a href="{{route('all')}}" class="site-footer-link">Books</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="{{route('All-videos')}}" class="site-footer-link">Videos</a>
                             </li>
     
                             <li class="site-footer-link-item">

@@ -8,6 +8,15 @@
                     <h2>Adhkar Details</h2>
                     <span class="underline center"></span>
                     <p id="ayat-header">ٱلَّذِينَ ءَامَنُوا۟ وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ ٱللَّهِ ۗ أَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ ۱۳:۲۸</p>
+                    
+                    <?php 
+
+                     use Carbon\Carbon;
+                     $dt = Carbon::now();
+                     $dt->addDays(1);
+                    echo "<p style='color:#0088ff;'>" . $dt->toHijri()->isoFormat('LL') . " A.H.". "</p>" ;
+                    ?>
+                
                 </div>
                 <div class="breadcrumb">
                     <ul>

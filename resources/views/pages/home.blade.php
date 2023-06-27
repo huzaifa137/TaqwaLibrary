@@ -152,6 +152,13 @@
                                         </ul>
                                     </li>
 
+                                    <li>
+                                        <a href="javascript:void()">Videos</a>
+                                        <ul>
+                                            <li><a id="links-highlight" href="{{route('All-videos')}}">Ugandan Sheikhs</a></li>
+                                        </ul>
+                                    </li>
+
                                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
                                         <i class="la la-book"></i>
                                         <span class="nav-text">dua and adhkar</span>
@@ -217,7 +224,8 @@
                         <div class="carousel-caption">
                             <h2 style="color: white" class="Basmallah">بسم الله الرحمن الرحيم</h2>
                             <h2>You're Welcome to Taqwa Library !</h2>
-                            <p >Taqwa Library gives you access to free <strong>Islamic Books,</strong> <strong>Quran,</strong> <strong>Dua & Adhkar,</strong> <strong>Arabic study,</strong><strong> Islamic Audio and Islamic Videos</strong></p>
+                            <p>Taqwa Library gives you access to free <strong>Islamic Books,</strong> <strong>Quran,</strong> <strong>Dua & Adhkar,</strong> <strong>Arabic study,</strong><strong>Islamic Audio and Islamic Videos</strong></p>
+
                             <div class="filter-box">
                                 <form action="{{route('search-bar')}}" class="banner-filter-box" method="get">
                                     <div class="form-group">
@@ -408,7 +416,7 @@
                             <div class="feature-box">
                                 <i class="yellow"></i>
                                 <h3>Islamic Books</h3>
-                                <p>We have a collection of free islamic books from authentic scholars in pdf, doc and other formats to be downloaded freely.</p>
+                                <p style="text-align: justify">We have a collection of free islamic books from authentic scholars in pdf, doc and other formats to be downloaded freely.</p>
             
                             </div>
                         </li>
@@ -416,7 +424,7 @@
                             <div class="feature-box">
                                 <i class="light-green"></i>
                                 <h3>Quran</h3>
-                                <p>We have Quran in different formats of audio, pdf, doc and others to be read , listened online and even download freely.</p>
+                                <p style="text-align: justify">We have Quran in different formats of audio, pdf, doc and others to be read , listened online and even download freely.</p>
                                
                             </div>
                         </li>
@@ -424,7 +432,7 @@
                             <div class="feature-box">
                                 <i class="blue"></i>
                                 <h3>Dua & Adhkar</h3>
-                                <p>We have a collection of different authentic dua and Adhkar in pdf, doc and other formats to be downloaded freely.</p>
+                                <p style="text-align: justify">We have a collection of different authentic dua and Adhkar in pdf, doc and other formats to be downloaded freely.</p>
                                 
                             </div>
                         </li>
@@ -432,7 +440,7 @@
                             <div class="feature-box">
                                 <i class="red"></i>
                                 <h3>Arabic study</h3>
-                                <p>were working on a basic and most interactive way for beginners to learn Arabic and start reciting the holy Quran with ease.</p>
+                                <p style="text-align: justify">were working on a basic and most interactive way for beginners to learn Arabic and start reciting the holy Quran with ease.</p>
                                
                             </div>
                         </li>
@@ -440,7 +448,7 @@
                             <div class="feature-box">
                                 <i class="violet"></i>
                                 <h3>islamic Audio</h3>
-                                <p>We Have in library a collection of different islamic authentic audio's and podcasts to be listened online and downloaded freely.</p>
+                                <p style="text-align: justify">We Have in library a collection of different islamic authentic audio's and podcasts to be listened online and downloaded freely.</p>
                                 
                             </div>
                         </li>
@@ -448,7 +456,7 @@
                             <div class="feature-box">
                                 <i class="green"></i>
                                 <h3>islamic Videos</h3>
-                                <p>We Have in library a collection of different islamic authentic videos's and series to be viewed online and downloaded freely.</p>
+                                <p style="text-align: justify">We Have in library a collection of different islamic authentic videos's and series to be viewed online and downloaded freely.</p>
                                 
                             </div>
                         </li>
@@ -467,7 +475,7 @@
                             <div class="welcome-text">
                               <h2 class="section-title"  >Welcome to TAQWA LIBRARY</h2>
                                 <span class="underline left"></span>
-                                <p> <b> Bismillaahi Rahmaan Raheem</b> – In the Name of Allāh, the Beneficent, the Merciful. <br> <br> Praise be to Allah سُبْحَانَهُۥ وَتَعَالَ, and the peace and blessings of Allah be upon the noble Messenger, his family, companions and those who follow them upon excellence till the day of judgement. <br> <br> Taqwa Library has been created to disseminate authentic and beneficial knowledge from Salafi Scholars and Students based on the Blessed and Moderate Methodology of the Sahabah, Taabi’een and Atbaa’ At-Tabi’een. We reject all forms of extremism and religious fanaticism in the name of Salfiyah. We also reject speech from hasty youth who are causing divisions among Salafi communities and rejecting advice of the Scholars. We love and respect our Noble Scholars, past and present, for the sake of Allah سُبْحَانَهُۥ وَتَعَالَ, Who blessed them with knowledge of His Book and Sunnah of the Prophet صلى الله عليه وسلم, and we shall continue to propagate their work, Insh'a Allah. <br>
+                                <p style="text-align:justify"> <b> Bismillaahi Rahmaan Raheem</b> – In the Name of Allāh, the Beneficent, the Merciful. <br> <br> Praise be to Allah سُبْحَانَهُۥ وَتَعَالَ, and the peace and blessings of Allah be upon the noble Messenger, his family, companions and those who follow them upon excellence till the day of judgement. <br> <br> Taqwa Library has been created to disseminate authentic and beneficial knowledge from Salafi Scholars and Students based on the Blessed and Moderate Methodology of the Sahabah, Taabi’een and Atbaa’ At-Tabi’een. We reject all forms of extremism and religious fanaticism in the name of Salfiyah. We also reject speech from hasty youth who are causing divisions among Salafi communities and rejecting advice of the Scholars. We love and respect our Noble Scholars, past and present, for the sake of Allah سُبْحَانَهُۥ وَتَعَالَ, Who blessed them with knowledge of His Book and Sunnah of the Prophet صلى الله عليه وسلم, and we shall continue to propagate their work, Insh'a Allah. <br>
                                   </p>
                                 <a class="btn btn-dark-gray" href="{{route('about-us')}}">Read More</a>
                             </div>
@@ -627,7 +635,7 @@
                 <div class="text-center">
                     <h2 class="section-title">HADITH</h2>
                     <span class="underline center"></span>
-                    <span id="hadith_intro"><strong>  Abu Hurairah (رضي الله عنه)reported:The Messenger of Allah (ﷺ) said,“The world, with all that it contains, is accursed except for the remembrance of Allah that which pleases Allah; and the religious schools and seekers of knowledge.” </strong></p></span>
+                    <span id="hadith_intro" ><strong>  Abu Hurairah (رضي الله عنه)reported:The Messenger of Allah (ﷺ) said,“The world, with all that it contains, is accursed except for the remembrance of Allah that which pleases Allah; and the religious schools and seekers of knowledge.” </strong></p></span>
                 </div>
                 <div class="owl-carousel">
                     <div class="single-testimonial-box">
@@ -635,8 +643,8 @@
                             <img src="/assets/images/testimonial-01.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
-                                <blockquote cite="javascript:void()">
-                                    <strong>Abu Huraira reported Allah’s Messenger (ﷺ) as saying:</strong>
+                                <blockquote cite="javascript:void()" style="text-align: justify">
+                                    <strong >Abu Huraira reported Allah’s Messenger (ﷺ) as saying:</strong>
                                     (When) the time would draw close to the Last Hour, knowledge would be snatched away, turmoil would be rampant, miserliness would be put (in the hearts of the people) and therewould be much blotshed. They said: What is al-harj? Thereupon he said: It is bloodshed.
                                 </blockquote>
                             </div>
@@ -656,7 +664,7 @@
                             <img src="/assets/images/testimonial-02.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
-                                <blockquote cite="javascript:void()">
+                                <blockquote cite="javascript:void()" style="text-align: justify">
                                     <strong>A’ishah (رضي الله عنه)  narrated that the Prophet (ﷺ) said : </strong> <br>
                                     One who is proficient in reciting the Qur’an is associated with the noble, pious (angel) scribes. As for he who stammers when reciting the Qur’an and find it difficult for him, he will be granted a double reward
                                 </blockquote>
@@ -677,7 +685,7 @@
                             <img src="/assets/images/testimonial-01.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
-                                <blockquote cite="javascript:void()"> 
+                                <blockquote cite="javascript:void()" style="text-align: justify"> 
                                     <strong>Abu Hurairah (رضي الله عنه)  reported : </strong> <br> <br>
                                     O Messenger of Allah! Who is most deserving of my fine treatment?" He (ﷺ) said, "Your mother, then your mother, then your mother, then your father, then your nearest, then nearest". <br> <br>
                                 </blockquote>
@@ -698,7 +706,7 @@
                             <img src="/assets/images/testimonial-02.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
-                                <blockquote cite="javascript:void()">
+                                <blockquote cite="javascript:void()" style="text-align: justify">
                                     <strong>Ibn Abbas  (رضي الله عنه)  reported : Allah's Messenger (ﷺ) said : </strong>
                                     A woman who has been previously married (Thayyib) has more right to her person than her guardian.And a virgin should also be consulted, and her silence implies her consent. <br> <br> 
                                 </blockquote>
@@ -719,7 +727,7 @@
                             <img src="/assets/images/testimonial-01.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
-                                <blockquote cite="javascript:void()">
+                                <blockquote cite="javascript:void()" style="text-align: justify">
                                     <strong>Narrated Anas:  (رضي الله عنه)  The Prophet (ﷺ) said: </strong> <br> <br> 
                                     A Muslim whose three children die before the age of puberty will be granted Paradise by Allah due to his mercy for them. <br> <br>
                                 </blockquote>
@@ -740,7 +748,7 @@
                             <img src="/assets/images/testimonial-02.jpg" alt="Testimonial Image" />
                             <div class="user-comment">
                                 <div class="arrow-left"></div>
-                                <blockquote cite="javascript:void()">
+                                <blockquote cite="javascript:void()" style="text-align: justify">
                                     <strong>Narrated Abu Huraira:  (رضي الله عنه)  The Prophet (ﷺ) said: </strong>
                                     Allah says, ‘Spend, O son of Adam, and I shall spend on you. The right hand of Allah is full and overflowing and in nothing would diminish it, by overspending day and night. <br> <br> 
                                 </blockquote> 
@@ -771,7 +779,7 @@
                     <div id="text-2" class="widget widget_text">
                         <h3 class="footer-widget-title">About &nbsp; Taqwa Library</h3>
                         <span class="underline left"></span>
-                        <div class="textwidget">
+                        <div class="textwidget" style="text-align: justify">
                             We ask your Du’a for the Ulama, Scholars, Students of Knowledge, Authors and Speakers whose works have been posted on this website, and for us. May Allah سُبْحَانَهُۥ وَتَعَالَىٰ make this website beneficial for all.                         </div>
                         <address>
                             <div class="info">
@@ -797,6 +805,7 @@
                             <ul id="menu-quick-links" class="menu">
                                 <li><a href="{{route('home')}}">Home</a></li>
                                 <li><a href="{{('all')}}">Books</a></li>
+                                <li><a href="{{('All-videos')}}">Videos</a></li>
                                 <li><a href="{{route('Ugandan-Sheikhs')}}">Audios</a></li>
                                 <li><a href="{{('morning-adhkar')}}">Dua & Adhkar</a></li>
                                 <li><a href="{{route('about-us')}}">About us</a></li>
@@ -822,8 +831,7 @@
                         <span class="underline left"></span>
                         <div id="twitter-feed">
                             <ul>
-                                
-                                    <p>“The life of this world is made up of three days: yesterday has gone with all that was done; tomorrow, you may never reach; but today is for you so do what you should do today.” <br> <b> Imaam Hasan Al Basri</b></p>
+                                    <p style="text-align: justify">“The life of this world is made up of three days: yesterday has gone with all that was done; tomorrow, you may never reach; but today is for you so do what you should do today.” <br> <b> Imaam Hasan Al Basri</b></p>
                                     <br>
                                     <p style="font-size: 1.5em">اَلسَّلاَ مُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ</p>
                             </ul>
@@ -843,6 +851,7 @@
                     <ul>
                         <li><a href="{{route('home')}}">Home</a></li>
                         <li><a href="{{route('all')}}">BOOKS</a></li>
+                        <li><a href="{{route('All-videos')}}">VIDEOS</a></li>
                         <li><a href="{{route('Ugandan-Sheikhs')}}">AUDIOS</a></li>
                         <li><a href="{{route('morning-adhkar')}}">Dua & Adhkar</a></li>
                         <li><a href="{{route('about-us')}}">ABOUT US</a></li>

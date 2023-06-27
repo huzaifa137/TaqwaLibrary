@@ -120,6 +120,18 @@
                     
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="la la-camera"></i>
+                            <span class="nav-text">Videos</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{route('All-Admin-videos')}}">All Videos</a></li>
+                            <li><a href="{{route('Add-video')}}">Add Video</a></li>
+                        </ul>
+                  </li>
+
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
                             <i class="la la-music"></i>
                             <span class="nav-text">Audios</span>
                         </a>
@@ -130,7 +142,7 @@
                   </li>
 
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <i class="la la-eye"></i>
+                        <i class="la la-heart"></i>
                         <span class="nav-text">Dua &  Adhkar</span>
                     </a>
                     <ul aria-expanded="false">
@@ -161,7 +173,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="javascript:void()">TaqwaLibrary</a> 2023</p>
+                <p>Copyright © Designed &amp; Developed by <a href="javascript:void()">TechSateUganda</a> 2023</p>
             </div>
         </div>
         <!--**********************************

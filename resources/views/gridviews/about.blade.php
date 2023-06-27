@@ -8,6 +8,15 @@
                     <h2>Our Services</h2>
                     <span class="underline center"></span>
                     <p class="lead" style="color: #fff">Access free Islamic Books, Quran, Dua & Adhkar, Arabic study, Islamic Audio and Islamic Videos</p>
+                    
+                    <?php 
+
+                     use Carbon\Carbon;
+                     $dt = Carbon::now();
+                     $dt->addDays(1);
+                    echo "<p style='color:#0088ff;'>" . $dt->toHijri()->isoFormat('LL') . " A.H.". "</p>" ;
+                    ?>
+                
                 </div>
                 <div class="breadcrumb">
                     <ul>
@@ -179,9 +188,9 @@
                                                         <div class="company-detail">
                                                             <h3 class="section-title">Who we are</h3>
                                                             <span class="underline left"></span>
-                                                            <p> Our Da'wah (call/ preaching) is established upon Kitaab (the book of Allah) and The Sunnah (Authentic traditions of prophet Muhammad) according to the understanding of The Salaf (righteous predecessors of this Ummah). What they considered to be first and foremost in their da'wah is what is first and foremost in our da'wah. It's nothing else but "Tauhiid", singling out Allah, in His Lordship (Rubuubiyyah), His sole right to be worshipped (Uluuhiyyah) and His perfect names and attributes (Asmaa' wa Asswifaat).</p> <p> Kindly contact us immediately if you find any material contradicting the Quran and the Sunnah or if you come across any errors due to our ignorance and lack of Islamic knowledge. </p>
-                                                            <p>Taqwa Library does not have specific types of members based upon allegiance, identity card, tribe, region, sect, or anything else. Rather, we consider everyone who is pleased with Allah as Lord, with Islam as a religion, and with Muhammad صلى الله عليه وسلم as a Prophet, to automatically be a member of the organization and deserving of the organization’s services. <br> <br> We reject hizbiyyah, (partisanship) and disunity, and we call everyone to be part of the saved sect; To adhere to the Qur'an and the Sunnah according to the understanding of the pious predecessors of this Ummah. </p>
-                                                            <p>This is <b> not-for-profit</b> website and all material contained within this website is published free of charge and in their original format for spreading Islamic knowledge.</p>
+                                                            <p style="text-align: justify"> Our Da'wah (call/ preaching) is established upon Kitaab (the book of Allah) and The Sunnah (Authentic traditions of prophet Muhammad) according to the understanding of The Salaf (righteous predecessors of this Ummah). What they considered to be first and foremost in their da'wah is what is first and foremost in our da'wah. It's nothing else but "Tauhiid", singling out Allah, in His Lordship (Rubuubiyyah), His sole right to be worshipped (Uluuhiyyah) and His perfect names and attributes (Asmaa' wa Asswifaat).</p> <p style="text-align: justify"> Kindly contact us immediately if you find any material contradicting the Quran and the Sunnah or if you come across any errors due to our ignorance and lack of Islamic knowledge. </p>
+                                                            <p style="text-align: justify">Taqwa Library does not have specific types of members based upon allegiance, identity card, tribe, region, sect, or anything else. Rather, we consider everyone who is pleased with Allah as Lord, with Islam as a religion, and with Muhammad صلى الله عليه وسلم as a Prophet, to automatically be a member of the organization and deserving of the organization’s services. <br> <br> We reject hizbiyyah, (partisanship) and disunity, and we call everyone to be part of the saved sect; To adhere to the Qur'an and the Sunnah according to the understanding of the pious predecessors of this Ummah. </p>
+                                                            <p style="text-align: justify">This is <b> not-for-profit</b> website and all material contained within this website is published free of charge and in their original format for spreading Islamic knowledge.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -242,9 +251,9 @@
                                                         <div class="company-detail bg-dark margin-left">
                                                             <h3 class="section-title">DISCLAIMER</h3>
                                                             <span class="underline left"></span>
-                                                            <p>All books and lectures here within are provided purely for educational and research purposes, please do not abuse this service by using it for commercial purposes. Give credit to the original content creators and only redistribute in its original format. Everything has been collected from free internet and individual sources.</p>
-                                                            <p>We ask your Du’a for the Ulama, Scholars, Students of Knowledge, Authors and Speakers whose works have been posted on this website, and for us. May Allah سُبْحَانَهُۥ وَتَعَالَىٰ make this website beneficial for all. May Allah سُبْحَانَهُۥ وَتَعَالَىٰ Help us in this challenging task to spread His Deen, as practiced by the Sahabah and Tabe’ein to seek His Pleasure.</p>
-                                                            <b><p>May Allah سُبْحَانَهُۥ وَتَعَالَىٰ the Most High, grants this project His Acceptance and success and reward our Scholars, Parents, Families, ourselves and Readers in the Hereafter, Allahuma Amin!</p></b> 
+                                                            <p style="text-align: justify">All books and lectures here within are provided purely for educational and research purposes, please do not abuse this service by using it for commercial purposes. Give credit to the original content creators and only redistribute in its original format. Everything has been collected from free internet and individual sources.</p>
+                                                            <p style="text-align: justify">We ask your Du’a for the Ulama, Scholars, Students of Knowledge, Authors and Speakers whose works have been posted on this website, and for us. May Allah سُبْحَانَهُۥ وَتَعَالَىٰ make this website beneficial for all. May Allah سُبْحَانَهُۥ وَتَعَالَىٰ Help us in this challenging task to spread His Deen, as practiced by the Sahabah and Tabe’ein to seek His Pleasure.</p>
+                                                            <b><p style="text-align: justify">May Allah سُبْحَانَهُۥ وَتَعَالَىٰ the Most High, grants this project His Acceptance and success and reward our Scholars, Parents, Families, ourselves and Readers in the Hereafter, Allahuma Amin!</p></b> 
                                                             <a href="#." class="btn btn-primary">Donate</a>
                                                         </div>
                                                     </div>
@@ -256,10 +265,10 @@
                                                         <div class="company-detail bg-light margin-right">
                                                             <h3 class="section-title">COPYRIGHT</h3>
                                                             <span class="underline left"></span>
-                                                            <p>This site may contain images, books, audio and video content delivered to our audience. Some of these maybe copyrighted materials the use of which has not been specifically authorized by the copyright owners.</p>
-                                                            <p>Taqwa Library is making such material available in our effort to advance understanding of Islam and Prophetic teachings among the Muslim brothers and sisters we do not own nor create some of this content.</p>
-                                                            <p>We do believe this constitutes a "Fair Use" of any such copyrighted material however would you wish to have any of your work removed from our site, please inform us and we will remove it immediately. Provide legal proof of your right to demand removal. If verified, the material will be removed immediately. Feel free to email us at <span><a href="mailto:Taqwalibrary123@gmail.com">Taqwalibrary123@gmail.com</a></span>  to raise your complaint.</p>
-                                                            <b><p>All credits go to their rightful owners.</p></b>
+                                                            <p style="text-align: justify">This site may contain images, books, audio and video content delivered to our audience. Some of these maybe copyrighted materials the use of which has not been specifically authorized by the copyright owners.</p>
+                                                            <p style="text-align: justify">Taqwa Library is making such material available in our effort to advance understanding of Islam and Prophetic teachings among the Muslim brothers and sisters we do not own nor create some of this content.</p>
+                                                            <p style="text-align: justify">We do believe this constitutes a "Fair Use" of any such copyrighted material however would you wish to have any of your work removed from our site, please inform us and we will remove it immediately. Provide legal proof of your right to demand removal. If verified, the material will be removed immediately. Feel free to email us at <span><a href="mailto:Taqwalibrary123@gmail.com">Taqwalibrary123@gmail.com</a></span>  to raise your complaint.</p>
+                                                            <b><p style="text-align: justify">All credits go to their rightful owners.</p></b>
                                                             <a href="javascript:void()" class="btn btn-dark-gray">Donate</a>
                                                         </div>
                                                     </div>
