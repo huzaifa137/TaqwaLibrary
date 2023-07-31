@@ -29,6 +29,8 @@
 
     <link href="/audio_assets/css/templatemo-pod-talk.css" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link href="/assets/images/libraria-logo-v3.png" rel="icon" type="image/x-icon" />
 </head>
 
 <body>

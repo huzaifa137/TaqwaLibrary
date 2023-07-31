@@ -6,14 +6,15 @@ use Illuminate\Support\Facades\Stroage;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use App\Models\Audio;
-use App\Models\Adhkar;
+use Illuminate\Support\Str;
 use App\Models\contact;
+use App\Models\Adhkar;
+use App\Models\Audio;
+use App\Models\video;
+use App\Models\Quran;
 use App\Models\Admin;
 use App\Models\Book;
-use App\Models\video;
 use Carbon\Carbon;
 
 
@@ -930,4 +931,48 @@ class BookController extends Controller
         public function QuranAudio(){
             return view('Quran.QuranAudio');
         }
+
+        public function SpecificReciter($name){
+            
+            $IndividualQuranReciters = Quran::where('ScholarName',$name)->get();
+
+            return view('Quran.Surah')->with('IndividualQuranReciters',$IndividualQuranReciters)->with('name',$name);
+        }
+
+
+        public function AddQuran(){
+            return view('Quran.UploadQuran');
+        }
+
+        public function UploadQuranAudio(Request $request){
+
+            $request->validate([
+                'SurahName'=>'required',
+                'ScholarName'=>'required',
+                'QuranAudio'=>'required|file|mimes:mp3,ogg',
+            ]);
+
+            $post = new Quran();  
+
+            $post->SurahName = $request->SurahName;
+            $post->ScholarName = $request->ScholarName;
+
+            $file = $request->QuranAudio;
+            $filename=date('YmdHi').'.'.$file->getClientOriginalExtension();
+            $file->move('quran_audios',$filename);
+            $post['QuranAudio']=$filename;
+            
+            $save=$post->save();
+           
+            if($save){
+                return redirect()->back()->with('success','Quranic Audio has been uploaded Successfully');
+            }
+            else{
+                echo "Data has not been stored !!!";
+            }
+        }
+
+        public function downloadQuran(Request $request,$audio){
+            return response()->download(public_path('quran_audios/'.$audio));
+    }
 }

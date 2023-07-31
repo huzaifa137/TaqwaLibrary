@@ -130,3 +130,8 @@ Route::get('showDate',[BookController::class,'carbonDate']);
 //Quran Routes
 
 Route::get('Quran-Audio',[BookController::class,'QuranAudio'])->name('Quran-Audio');
+Route::get('surah/{name}',[BookController::class,'SpecificReciter'])->name('surah');
+Route::get('/download-Quran/{file}',[BookController::class,'downloadQuran']);
+
+Route::get('Add-Quran',[BookController::class,'AddQuran'])->name('Add-Quran');
+Route::post('upload-Quran',[BookController::class,'UploadQuranAudio'])->name('upload-Quran');

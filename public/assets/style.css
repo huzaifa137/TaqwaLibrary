@@ -19305,3 +19305,16 @@ td{
   justify-content: center;
   align-items: center;
 }
+
+
+@media (max-width: 575.98px) { 
+    .comment-author{
+      display: none !important;
+    }
+
+    .comment-meta{
+      width: 100% !important;
+    }
+      
+   }
+

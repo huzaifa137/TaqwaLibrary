@@ -28,6 +28,7 @@
         <!-- Stylesheet -->
         <link href="/assets/style.css" rel="stylesheet" type="text/css" />
 
+        
     </head>
 
     <body>
@@ -227,8 +228,8 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td style="color: #3686ff">Abdullah Awad al-Juhani</td>
-                                                        <td>Abdullah Basfar</td>
+                                                        <td style="color: #3686ff"> <a href="{{url('surah/Abdullah Awad al-Juhani')}}"> Abdullah Awad al-Juhani </a></td>
+                                                        <td> <a href="{{url('surah/Abdullah Basfar')}}" style="color: black !important"> Abdullah Basfar</td></a>
                                                         <td style="color: #3686ff">Abdur-Rahman as-Sudais</td>                                                                
                                                     </tr>
                                                     <tr>
