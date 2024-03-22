@@ -117,6 +117,17 @@
                             <li><a href="{{route('AddBook')}}">Add Book</a></li>
                         </ul>
                     </li>
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="la la-diamond"></i>
+                            <span class="nav-text">Quran</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{route('All-Quran')}}">All Quran</a></li>
+                            <li><a href="{{route('Add-Quran')}}">Add Quran</a></li>
+                        </ul>
+                  </li>
                     
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">

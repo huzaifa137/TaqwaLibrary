@@ -935,8 +935,8 @@ class BookController extends Controller
         public function SpecificReciter($name){
             
             $IndividualQuranReciters = Quran::where('ScholarName',$name)->get();
-
-            return view('Quran.Surah')->with('IndividualQuranReciters',$IndividualQuranReciters)->with('name',$name);
+            
+            return view('Quran.Surah',compact(['IndividualQuranReciters','name']));
         }
 
 
@@ -974,5 +974,12 @@ class BookController extends Controller
 
         public function downloadQuran(Request $request,$audio){
             return response()->download(public_path('quran_audios/'.$audio));
-    }
+        }
+
+        public function AllQuran(){
+
+            $data = Quran::all();
+
+            return view('Quran.AllQuran',compact(['data']));
+        }
 }

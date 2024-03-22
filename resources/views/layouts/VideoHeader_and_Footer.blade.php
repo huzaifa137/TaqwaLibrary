@@ -79,7 +79,7 @@
                                                 <li><a href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                             </ul>
                                         </li>
-
+                                        <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
                                         <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('Ugandan-Sheikhs')}}">Audios</a>
                                             <ul class="dropdown-menu">
@@ -108,7 +108,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="{{route('about-us')}}">About us</a></li>
-                                        <li><a href="{{route('contact')}}">Contact us</a></li>
+                                        <li style="margin-left: -2rem"><a href="{{route('contact')}}">Contact us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                             <li><a id="links-highlight" href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                         </ul>
                                     </li>
-
+                                    <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
                                     <li>
                                         <a href="javascript:void()">Audios</a>
                                         <ul>
@@ -434,6 +434,7 @@
                             <ul id="menu-quick-links" class="menu">
                                 <li><a href="{{route('home')}}">Home</a></li>
                                 <li><a href="{{('all')}}">Books</a></li>
+                                <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
                                 <li><a href="{{('All-videos')}}">Videos</a></li>
                                 <li><a href="{{('Ugandan-Sheikhs')}}">Audio</a></li>
                                 <li><a href="{{('morning-adhkar')}}">Dua & Adhkar</a></li>
@@ -481,6 +482,7 @@
                     <ul>
                         <li><a href="{{route('home')}}">Home</a></li>
                         <li><a href="{{('all')}}">Books</a></li>
+                        <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
                         <li><a href="{{('All-videos')}}">Videos</a></li>
                         <li><a href="{{('Ugandan-Sheikhs')}}">Audio</a></li>
                         <li><a href="{{('morning-adhkar')}}">Dua & Adhkar</a></li>

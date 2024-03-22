@@ -78,7 +78,7 @@
                                                 <li><a href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                             </ul>
                                         </li>
-
+                                        <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
                                         <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('Ugandan-Sheikhs')}}">Audios</a>
                                             <ul class="dropdown-menu">
@@ -106,7 +106,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="{{route('about-us')}}">About us</a></li>
-                                        <li><a href="{{route('contact')}}">Contact us</a></li>
+                                        <li style="margin-left: -2rem"><a href="{{route('contact')}}">Contact us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
                                             <li><a id="links-highlight" href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                         </ul>
                                     </li>
-
+                                    <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
                                     <li>
                                         <a href="javascript:void()">Audios</a>
                                         <ul>
@@ -230,51 +230,51 @@
                                                     <tr>
                                                         <td style="color: #3686ff"> <a href="{{url('surah/Abdullah Awad al-Juhani')}}"> Abdullah Awad al-Juhani </a></td>
                                                         <td> <a href="{{url('surah/Abdullah Basfar')}}" style="color: black !important"> Abdullah Basfar</td></a>
-                                                        <td style="color: #3686ff">Abdur-Rahman as-Sudais</td>                                                                
+                                                        <td style="color: #3686ff"> <a href="{{url('surah/Abdur-Rahman as-Sudais')}}" >Abdur-Rahman as-Sudais</td>                                                                
                                                     </tr>
                                                     <tr>
-                                                        <td>AbdulMuhsin al-Qasim</td>
-                                                        <td style="color: #3686ff" style="color: #3686ff">AbdulBari ath-Thubaity</td>
-                                                        <td>Ahmed ibn Ali al-Ajmy</td>
+                                                        <td ><a href="{{url('surah/AbdulMuhsin al-Qasim')}}" style="color: #000">AbdulMuhsin al-Qasim</td>
+                                                        <td style="color: #3686ff" ><a href="{{url('surah/AbdulBari ath-Thubaity')}}" >AbdulBari ath-Thubaity</td>
+                                                        <td><a href="{{url('surah/Ahmed ibn Ali al-Ajmy')}}" style="color: #000">Ahmed ibn Ali al-Ajmy</td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="color: #3686ff">AbdulAzeez al-Ahmad</td>
-                                                        <td>AbdulBaset AbdulSamad [Murattal]</td>
-                                                        <td style="color: #3686ff">AbdulWadud Haneef</td>
+                                                        <td ><a href="{{url('surah/AbdulAzeez al-Ahmad')}}" style="color: #3686ff">AbdulAzeez al-Ahmad</td>
+                                                        <td><a href="{{url('surah/AbdulBaset AbdulSamad [Murattal]')}}" style="color: #000">AbdulBaset AbdulSamad [Murattal]</td>
+                                                        <td ><a href="{{url('surah/AbdulWadud Haneef')}}" style="color: #3686ff">AbdulWadud Haneef</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Aziz Alili</td>
-                                                        <td style="color: #3686ff">AbdulBaset AbdulSamad [Mujawwad]</td>
-                                                        <td>Al-Hussayni Al-'Azazy (with Children)</td>
+                                                        <td><a href="{{url('surah/Aziz Alili')}}" style="color: #000">Aziz Alili</td>
+                                                        <td><a href="{{url('surah/AbdulBaset AbdulSamad [Mujawwad]')}}" style="color: #3686ff">AbdulBaset AbdulSamad [Mujawwad]</td>
+                                                        <td><a href="{{url('surah/Al-Hussayni Al-\'Azazy (with Children)')}}" style="color: #000">Al-Hussayni Al-'Azazy (with Children)</td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="color: #3686ff">Abdur-Razaq bin Abtan al-Dulaimi [Mujawwad]</td>
-                                                        <td>Abdullah Khayat</td>
-                                                        <td style="color: #3686ff">Adel Kalbani</td>
+                                                        <td><a href="{{url('surah/Abdur-Razaq bin Abtan al-Dulaimi [Mujawwad]')}}" style="color: #3686ff">Abdur-Razaq bin Abtan al-Dulaimi [Mujawwad]</td>
+                                                        <td><a href="{{url('surah/Abdullah Khayat')}}" style="color: #000">Abdullah Khayat</td>
+                                                        <td><a href="{{url('surah/Adel Kalbani')}}" style="color: #3686ff"> Adel Kalbani</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>AbdulKareem Al Hazmi</td>
-                                                        <td style="color: #3686ff">Abdul-Mun'im Abdul-Mubdi'</td>
-                                                        <td>Abdur-Rashid Sufi</td>
+                                                        <td><a href="{{url('surah/AbdulKareem Al Hazmi')}}" style="color: #000">AbdulKareem Al Hazmi</td>
+                                                        <td><a href="{{url('surah/Abdul-Mun\'im Abdul-Mubdi\'')}}" style="color: #3686ff">Abdul-Mun'im Abdul-Mubdi'</td>
+                                                        <td><a href="{{url('surah/Abdur-Rashid Sufi')}}" style="color: #000">Abdur-Rashid Sufi</td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="color: #3686ff">Abdur-Rashid Sufi</td>
-                                                        <td>Ahmad al-Huthaify</td>
-                                                        <td style="color: #3686ff">Abu Bakr al-Shatri [Taraweeh]</td>
+                                                        <td style="color: #3686ff">"***Abdur-Rashid Sufi***"</td>
+                                                        <td><a href="{{url('surah/Ahmad al-Huthaify')}}" style="color: black !important">Ahmad al-Huthaify</td>
+                                                        <td><a href="{{url('surah/Abu Bakr al-Shatri [Taraweeh]')}}" style="color: #3686ff">Abu Bakr al-Shatri [Taraweeh]</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Abdullah Matroud</td>
-                                                        <td style="color: #3686ff">AbdulWadood Haneef</td>
-                                                        <td>Ahmad Nauina</td>
+                                                        <td><a href="{{url('surah/Abdullah Matroud')}}" style="color: black !important">Abdullah Matroud</td>
+                                                        <td><a href="{{url('surah/AbdulWadood Haneef')}}" style="color: #3686ff">AbdulWadood Haneef</td>
+                                                        <td><a href="{{url('surah/Ahmad Nauina')}}" style="color: black !important">Ahmad Nauina</td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="color: #3686ff">Akram Al-Alaqmi</td>
-                                                        <td>Ali Hajjaj Alsouasi</td>
-                                                        <td style="color: #3686ff">Asim Abdul Aleem</td>
+                                                        <td><a href="{{url('surah/Akram Al-Alaqmi')}}" style="color: #3686ff">Akram Al-Alaqmi</td>
+                                                        <td><a href="{{url('surah/Ali Hajjaj Alsouasi')}}" style="color: black !important">Ali Hajjaj Alsouasi</td>
+                                                        <td><a href="{{url('surah/Asim Abdul Aleem')}}" style="color: #3686ff">Asim Abdul Aleem</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Abdallah Abdal</td>
-                                                        <td style="color: #3686ff">Abdullah Ali Jabir</td>
+                                                        <td><a href="{{url('surah/Abdallah Abdal')}}" style="color: black !important">Abdallah Abdal</td>
+                                                        <td><a href="{{url('surah/Abdullah Ali Jabir')}}" style="color: #3686ff">Abdullah Ali Jabir</td>
                                                     </tr>
                                         </table>
                                         <table class="table table-bordered">
@@ -285,7 +285,7 @@
                                                     </thead>
                                                 <body>
                                                         <tr>
-                                                            <td>Bandar Baleela</td>                                                                 
+                                                            <td><a href="{{url('surah/Bandar Baleela')}}" style="color: black !important">Bandar Baleela</td>                                                                 
                                                         </tr>
                                                     </thead>
                                                 </tbody>
@@ -301,7 +301,7 @@
                                             </thead>
                                             <body>
                                                 <tr>
-                                                    <td>Dr. Shawqy Hamed [Murattal]</td>                                                                 
+                                                    <td><a href="{{url('surah/Dr. Shawqy Hamed [Murattal]')}}" style="color: black !important">Dr. Shawqy Hamed [Murattal]</td>                                                                 
                                                 </tr>
                                             </thead>
                                         </tbody>
@@ -316,8 +316,8 @@
                                     </thead>
                                     <body>
                                         <tr>
-                                            <td style="color: #3686ff">Fares Abbad</td>
-                                            <td>Fatih Seferagic</td>                                                                 
+                                            <td><a href="{{url('surah/Fares Abbad')}}" style="color: #3686ff">Fares Abbad</td>
+                                            <td><a href="{{url('surah/Fatih Seferagic')}}" style="color: black !important">Fatih Seferagic</td>                                                                 
                                         </tr>
                                     
                                 </tbody>
@@ -332,9 +332,9 @@
                             </thead>
                             <body>
                                 <tr>
-                                    <td>Hani ar-Rifai</td>
-                                    <td style="color: #3686ff">Hamad Sinan</td>         
-                                    <td>Hatem Farid</td>                                                      
+                                    <td><a href="{{url('surah/Hani ar-Rifai')}}" style="color: black !important">Hani ar-Rifai</td>
+                                    <td><a href="{{url('surah/Hamad Sinan')}}" style="color: #3686ff !important">Hamad Sinan</td>         
+                                    <td><a href="{{url('surah/Hatem Farid')}}" style="color: black !important">Hatem Farid</td>                                                      
                                 </tr>
                             </body>
                 </table>
@@ -348,12 +348,12 @@
                     </thead>
                 <body>
                         <tr>
-                            <td style="color: #3686ff">Ibrahim Al-Jibrin</td>
-                            <td>Imad Zuhair Hafez</td>         
-                            <td style="color: #3686ff">Ibrahim Al Akhdar</td>                                  
+                            <td><a href="{{url('surah/Ibrahim Al-Jibrin')}}" style="color: #3686ff !important">Ibrahim Al-Jibrin</td>
+                            <td><a href="{{url('surah/Imad Zuhair Hafez')}}" style="color: black !important">Imad Zuhair Hafez</td>         
+                            <td><a href="{{url('surah/Ibrahim Al Akhdar')}}" style="color: #3686ff !important">Ibrahim Al Akhdar</td>                                  
                         </tr>
                         <tr>
-                            <td>Idrees Abkar</td>
+                            <td><a href="{{url('surah/Idrees Abkar')}}" style="color: black !important">Idrees Abkar</td>
                         </tr>
                 </tbody>
             </table>
@@ -367,9 +367,9 @@
                 </thead>
                 <body>
                     <tr>
-                        <td>Khalid al-Qahtani</td>
-                        <td style="color: #3686ff" style="color: #3686ff">Khalid Al Ghamdi</td>         
-                        <td>Khalifah Taniji</td>                                                  
+                        <td><a href="{{url('surah/Khalid al-Qahtani')}}" style="color: black !important">Khalid al-Qahtani</td>
+                        <td><a href="{{url('surah/Khalid Al Ghamdi')}}" style="color: #3686ff !important">Khalid Al Ghamdi</td>         
+                        <td><a href="{{url('surah/Khalifah Taniji')}}" style="color: black !important">Khalifah Taniji</td>                                                  
                     </tr>
             </tbody>
         </table>
@@ -384,37 +384,37 @@
             </thead>
             <body>
                 <tr>
-                    <td style="color: #3686ff">Mishari Rashid al-`Afasy</td>
-                    <td>Muhammad Siddiq al-Minshawi</td>         
-                    <td style="color: #3686ff">Muhammad Jibreel</td>                                       
+                    <td><a href="{{url('surah/Mishari Rashid al-`Afasy')}}" style="color: #3686ff !important">Mishari Rashid al-`Afasy</td>
+                    <td><a href="{{url('surah/Muhammad Siddiq al-Minshawi')}}" style="color: black !important">Muhammad Siddiq al-Minshawi</td>         
+                    <td><a href="{{url('surah/Muhammad Jibreel')}}" style="color: #3686ff !important">Muhammad Jibreel</td>                                       
                 </tr>
                 <tr>
-                    <td>Muhammad al-Mehysni</td>  
-                    <td style="color: #3686ff">Muhammad Siddiq al-Minshawi [Mujawwad]</td>
-                    <td>Muhammad al-Luhaidan</td>
+                    <td><a href="{{url('surah/Muhammad al-Mehysni')}}" style="color: black !important">Muhammad al-Mehysni</td>  
+                    <td><a href="{{url('surah/Muhammad Siddiq al-Minshawi [Mujawwad]')}}" style="color: #3686ff !important">Muhammad Siddiq al-Minshawi [Mujawwad]</td>
+                    <td><a href="{{url('surah/Muhammad al-Luhaidan')}}" style="color: black !important">Muhammad al-Luhaidan</td>
                 </tr>
                 <tr>
-                    <td style="color: #3686ff">Muhammad Abdul-Kareem</td>  
-                    <td>Mustafa al-`Azawi</td>
-                    <td style="color: #3686ff">Muhammad Hassan</td>
+                    <td><a href="{{url('surah/Muhammad Abdul-Kareem')}}" style="color: #3686ff !important">Muhammad Abdul-Kareem</td>  
+                    <td><a href="{{url('surah/Mustafa al-`Azawi')}}" style="color: black !important">Mustafa al-`Azawi</td>
+                    <td><a href="{{url('surah/Muhammad Hassan')}}" style="color: #3686ff !important">Muhammad Hassan</td>
                 </tr>
                 <tr>
-                    <td>Mostafa Ismaeel</td>  
-                    <td style="color: #3686ff">Muhammad Sulaiman Patel</td>
-                    <td>Mohammad Al-Tablawi</td>
+                    <td><a href="{{url('surah/Mostafa Ismaeel')}}" style="color: black !important">Mostafa Ismaeel</td>  
+                    <td><a href="{{url('surah/Muhammad Sulaiman Patel')}}" style="color: #3686ff !important">Muhammad Sulaiman Patel</td>
+                    <td><a href="{{url('surah/Mohammad Al-Tablawi')}}" style="color: black !important">Mohammad Al-Tablawi</td>
                 </tr>
                 <tr>
-                    <td style="color: #3686ff">Mohammad Ismaeel Al-Muqaddim</td>  
-                    <td>Muhammad Ayyoob [Taraweeh]</td>
-                    <td style="color: #3686ff">Masjid Quba Taraweeh 1434</td>
+                    <td><a href="{{url('surah/Mohammad Ismaeel Al-Muqaddim')}}" style="color: #3686ff !important">Mohammad Ismaeel Al-Muqaddim</td>  
+                    <td><a href="{{url('surah/Muhammad Ayyoob [Taraweeh]')}}" style="color: black !important">Muhammad Ayyoob [Taraweeh]</td>
+                    <td><a href="{{url('surah/Masjid Quba Taraweeh 1434')}}" style="color: #3686ff !important">Masjid Quba Taraweeh 1434</td>
                 </tr>
                 <tr>
-                    <td>Muhammad Khaleel</td>  
-                    <td style="color: #3686ff">Mahmoud Khaleel Al-Husary</td>
-                    <td>Mahmood Ali Al-Bana</td>
+                    <td><a href="{{url('surah/Muhammad Khaleel')}}" style="color: black !important">Muhammad Khaleel</td>  
+                    <td><a href="{{url('surah/Mahmoud Khaleel Al-Husary')}}" style="color: #3686ff !important">Mahmoud Khaleel Al-Husary</td>
+                    <td><a href="{{url('surah/Mahmood Ali Al-Bana')}}" style="color: black !important">Mahmood Ali Al-Bana</td>
                 </tr>
                 <tr>
-                    <td style="color: #3686ff">Maher al-Muaiqly</td>  
+                    <td><a href="{{url('surah/Maher al-Muaiqly')}}" style="color: #3686ff !important">Maher al-Muaiqly</td>  
                 </tr>
             </body>
     </table>
@@ -428,8 +428,8 @@
         </thead>
         <body>
             <tr>
-                <td>Nabil ar-Rifai</td>
-                <td style="color: #3686ff">Nasser Al Qatami</td>                                                          
+                <td><a href="{{url('surah/Nabil ar-Rifai')}}" style="color: black !important">Nabil ar-Rifai</td>
+                <td><a href="{{url('surah/Nasser Al Qatami')}}" style="color: #3686ff !important">Nasser Al Qatami</td>                                                          
             </tr>
     </tbody>
 </table>
@@ -443,19 +443,19 @@
     </thead>
     <body>
         <tr>
-            <td style="color: #3686ff">Sa`ud ash-Shuraym</td>
-            <td>Saad al-Ghamdi</td>          
-            <td style="color: #3686ff">Sahl Yasin</td>                                                
+            <td><a href="{{url('surah/Sa`ud ash-Shuraym')}}" style="color: #3686ff !important">Sa`ud ash-Shuraym</td>
+            <td><a href="{{url('surah/Saad al-Ghamdi')}}" style="color: black !important">Saad al-Ghamdi</td>          
+            <td><a href="{{url('surah/Sahl Yasin')}}" style="color: #3686ff !important">Sahl Yasin</td>                                                
         </tr>
         <tr>
-            <td>Salah Bukhatir</td>
-            <td style="color: #3686ff">Sudais and Shuraym</td>          
-            <td>Saleh al Taleb</td>                                                
+            <td><a href="{{url('surah/Salah Bukhatir')}}" style="color: black !important">Salah Bukhatir</td>
+            <td><a href="{{url('surah/Sudais and Shuraym')}}" style="color: #3686ff !important">Sudais and Shuraym</td>          
+            <td><a href="{{url('surah/Saleh al Taleb')}}" style="color: black !important">Saleh al Taleb</td>                                                
         </tr>
         <tr>
-            <td style="color: #3686ff">Salah al-Budair</td>
-            <td>Sadaqat `Ali</td>          
-            <td style="color: #3686ff">Salah Al-Hashim</td>                                                
+            <td><a href="{{url('surah/Salah al-Budair')}}" style="color: #3686ff !important">Salah al-Budair</td>
+            <td><a href="{{url('surah/Sadaqat `Ali')}}" style="color: black !important">Sadaqat `Ali</td>          
+            <td><a href="{{url('surah/Salah Al-Hashim')}}" style="color: #3686ff !important">Salah Al-Hashim</td>                                                
         </tr>
 </tbody>
 </table>
@@ -468,7 +468,7 @@
         </thead>
         <body>
         <tr>
-            <td> Tawfeeq ibn Sa`id as-Sawa'igh</td>                                          
+            <td><a href="{{url('surah/Tawfeeq ibn Sa`id as-Sawa\'igh')}}" style="color: black !important"> Tawfeeq ibn Sa`id as-Sawa'igh</td>                                          
         </tr>
 </tbody>
 </table>
@@ -481,7 +481,7 @@
     </thead>
     <body>
         <tr>
-            <td style="color: #3686ff"> Wadee Hammadi Al Yamani</td>                                          
+            <td><a href="{{url('surah/Wadee Hammadi Al Yamani')}}" style="color: #3686ff !important"> Wadee Hammadi Al Yamani</td>                                          
         </tr>
 </tbody>
 </table>
@@ -494,7 +494,7 @@
     </thead>
 <body>
         <tr>
-            <td>Yasser ad-Dussary</td>                                          
+            <td><a href="{{url('surah/Yasser ad-Dussary')}}" style="color: black !important">Yasser ad-Dussary</td>                                          
         </tr>
     </tbody>
 </table>
@@ -510,32 +510,32 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Makkah Taraweeh 1426 </td>
-                        <td>Makkah Taraweeh 1427</td>
-                        <td>Makkah Taraweeh 1425</td>
-                        <td>Makkah Taraweeh 1428</td>                                                                    
+                        <td><a href="{{url('surah/Makkah Taraweeh 1426')}}" style="color: black !important">Makkah Taraweeh 1424</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1425')}}" style="color: black !important">Makkah Taraweeh 1425 </td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1426')}}" style="color: black !important">Makkah Taraweeh 1426</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1427')}}" style="color: black !important">Makkah Taraweeh 1427</td>                                                                    
                     </tr>
                     <tr>
-                        <td>Makkah Taraweeh 1424</td>
-                        <td>Makkah Taraweeh 1429</td>
-                        <td>Makkah Taraweeh 1430</td>
-                        <td>Makkah Taraweeh 1431</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1428')}}" style="color: black !important">Makkah Taraweeh 1428</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1429')}}" style="color: black !important">Makkah Taraweeh 1429</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1430')}}" style="color: black !important">Makkah Taraweeh 1430</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1431')}}" style="color: black !important">Makkah Taraweeh 1431</td>
                     </tr>
                     <tr>
-                        <td>Makkah Taraweeh 1432</td>
-                        <td>Makkah Taraweeh 1433</td>
-                        <td>Makkah Taraweeh 1434</td>
-                        <td>Makkah Taraweeh 1435</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1432')}}" style="color: black !important">Makkah Taraweeh 1432</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1433')}}" style="color: black !important">Makkah Taraweeh 1433</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1434')}}" style="color: black !important">Makkah Taraweeh 1434</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1435')}}" style="color: black !important">Makkah Taraweeh 1435</td>
                     </tr>
                     <tr>
-                        <td>Makkah Taraweeh 1436</td>
-                        <td>Makkah Taraweeh 1437</td>
-                        <td>Makkah Taraweeh 1438</td>
-                        <td>Makkah Taraweeh 1439</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1436')}}" style="color: black !important">Makkah Taraweeh 1436</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1437')}}" style="color: black !important">Makkah Taraweeh 1437</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1438')}}" style="color: black !important">Makkah Taraweeh 1438</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1439')}}" style="color: black !important">Makkah Taraweeh 1439</td>
                     </tr>
                     <tr>
-                        <td>Makkah Taraweeh 1440</td>
-                        <td>Makkah Taraweeh 1441</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1440')}}" style="color: black !important">Makkah Taraweeh 1440</td>
+                        <td><a href="{{url('surah/Makkah Taraweeh 1441')}}" style="color: black !important">Makkah Taraweeh 1441</td>
                     </tr>
                 </tbody>
                 </table>
@@ -547,35 +547,34 @@
                         </tr>
                     </thead>
                         <tr>
-                            <td>Madinah Taraweeh 1419</td>
-                            <td>Madinah Taraweeh 1426</td>
-                            <td>Madinah Taraweeh 1427</td>                                                                  
+                            <td><a href="{{url('surah/Madinah Taraweeh 1419')}}" style="color: black !important">Madinah Taraweeh 1419</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1423')}}" style="color: black !important">Madinah Taraweeh 1423</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1426')}}" style="color: black !important">Madinah Taraweeh 1426</td>                                                                 
                         </tr>
                         <tr>
-                            <td>Madinah Taraweeh 1423</td>
-                            <td>Madinah Taraweeh 1428</td>
-                            <td>Madinah Taraweeh 1429</td>
-                            
+                            <td><a href="{{url('surah/Madinah Taraweeh 1427')}}" style="color: black !important">Madinah Taraweeh 1427</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1429')}}" style="color: black !important">Madinah Taraweeh 1429</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1428')}}" style="color: black !important">Madinah Taraweeh 1428</td>
                         </tr>
                        <tr>
-                        <td>Madinah Taraweeh 1430</td>
-                        <td>Madinah Taraweeh 1431</td>
-                        <td>Madinah Taraweeh 1432</td>
+                        <td><a href="{{url('surah/Madinah Taraweeh 1430')}}" style="color: black !important">Madinah Taraweeh 1430</td>
+                        <td><a href="{{url('surah/Madinah Taraweeh 1431')}}" style="color: black !important">Madinah Taraweeh 1431</td>
+                        <td><a href="{{url('surah/Madinah Taraweeh 1432')}}" style="color: black !important">Madinah Taraweeh 1432</td>
                         </tr>
                         <tr>
-                            <td>Madinah Taraweeh 1433</td>
-                            <td>Madinah Taraweeh 1434</td>
-                            <td>Madinah Taraweeh 1435</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1433')}}" style="color: black !important">Madinah Taraweeh 1433</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1434')}}" style="color: black !important">Madinah Taraweeh 1434</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1435')}}" style="color: black !important">Madinah Taraweeh 1435</td>
                         </tr>
                         <tr>
-                            <td>Madinah Taraweeh 1436</td>
-                            <td>Madinah Taraweeh 1437</td>
-                            <td>Madinah Taraweeh 1439</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1436')}}" style="color: black !important">Madinah Taraweeh 1436</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1437')}}" style="color: black !important">Madinah Taraweeh 1437</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1439')}}" style="color: black !important">Madinah Taraweeh 1439</td>
                         </tr>
                         <tr>
-                            <td>Madinah Taraweeh 1440</td>
-                            <td>Madinah Taraweeh 1441</td>
-                            <td>Madinah Taraweeh 1442</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1440')}}" style="color: black !important">Madinah Taraweeh 1440</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1441')}}" style="color: black !important">Madinah Taraweeh 1441</td>
+                            <td><a href="{{url('surah/Madinah Taraweeh 1442')}}" style="color: black !important">Madinah Taraweeh 1442</td>
                         </tr>
                     </thead>
                 </tbody>
@@ -592,18 +591,18 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>AbdulBaset AbdulSamad [Warsh]</td>
-                        <td>Abdur-Rashid Sufi [Soosi]</td>
-                        <td>Abdur-Rashid Sufi [Khalaf]</td>                                                                
+                        <td><a href="{{url('surah/AbdulBaset AbdulSamad [Warsh]')}}" style="color: black !important">AbdulBaset AbdulSamad [Warsh]</td>
+                        <td><a href="{{url('surah/Abdur-Rashid Sufi [Soosi]')}}" style="color: black !important">Abdur-Rashid Sufi [Soosi]</td>
+                        <td><a href="{{url('surah/Abdur-Rashid Sufi [Khalaf]')}}" style="color: black !important">Abdur-Rashid Sufi [Khalaf]</td>                                                                
                     </tr>
                     <tr>
-                        <td>Abdur-Rashid Sufi [Abi al-Haarith an al-Kasaa'ee]</td>
-                        <td>Abdur-Rashid Sufi [ad-Doori an Abi Amr]</td>
-                        <td>Abdur-Rashid Sufi [Shu'bah an Asim]</td>                                                                
+                        <td><a href="{{url('surah/Abdur-Rashid Sufi [Abi al-Haarith an al-Kasaa\'ee]')}}" style="color: black !important">Abdur-Rashid Sufi [Abi al-Haarith an al-Kasaa'ee]</td>
+                        <td><a href="{{url('surah/Abdur-Rashid Sufi [ad-Doori an Abi Amr]')}}" style="color: black !important">Abdur-Rashid Sufi [ad-Doori an Abi Amr]</td>
+                        <td><a href="{{url('surah/Abdur-Rashid Sufi [Shu\'bah an Asim]')}}" style="color: black !important">Abdur-Rashid Sufi [Shu'bah an Asim]</td>                                                                
                     </tr>
                     <tr>
-                        <td>Ali al-Huthaify [Qaloon]</td>
-                        <td>Abdur-Rashid Sufi [Soosi, 2020]</td>                                                              
+                        <td><a href="{{url('surah/Ali al-Huthaify [Qaloon]')}}" style="color: black !important">Ali al-Huthaify [Qaloon]</td>
+                        <td><a href="{{url('surah/Abdur-Rashid Sufi [Soosi, 2020]')}}" style="color: black !important">Abdur-Rashid Sufi [Soosi, 2020]</td>                                                              
                     </tr>
                 </tbody>
                 </table>
@@ -617,7 +616,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Mahmoud Khalil Al-Husary [Doori]</td>                                                               
+                            <td><a href="{{url('surah/Mahmoud Khalil Al-Husary [Doori]')}}" style="color: black !important">Mahmoud Khalil Al-Husary [Doori]</td>                                                               
                         </tr>
                     </tbody>
                     </table>
@@ -630,7 +629,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Noreen Siddiq [ad-Doori an Abi Amr]</td>                                                               
+                                <td><a href="{{url('surah/Noreen Siddiq [ad-Doori an Abi Amr]')}}" style="color: black !important">Noreen Siddiq [ad-Doori an Abi Amr]</td>                                                               
                             </tr>
                         </tbody>
                         </table>
@@ -645,9 +644,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>AbdulBaset AbdulSamad with Naeem Sultan [Pickthall Translation]</td>
-                        <td>AbdulBaset AbdulSamad with Ibrahim Walk [Saheeh Intl Translation]</td>
-                        <td>Abdullah Basfar with Ibrahim Walk [Saheeh Intl Translation]</td>                                                                
+                        <td><a href="{{url('surah/AbdulBaset AbdulSamad with Naeem Sultan [Pickthall Translation]')}}" style="color: black !important">AbdulBaset AbdulSamad with Naeem Sultan [Pickthall Translation]</td>
+                        <td><a href="{{url('surah/AbdulBaset AbdulSamad with Ibrahim Walk [Saheeh Intl Translation]')}}" style="color: black !important">AbdulBaset AbdulSamad with Ibrahim Walk [Saheeh Intl Translation]</td>
+                        <td><a href="{{url('surah/Abdullah Basfar with Ibrahim Walk [Saheeh Intl Translation]')}}" style="color: black !important">Abdullah Basfar with Ibrahim Walk [Saheeh Intl Translation]</td>                                                                
                     </tr>
                     
                 </tbody>
@@ -661,9 +660,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Muhammad Ayyub with Mikaal Waters [Muhsin Khan Translation]</td>
-                            <td>Mishari ibn Rashid al-`Afasy with Saabir [Muhsin Khan Translation]</td>
-                            <td>Mishari ibn Rashid al-`Afasy with Ibrahim Walk [Saheeh Intl Translation]</td>                                                                
+                            <td><a href="{{url('surah/Muhammad Ayyub with Mikaal Waters [Muhsin Khan Translation]')}}" style="color: black !important">Muhammad Ayyub with Mikaal Waters [Muhsin Khan Translation]</td>
+                            <td><a href="{{url('surah/Mishari ibn Rashid al-`Afasy with Saabir [Muhsin Khan Translation]')}}" style="color: black !important">Mishari ibn Rashid al-`Afasy with Saabir [Muhsin Khan Translation]</td>
+                            <td><a href="{{url('surah/Mishari ibn Rashid al-`Afasy with Ibrahim Walk [Saheeh Intl Translation]')}}" style="color: black !important">Mishari ibn Rashid al-`Afasy with Ibrahim Walk [Saheeh Intl Translation]</td>                                                                
                         </tr>
                     </tbody>
                     </table>
@@ -676,11 +675,11 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Sudais and Shuraym with Aslam Athar [Pickthall Translation]</td>    
-                            <td>Shakir Qasami with Aslam Athar [Pickthall Translation]</td>
-                            <td>Sudais and Shuraym with Naeem Sultan [Pickthall Translation]</td>                                                           
+                            <td><a href="{{url('surah/Sudais and Shuraym with Aslam Athar [Pickthall Translation]')}}" style="color: black !important">Sudais and Shuraym with Aslam Athar [Pickthall Translation]</td>    
+                            <td><a href="{{url('surah/Shakir Qasami with Aslam Athar [Pickthall Translation]')}}" style="color: black !important">Shakir Qasami with Aslam Athar [Pickthall Translation]</td>
+                            <td><a href="{{url('surah/Sudais and Shuraym with Naeem Sultan [Pickthall Translation]')}}" style="color: black !important">Sudais and Shuraym with Naeem Sultan [Pickthall Translation]</td>                                                           
                         </tr>
-                        <td>Sudais and Shuraym [Urdu Translation]</td>
+                        <td><a href="{{url('surah/Sudais and Shuraym [Urdu Translation]')}}" style="color: black !important">Sudais and Shuraym [Urdu Translation]</td>
                     </tbody>
                     </table>
     </div>
@@ -732,6 +731,7 @@
                             <ul id="menu-quick-links" class="menu">
                                 <li><a href="{{route('home')}}">Home</a></li>
                                 <li><a href="{{('all')}}">Books</a></li>
+                                <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
                                 <li><a href="{{('All-videos')}}">Videos</a></li>
                                 <li><a href="{{('Ugandan-Sheikhs')}}">Audio</a></li>
                                 <li><a href="{{('morning-adhkar')}}">Dua & Adhkar</a></li>
@@ -779,6 +779,7 @@
                     <ul>
                         <li><a href="{{route('home')}}">Home</a></li>
                         <li><a href="{{('all')}}">Books</a></li>
+                        <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
                         <li><a href="{{('All-videos')}}">Videos</a></li>
                         <li><a href="{{('Ugandan-Sheikhs')}}">Audio</a></li>
                         <li><a href="{{('morning-adhkar')}}">Dua & Adhkar</a></li>

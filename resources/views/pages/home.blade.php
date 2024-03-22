@@ -71,6 +71,9 @@
                                         </ul>
                                     </li>
                                     
+                                    <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
+                                   
+
                                     <li class="dropdown">
                                         <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('Ugandan-Sheikhs')}}">Audios</a>
                                         <ul class="dropdown-menu">
@@ -144,6 +147,8 @@
                                             <li><a id="links-highlight" href="{{route('All_Luganda_Books')}}">Luganda Books</a></li>
                                         </ul>
                                     </li>
+
+                                    <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
 
                                     <li>
                                         <a href="javascript:void()">Audios</a>
@@ -805,6 +810,7 @@
                             <ul id="menu-quick-links" class="menu">
                                 <li><a href="{{route('home')}}">Home</a></li>
                                 <li><a href="{{('all')}}">Books</a></li>
+                                <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
                                 <li><a href="{{('All-videos')}}">Videos</a></li>
                                 <li><a href="{{route('Ugandan-Sheikhs')}}">Audios</a></li>
                                 <li><a href="{{('morning-adhkar')}}">Dua & Adhkar</a></li>
@@ -851,17 +857,12 @@
                     <ul>
                         <li><a href="{{route('home')}}">Home</a></li>
                         <li><a href="{{route('all')}}">BOOKS</a></li>
+                        <li><a href="{{route('Quran-Audio')}}">Quran</a></li>
                         <li><a href="{{route('All-videos')}}">VIDEOS</a></li>
                         <li><a href="{{route('Ugandan-Sheikhs')}}">AUDIOS</a></li>
                         <li><a href="{{route('morning-adhkar')}}">Dua & Adhkar</a></li>
                         <li><a href="{{route('about-us')}}">ABOUT US</a></li>
                         <li><a href="{{route('contact')}}">Contact us</a></li>
-                        {{-- <li><a href="news-events-list-view.html">News &amp; Events</a></li>
-                        <li><a href="#">Kids &amp; Teens</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li> --}}
                     </ul>
                 </div>
             </div>

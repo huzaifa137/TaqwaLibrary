@@ -51,6 +51,20 @@ Route::middleware(['middleware'=>'AuthCheck'])->group(function () {
     Route::get('Edit/{id}',[BookController::class,'updateRecord']);
     Route::get('AllBooks',[BookController::class,'show'])->name('AllBooks');
     Route::get('contact-info',[BookController::class,'contact_info'])->name('contact-info');
+    Route::get('Edit-Adhkar/{id}',[BookController::class,'EditAdhkar'])->name('Edit-Adhkar');
+    Route::get('delete-Adhkar/{id}',[BookController::class,'deleteAdhkar']);
+    Route::get('Upload-Audio',[BookController::class,'AudioUpload'])->name('Upload-Audio');
+    Route::get('All-Audio',[BookController::class,'AllAudios'])->name('All-Audio');
+    Route::get('Edit-Audio/{id}',[BookController::class,'EditAudio'])->name('Edit-Audio');
+    Route::get('delete-Audio/{id}',[BookController::class,'deleteAudio']);
+    Route::get('adhkar-details/{id}',[BookController::class,'adhkarDetails'])->name('adhkar-details');
+    Route::get('AllAdhkar',[BookController::class,'ShowAllAdhkar'])->name('AllAdhkar');
+    Route::get('Add-Quran',[BookController::class,'AddQuran'])->name('Add-Quran');
+    Route::get('All-Admin-videos',[BookController::class,'AdminVideos'])->name('All-Admin-videos');
+    Route::get('Edit-Video/{id}',[BookController::class,'EditVideo'])->name('Edit-Video');
+    Route::get('delete-Video/{id}',[BookController::class,'deleteVideo']);
+    Route::get('Add-video',[BookController::class,'AddVideo'])->name('Add-video');
+    
 }); 
 
 
@@ -60,10 +74,10 @@ Route::get('auth.login',[BookController::class,'login'])->name('auth.login');
 Route::post('auth.save',[BookController::class,'store1'])->name('auth.save');
 Route::post('auth.check',[BookController::class,'verify'])->name('auth.check');
 Route::post('send-message',[BookController::class,'SendMessage'])->name('send-message');
+
 Route::get('search-bar',[BookController::class,'SearchBar'])->name('search-bar');
 Route::get('fetchRecords/{keyword}',[BookController::class,'fetchRecords'])->name('fetchRecords-link');
 Route::get('search/{keyword}',[BookController::class,'searchInfo'])->name('search-link');
-
 Route::get('search-ulaamah/{keyword}',[BookController::class,'search_Scholar'])->name('search-link');
 
 
@@ -76,13 +90,6 @@ Route::get('Adhkar-After-Swalah',[BookController::class,'Adhkar_After_Swalah'])-
 Route::get('Famous-Duas-from-the-Quran',[BookController::class,'Famous_Duas_from_the_Quran'])->name('Famous-Duas-from-the-Quran');
 Route::get('Other-Duas',[BookController::class,'Other_Duas'])->name('Other-Duas');
 
-Route::get('adhkar-details/{id}',[BookController::class,'adhkarDetails'])->name('adhkar-details');
-Route::get('AllAdhkar',[BookController::class,'ShowAllAdhkar'])->name('AllAdhkar');
-
-// Admin Routes
-Route::get('Edit-Adhkar/{id}',[BookController::class,'EditAdhkar'])->name('Edit-Adhkar');
-Route::get('delete-Adhkar/{id}',[BookController::class,'deleteAdhkar']);
-
 Route::post('add-post',[BookController::class,'add_post'])->name('add-post');
 Route::post('update-post',[BookController::class,'updateAdhkar'])->name('update-post');
 
@@ -91,14 +98,6 @@ Route::post('update-post',[BookController::class,'updateAdhkar'])->name('update-
 
 Route::get('Ugandan-Sheikhs',[BookController::class,'AudioPage'])->name('Ugandan-Sheikhs');
 Route::get('Indvidual-Sheikh',[BookController::class,'IndividualSheikh'])->name('Indvidual-Sheikh');
-
-// Admin Routes
-Route::get('Upload-Audio',[BookController::class,'AudioUpload'])->name('Upload-Audio');
-Route::get('All-Audio',[BookController::class,'AllAudios'])->name('All-Audio');
-
-Route::get('Edit-Audio/{id}',[BookController::class,'EditAudio'])->name('Edit-Audio');
-Route::get('delete-Audio/{id}',[BookController::class,'deleteAudio']);
-
 Route::get('sheikh/{name}',[BookController::class,'SheikhLectures']);
 Route::get('/download-Audio/{file}',[BookController::class,'downloadAudio']);
 
@@ -109,10 +108,6 @@ Route::post('update-Audio',[BookController::class,'UpdateAudio'])->name('update-
 //Video Routes
 
 Route::get('All-videos',[BookController::class,'AllVideos'])->name('All-videos');
-Route::get('All-Admin-videos',[BookController::class,'AdminVideos'])->name('All-Admin-videos');
-Route::get('Edit-Video/{id}',[BookController::class,'EditVideo'])->name('Edit-Video');
-Route::get('delete-Video/{id}',[BookController::class,'deleteVideo']);
-Route::get('Add-video',[BookController::class,'AddVideo'])->name('Add-video');
 Route::get('Video-Details',[BookController::class,'VideoDetails'])->name('Video-Details');
 Route::get('search/subject/{keyword}',[BookController::class,'SearchSubject']);
 Route::get('search/sheikh/{keyword}',[BookController::class,'SearchSheikh']);
@@ -132,6 +127,7 @@ Route::get('showDate',[BookController::class,'carbonDate']);
 Route::get('Quran-Audio',[BookController::class,'QuranAudio'])->name('Quran-Audio');
 Route::get('surah/{name}',[BookController::class,'SpecificReciter'])->name('surah');
 Route::get('/download-Quran/{file}',[BookController::class,'downloadQuran']);
+Route::get('All-Quran',[BookController::class,'AllQuran'])->name('All-Quran');
 
-Route::get('Add-Quran',[BookController::class,'AddQuran'])->name('Add-Quran');
+
 Route::post('upload-Quran',[BookController::class,'UploadQuranAudio'])->name('upload-Quran');
